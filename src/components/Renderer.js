@@ -102,30 +102,66 @@ export function renderProjects(data, container) {
     `;
 
     data.categories.forEach(category => {
+        const isEU = category.funding === 'eu';
+        const badgeClass = isEU ? 'badge-eu' : 'badge-national';
+        const badgeLabel = isEU ? '🇪🇺 EU Funded' : '🇮🇹 National / Structural';
+
         html += `
-            <h2 class="section-title">${category.title}</h2>
-            <div class="grid-layout" style="margin-bottom: 3rem;">
+            <div class="project-section-header">
+                <h2 class="section-title" style="border-bottom: none; margin-bottom: 0.25rem;">${category.title}</h2>
+                <span class="funding-badge ${badgeClass}">${badgeLabel}</span>
+            </div>
+            <div class="grid-layout project-grid" style="margin-bottom: 3rem;">
         `;
-        
+
         if (category.items && category.items.length > 0) {
-            category.items.forEach(item => {
+            // Sort by year descending (take the start year of the range)
+            const sorted = [...category.items].sort((a, b) => {
+                const ya = parseInt((a.year || '0').split('–')[0]);
+                const yb = parseInt((b.year || '0').split('–')[0]);
+                return yb - ya;
+            });
+
+            sorted.forEach(item => {
+                const logoHtml = item.logo
+                    ? `<img src="${item.logo}" alt="${item.name} logo" class="project-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                       <div class="project-logo-fallback" style="display:none;">${item.name}</div>`
+                    : `<div class="project-logo-fallback">${item.name}</div>`;
+
+                const linkHtml = item.url
+                    ? `<a href="${item.url}" target="_blank" class="custom-link" style="align-self: flex-start;">Visit Project &rarr;</a>`
+                    : `<span style="color: #999; font-size: 0.9rem; font-style: italic;">No public website</span>`;
+
                 html += `
-                    <div class="glass-card" style="display: flex; flex-direction: column; justify-content: space-between; align-items: flex-start;">
-                        <h3 class="card-title">${item.name}</h3>
-                        <a href="${item.url}" target="_blank" class="custom-link">Visit Project &rarr;</a>
+                    <div class="glass-card project-card">
+                        <div class="project-card-header">
+                            <div class="project-logo-wrap">
+                                ${logoHtml}
+                            </div>
+                            <div class="project-meta">
+                                <h3 class="card-title project-name">${item.name}</h3>
+                                ${item.fullName ? `<p class="project-fullname">${item.fullName}</p>` : ''}
+                                ${item.year ? `<span class="project-year-badge">${item.year}</span>` : ''}
+                            </div>
+                        </div>
+                        ${item.description ? `<p class="project-desc">${item.description}</p>` : ''}
+                        <div style="margin-top: auto; padding-top: 1rem;">
+                            ${linkHtml}
+                        </div>
                     </div>
                 `;
             });
         } else {
-            html += `<p style="color: var(--text-color); font-style: italic; margin-bottom: 1rem;">No current projects in this category.</p>`;
+            html += `<p style="color: var(--text-color); font-style: italic;">No current projects in this category.</p>`;
         }
-        
+
         html += `</div>`;
     });
 
     html += `</div>`;
     container.innerHTML = html;
 }
+
 
 export function renderPublications(data, container) {
     let html = `
