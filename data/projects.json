@@ -1,0 +1,18 @@
+{
+  "title": "Projects (last 10 years)",
+  "categories": [
+    {
+      "title": "EU-Funded Projects",
+      "items": [
+        { "name": "ELASTIC", "url": "https://elasticproject.eu/" },
+        { "name": "MIRANDA", "url": "https://www.mirandaproject.eu/" },
+        { "name": "PREDICT-6G", "url": "https://predict-6g.eu/" },
+        { "name": "FLUIDOS", "url": "https://www.fluidos.eu/" }
+      ]
+    },
+    {
+      "title": "Research Projects Supported by Structural and National Funds",
+      "items": []
+    }
+  ]
+}

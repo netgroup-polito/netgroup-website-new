@@ -1,0 +1,15 @@
+{
+  "title": "Research at Netgroup",
+  "description": "This page contains information related to the research activities in the Networking Group (NetGroup). The main research topics are related to:",
+  "topics": [
+    { "name": "Formal methods/verification", "reference": "prof. Riccardo Sisto" },
+    { "name": "Communication protocol engineering", "reference": "prof. Claudio Casetti" },
+    { "name": "Software-defined networking", "reference": "prof. Guido Marchetto" },
+    { "name": "High-speed packet processing/forwarding", "reference": "prof. Fulvio Risso" },
+    { "name": "Machine learning-based network management", "reference": "dott. Alessio Sacco" },
+    { "name": "Techniques for network security analysis, verification and monitoring", "reference": "prof. Riccardo Sisto" },
+    { "name": "Network security policy", "reference": "dott. Fulvio Valenza" },
+    { "name": "Network security automation", "reference": "dott. Daniele Bringhenti" },
+    { "name": "Network functions virtualization", "reference": "various faculties" }
+  ]
+}

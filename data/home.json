@@ -1,0 +1,38 @@
+{
+  "title": "Welcome to the NetGroup at Politecnico di Torino",
+  "description": "The Computer Networks Group (NetGroup) is a research group focused on computer networks. It is involved in several teaching activities (courses), research projects (both academic and applied research), and consulting activities.",
+  "directions": [
+    {
+      "title": "Cloud, Edge & Fog Computing",
+      "items": [
+        "Kubernetes, serverless, FaaS",
+        "Multi-cloud (e.g., with Liqo.io)"
+      ]
+    },
+    {
+      "title": "Network Softwarization",
+      "items": [
+        "Software-Defined Networks (SDN) and Network Functions Virtualization (NFV)",
+        "Resource and Service orchestration",
+        "Formal methods applied to multi-domain cloud/fog-oriented SDN/NFV-based networks"
+      ]
+    },
+    {
+      "title": "Network-Software Engineering",
+      "items": [
+        "Efficient data plane networking (e.g., Linux kernel, eBPF/XDP, DPDK, SmartNICs)",
+        "Model-based and policy-based development",
+        "Machine Learning-based network management",
+        "Network security automation"
+      ]
+    },
+    {
+      "title": "Protocol Engineering",
+      "items": [
+        "Languages for protocol description",
+        "Formal verification of security protocols",
+        "Security function allocation"
+      ]
+    }
+  ]
+}
