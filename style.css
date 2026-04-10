@@ -221,7 +221,7 @@ ul.card-list li::before {
 
 /* People Styles */
 .person-item {
-    padding: 1rem 0;
+    padding: 0.85rem 0;
     border-bottom: 1px solid rgba(0,0,0,0.05);
     display: flex;
     justify-content: space-between;
@@ -232,10 +232,48 @@ ul.card-list li::before {
 .person-item:last-child {
     border-bottom: none;
 }
+.person-left {
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+}
+.person-avatar {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+    border: 2px solid var(--glass-border);
+    background: var(--glass-bg);
+}
+.person-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+}
+.person-name-row {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
 .person-name {
     font-weight: 600;
     color: var(--heading-color);
     font-size: 1.1rem;
+}
+.person-role {
+    display: inline-block;
+    margin-left: 0.6rem;
+    font-size: 0.78rem;
+    font-weight: 500;
+    color: var(--accent-color);
+    background: rgba(16, 185, 129, 0.1);
+    border: 1px solid rgba(16, 185, 129, 0.25);
+    border-radius: 20px;
+    padding: 0.1rem 0.55rem;
+    vertical-align: middle;
+    letter-spacing: 0.02em;
 }
 .person-email {
     color: var(--accent-color);
@@ -420,6 +458,32 @@ footer {
     background: var(--accent-color);
     color: #ffffff;
     border-color: var(--accent-color);
+}
+
+/* Year Dividers in Publications */
+.year-divider {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 1.5rem 0 0.5rem;
+}
+.year-divider::before,
+.year-divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--glass-border);
+}
+.year-divider-label {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--accent-color);
+    background: rgba(16, 185, 129, 0.1);
+    border: 1px solid rgba(16, 185, 129, 0.25);
+    border-radius: 20px;
+    padding: 0.15rem 0.8rem;
+    white-space: nowrap;
+    letter-spacing: 0.04em;
 }
 
 /* Responsive */

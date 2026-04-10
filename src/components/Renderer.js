@@ -47,11 +47,18 @@ export function renderPeople(data, container) {
                 linksHtml = person.links.map(link => `<a href="${link.url}" target="_blank">${link.text}</a>`).join('');
             }
             
+            const photoSrc = person.photo || 'assets/placeholder.png';
             html += `
                 <div class="person-item">
-                    <div>
-                        <span class="person-name">${person.name}</span>
-                        ${linksHtml ? `<span class="person-links">${linksHtml}</span>` : ''}
+                    <div class="person-left">
+                        <img src="${photoSrc}" alt="${person.name}" class="person-avatar" onerror="this.src='assets/placeholder.png'">
+                        <div class="person-info">
+                            <div class="person-name-row">
+                                <span class="person-name">${person.name}</span>
+                                ${person.role ? `<span class="person-role">${person.role}</span>` : ''}
+                            </div>
+                            ${linksHtml ? `<div class="person-links">${linksHtml}</div>` : ''}
+                        </div>
                     </div>
                     ${person.email ? `<a href="mailto:${person.email}" class="person-email">${person.email}</a>` : ''}
                 </div>
@@ -284,7 +291,17 @@ export function renderPublications(data, container) {
         const nextBatch = filteredPapers.slice(currentIndex, currentIndex + PAGE_SIZE);
         
         let chunkHtml = '';
+        let lastYear = pubContainer.dataset.lastYear || null;
         nextBatch.forEach(p => {
+            const thisYear = p.year || '';
+            if (thisYear && thisYear !== lastYear) {
+                chunkHtml += `
+                    <div class="year-divider" style="grid-column: 1 / -1;">
+                        <span class="year-divider-label">${thisYear}</span>
+                    </div>
+                `;
+                lastYear = thisYear;
+            }
             chunkHtml += `
                 <div class="glass-card publication-card fade-in" style="display: flex; flex-direction: column; justify-content: space-between;">
                     <div>
@@ -299,6 +316,7 @@ export function renderPublications(data, container) {
         });
         
         pubContainer.insertAdjacentHTML('beforeend', chunkHtml);
+        pubContainer.dataset.lastYear = lastYear || '';
         currentIndex += PAGE_SIZE;
 
         if (currentIndex >= filteredPapers.length) {
@@ -322,6 +340,7 @@ export function renderPublications(data, container) {
             currentFilter = e.target.getAttribute('data-filter');
             currentIndex = 0;
             pubContainer.innerHTML = '';
+            pubContainer.dataset.lastYear = '';
             
             renderPapersChunk(true);
         });
