@@ -5,6 +5,8 @@
       "people": [
         {
           "name": "Riccardo Sisto",
+          "role": "Full Professor",
+          "photo": "assets/people/riccardo_sisto.jpg",
           "email": "riccardo.sisto@polito.it",
           "links": [
             {
@@ -19,6 +21,8 @@
         },
         {
           "name": "Claudio Casetti",
+          "role": "Full Professor",
+          "photo": "assets/people/claudio_casetti.jpg",
           "email": "claudio.casetti@polito.it",
           "links": [
             {
@@ -33,6 +37,8 @@
         },
         {
           "name": "Fulvio Risso",
+          "role": "Full Professor",
+          "photo": "assets/people/fulvio_risso.jpg",
           "email": "fulvio.risso@polito.it",
           "links": [
             {
@@ -47,6 +53,8 @@
         },
         {
           "name": "Guido Marchetto",
+          "role": "Full Professor",
+          "photo": "assets/people/guido_marchetto.jpg",
           "email": "guido.marchetto@polito.it",
           "links": [
             {
@@ -61,6 +69,8 @@
         },
         {
           "name": "Fulvio Valenza",
+          "role": "Associate Professor",
+          "photo": "assets/people/fulvio_valenza.jpg",
           "email": "fulvio.valenza@polito.it",
           "links": [
             {
@@ -75,6 +85,8 @@
         },
         {
           "name": "Alessio Sacco",
+          "role": "TBD",
+          "photo": "assets/people/alessio_sacco.jpg",
           "email": "alessio_sacco@polito.it",
           "links": [
             {
@@ -89,6 +101,8 @@
         },
         {
           "name": "Marco Rapelli",
+          "role": "TBD",
+          "photo": "assets/people/marco_rapelli.jpg",
           "email": "marco.rapelli@polito.it",
           "links": [
             {
@@ -103,6 +117,8 @@
         },
         {
           "name": "Daniele Bringhenti",
+          "role": "TBD",
+          "photo": "assets/people/daniele_bringhenti.jpg",
           "email": "daniele.bringhenti@polito.it",
           "links": [
             {
@@ -122,6 +138,7 @@
       "people": [
         {
           "name": "Stefano Galantino",
+          "photo": "assets/people/stefano_galantino.jpg",
           "email": "stefano.galantino@polito.it",
           "links": [
             {
@@ -295,12 +312,11 @@
           ]
         },
         {
-          "name": "Riccardo Medina",
-          "email": "riccardo.medina@polito.it",
+          "name": "Vincenzo Cosi",
           "links": [
             {
               "text": "homepage",
-              "url": "https://www.polito.it/personale?p=riccardo.medina"
+              "url": "https://www.linkedin.com/in/vincenzo-cosi/"
             }
           ]
         }
@@ -311,11 +327,12 @@
       "collapsible": true,
       "people": [
         {
-          "name": "Vincenzo Cosi",
+          "name": "Riccardo Medina",
+          "email": "riccardo.medina@polito.it",
           "links": [
             {
               "text": "homepage",
-              "url": "https://www.linkedin.com/in/vincenzo-cosi/"
+              "url": "https://www.polito.it/personale?p=riccardo.medina"
             }
           ]
         },
