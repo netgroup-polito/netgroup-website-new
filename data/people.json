@@ -295,12 +295,11 @@
           ]
         },
         {
-          "name": "Riccardo Medina",
-          "email": "riccardo.medina@polito.it",
+          "name": "Vincenzo Cosi",
           "links": [
             {
               "text": "homepage",
-              "url": "https://www.polito.it/personale?p=riccardo.medina"
+              "url": "https://www.linkedin.com/in/vincenzo-cosi/"
             }
           ]
         }
@@ -311,11 +310,12 @@
       "collapsible": true,
       "people": [
         {
-          "name": "Vincenzo Cosi",
+          "name": "Riccardo Medina",
+          "email": "riccardo.medina@polito.it",
           "links": [
             {
               "text": "homepage",
-              "url": "https://www.linkedin.com/in/vincenzo-cosi/"
+              "url": "https://www.polito.it/personale?p=riccardo.medina"
             }
           ]
         },
