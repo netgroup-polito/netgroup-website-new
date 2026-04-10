@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: "{{ include "netgroup-website.fullname" . }}-test-connection"
+  labels:
+    {{- include "netgroup-website.labels" . | nindent 4 }}
+  annotations:
+    "helm.sh/hook": test
+spec:
+  containers:
+    - name: wget
+      image: busybox
+      command: ['wget']
+      args: ['{{ include "netgroup-website.fullname" . }}:{{ .Values.service.port }}']
+  restartPolicy: Never
