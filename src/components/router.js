@@ -1,7 +1,11 @@
 import { renderHome, renderPeople, renderResearch, renderProjects, renderPublications } from './Renderer.js';
 
 const routes = {
-    'home': { dataUrl: 'data/home.json', renderer: renderHome },
+    'home': {
+        dataUrl: 'data/home.json',
+        extraUrls: ['data/people.json', 'data/projects.json', 'data/publications.json'],
+        renderer: renderHome
+    },
     'people': { dataUrl: 'data/people.json', renderer: renderPeople },
     'research': { dataUrl: 'data/research.json', renderer: renderResearch },
     'projects': { dataUrl: 'data/projects.json', renderer: renderProjects },
@@ -29,13 +33,13 @@ async function loadRoute() {
 
     try {
         const route = routes[hash];
-        const response = await fetch(route.dataUrl);
-        if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
-        const data = await response.json();
-        
-        // Execute the renderer corresponding to the route
-        route.renderer(data, appContent);
-        
+        const urls = [route.dataUrl, ...(route.extraUrls || [])];
+        const responses = await Promise.all(urls.map(u => fetch(u)));
+        for (const r of responses) { if (!r.ok) throw new Error(`HTTP error! status: ${r.status}`); }
+        const [data, ...extras] = await Promise.all(responses.map(r => r.json()));
+
+        route.renderer(data, appContent, ...extras);
+
     } catch (error) {
         console.error("Failed to load content: ", error);
         appContent.innerHTML = `<div class="error">Failed to load content. Please try again later.</div>`;
