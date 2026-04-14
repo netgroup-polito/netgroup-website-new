@@ -219,7 +219,175 @@ ul.card-list li::before {
     color: var(--accent-color);
 }
 
+/* ═══════════════════════════════════════
+   HOME PAGE
+   ═══════════════════════════════════════ */
+
+.home-page {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+/* Hero */
+.home-hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2.5rem;
+    padding: 2rem 0;
+    flex-wrap: wrap;
+}
+
+.home-hero-text {
+    flex: 1;
+    min-width: 280px;
+}
+
+.home-hero-title {
+    font-size: clamp(3rem, 7vw, 5.5rem);
+    font-weight: 800;
+    background: linear-gradient(135deg, var(--heading-color) 40%, var(--accent-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    margin-bottom: 0.5rem;
+}
+
+.home-hero-sub {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--heading-color);
+    line-height: 1.6;
+    margin-bottom: 1.25rem;
+}
+
+.home-hero-desc {
+    font-size: 1rem;
+    color: var(--text-color);
+    line-height: 1.75;
+    max-width: 560px;
+    margin-bottom: 2rem;
+}
+
+.home-hero-actions {
+    display: flex;
+    gap: 0.85rem;
+    flex-wrap: wrap;
+}
+
+.hero-btn {
+    display: inline-block;
+    padding: 0.7rem 1.5rem;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-decoration: none;
+    transition: all 0.25s ease;
+}
+
+.hero-btn-primary {
+    background: var(--accent-color);
+    color: #fff;
+    box-shadow: 0 4px 15px rgba(16, 185, 129, 0.35);
+}
+
+.hero-btn-primary:hover {
+    background: #0ea271;
+    box-shadow: 0 6px 20px rgba(16, 185, 129, 0.5);
+    transform: translateY(-2px);
+}
+
+.hero-btn-secondary {
+    background: var(--glass-bg);
+    color: var(--heading-color);
+    border: 1px solid var(--glass-border);
+}
+
+.hero-btn-secondary:hover {
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+    transform: translateY(-2px);
+}
+
+.home-hero-badge {
+    flex-shrink: 0;
+}
+
+.campus-badge {
+    text-align: center;
+    padding: 1.5rem 2rem;
+    min-width: 220px;
+}
+
+/* Counters */
+.home-counters {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 1rem;
+}
+
+.counter-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.75rem 1rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.counter-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(16,185,129,0.04) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.counter-value {
+    font-size: clamp(2.2rem, 5vw, 3.2rem);
+    font-weight: 800;
+    color: var(--accent-color);
+    line-height: 1;
+    margin-bottom: 0.4rem;
+    letter-spacing: -0.02em;
+}
+
+.counter-label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--heading-color);
+}
+
+.counter-sublabel {
+    font-size: 0.75rem;
+    color: #999;
+    margin-top: 0.2rem;
+}
+
+/* Research Highlights */
+.direction-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.direction-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 30px rgba(16, 185, 129, 0.12);
+}
+
+.direction-title {
+    font-size: 1.1rem;
+    margin-bottom: 0.85rem;
+    padding-bottom: 0.6rem;
+    border-bottom: 2px solid rgba(16, 185, 129, 0.2);
+}
+
 /* Research Topics */
+
 .research-list {
     display: flex;
     flex-direction: column;
