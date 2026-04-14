@@ -81,26 +81,48 @@ export function renderResearch(data, container) {
         <div class="fade-in">
             <h2 class="hero-title">${data.title}</h2>
             <p class="hero-desc">${data.description}</p>
-            <div class="glass-card">
-                <ul class="card-list" style="font-size: 1.1rem;">
+            <div class="research-list">
     `;
 
-    data.topics.forEach(topic => {
+    data.topics.forEach((topic, i) => {
+        const hasDetails = topic.description || (topic.links && topic.links.length > 0);
+        const linksHtml = (topic.links && topic.links.length > 0)
+            ? `<div class="research-links">${topic.links.map(l => `<a href="${l.url}" target="_blank" class="custom-link" style="margin-top: 0; padding: 0.3rem 0.8rem; font-size: 0.88rem;">${l.text} &rarr;</a>`).join('')}</div>`
+            : '';
+
         html += `
-            <li style="margin-bottom: 1rem;">
-                <strong>${topic.name}</strong> 
-                <span style="color: #8b949e; display: block; font-size: 0.95rem;">Reference: ${topic.reference}</span>
-            </li>
+            <details class="research-item glass-card" id="research-topic-${i}">
+                <summary class="research-summary">
+                    <div class="research-header">
+                        <span class="research-name">${topic.name}</span>
+                        <span class="research-ref">Reference: ${topic.reference}</span>
+                    </div>
+                    ${hasDetails ? `<span class="research-chevron">▸</span>` : ''}
+                </summary>
+                ${hasDetails ? `
+                <div class="research-body">
+                    ${topic.description ? `<p class="research-desc">${topic.description}</p>` : ''}
+                    ${linksHtml}
+                </div>` : ''}
+            </details>
         `;
     });
 
     html += `
-                </ul>
             </div>
         </div>
     `;
     container.innerHTML = html;
+
+    // Rotate chevron on open/close
+    container.querySelectorAll('details.research-item').forEach(det => {
+        det.addEventListener('toggle', () => {
+            const chevron = det.querySelector('.research-chevron');
+            if (chevron) chevron.style.transform = det.open ? 'rotate(90deg)' : 'rotate(0deg)';
+        });
+    });
 }
+
 
 export function renderProjects(data, container) {
     let html = `

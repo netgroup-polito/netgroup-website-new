@@ -44,6 +44,30 @@
           "url": "https://www.fluidos.eu/",
           "logo": "https://www.fluidos.eu/wp-content/uploads/2022/09/fluidos-logo.png",
           "description": "FLUIDOS creates a decentralized MetaOS that seamlessly unifies edge, cloud, and IoT resources into a trustworthy computing continuum. Built on top of Kubernetes, it introduces the REAR protocol for secure resource discovery and AI-powered workload orchestration. Politecnico di Torino serves as Project Technical Coordinator."
+        },
+        {
+          "name": "TOSHI",
+          "fullName": "TOtal System SHIeld",
+          "year": "2020–2020",
+          "url": "https://www.eitdigital.eu/fileadmin/files/2020/factsheets/digital-tech/EIT-Digital-Factsheet-TOSHII.pdf",
+          "logo": "TBD",
+          "description": "TOSHI combines recent Linux kernel technologies that are now reaching their maturity with AI/ML-based techniques to analyze events and detect anomalies. These two main pillars have not been integrated in any product to enforce host security and their unique combination has the potential to address a constantly growing security market."
+        },
+        {
+          "name": "5GROWTH",
+          "fullName": "5G-enabled Growth in Vertical Industries",
+          "year": "2019–2020",
+          "url": "https://tech.nextworks.it/projects/5growth-5g-enabled-growth-in-vertical-industries/",
+          "logo": "TBD",
+          "description": "Validate through field-trials the actual performance of 5G system deployed on the premises of vertical industries, and optimize the performance using automation and Artificial Intelligence (AI)-driven solutions. Nine use cases in three pilot sectors, Industry 4.0, Transport, and Energy, to be field-trialed on four vertical-owned sites in Spain, Italy, and Portugal."
+        },
+        {
+          "name": "ASTRID",
+          "fullName": "Addressing threats for virtualised services",
+          "year": "2018–2020",
+          "url": "https://www.surrey.ac.uk/research-projects/astrid-addressing-threats-virtualised-services",
+          "logo": "TBD",
+          "description": "ASTRID project aims to build situational awareness for virtualised services to facilitate the detection of sophisticated cyber-attacks and prompt an automated response. This would effectively shift the responsibility for security, privacy and trustworthiness from developers or end users to service providers."
         }
       ]
     },
@@ -58,6 +82,12 @@
           "url": "https://serics.eu/",
           "logo": "https://serics.eu/wp-content/uploads/2022/11/logo-serics.png",
           "description": "SERICS is Italy's extended national partnership on cybersecurity, funded via the PNRR and NextGenerationEU programmes. Operating in a hub-and-spoke model with 30+ universities and research centres, it advances research in critical infrastructure protection, network security, AI-based defenses, and digital rights. NetGroup contributes through network security, formal verification, and AI-driven threat detection."
+        },
+        {
+          "name": "ECCO",
+          "fullName": "Edge-Cloud COntinuum for connected vehicles",
+          "year": "2021–2022",
+          "logo": "TBD"
         }
       ]
     }
