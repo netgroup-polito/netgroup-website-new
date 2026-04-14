@@ -1,32 +1,125 @@
-export function renderHome(data, container) {
-    let html = `
-        <div class="fade-in">
-            <h2 class="hero-title">${data.title}</h2>
-            <p class="hero-desc">${data.description}</p>
-            <div class="grid-layout">
-    `;
+export function renderHome(data, container, peopleData, projectsData, publicationsData) {
+    // ── Compute stats dynamically ──────────────────────────────────────────────
+    const totalPublications = publicationsData ? publicationsData.papers.length : 0;
 
-    data.directions.forEach(dir => {
-        html += `
-            <div class="glass-card">
-                <h3 class="card-title">${dir.title}</h3>
-                <ul class="card-list">
-                    ${dir.items.map(item => `<li>${item}</li>`).join('')}
-                </ul>
-            </div>
-        `;
-    });
+    const totalProjects = projectsData
+        ? projectsData.categories.reduce((s, c) => s + (c.items ? c.items.length : 0), 0)
+        : 0;
 
-    html += `
-            </div>
+    let currentPeople = 0, pastPeople = 0;
+    if (peopleData) {
+        peopleData.categories.forEach(cat => {
+            if (cat.collapsible) {
+                pastPeople += cat.people.length;
+            } else {
+                currentPeople += cat.people.length;
+            }
+        });
+    }
+
+    // ── HTML ───────────────────────────────────────────────────────────────────
+    container.innerHTML = `
+        <div class="fade-in home-page">
+
+            <!-- Hero -->
+            <section class="home-hero">
+                <div class="home-hero-text">
+                    <h1 class="home-hero-title">NetGroup</h1>
+                    <p class="home-hero-sub">Computer Networks Research Group<br>
+                        <span style="font-weight: 400; opacity: 0.75;">Politecnico di Torino · Turin, Italy</span>
+                    </p>
+                    <p class="home-hero-desc">${data.description}</p>
+                    <div class="home-hero-actions">
+                        <a href="#research" class="hero-btn hero-btn-primary">Our Research</a>
+                        <a href="#people" class="hero-btn hero-btn-secondary">Meet the Team</a>
+                    </div>
+                </div>
+                <div class="home-hero-badge">
+                    <div class="campus-badge glass-card">
+                        <div style="font-size: 2.5rem; margin-bottom: 0.5rem;">🏛️</div>
+                        <div style="font-weight: 700; font-size: 1rem; color: var(--heading-color);">Politecnico di Torino</div>
+                        <div style="font-size: 0.85rem; color: #888; margin-top: 0.2rem;">Corso Castelfidardo, 34/D</div>
+                        <div style="font-size: 0.85rem; color: #888;">10129 Turin, Italy</div>
+                        <a href="https://maps.app.goo.gl/wFJbU6cmt2QyoEUh8" target="_blank"
+                           class="custom-link" style="margin-top: 0.8rem; font-size: 0.85rem;">View on Maps →</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Animated Counters -->
+            <section class="home-counters">
+                <div class="counter-card glass-card">
+                    <span class="counter-value" data-target="${totalPublications}">0</span>
+                    <span class="counter-label">Publications</span>
+                </div>
+                <div class="counter-card glass-card">
+                    <span class="counter-value" data-target="${totalProjects}">0</span>
+                    <span class="counter-label">Research Projects</span>
+                </div>
+                <div class="counter-card glass-card">
+                    <span class="counter-value" data-target="${currentPeople}">0</span>
+                    <span class="counter-label">Team Members</span>
+                </div>
+                <div class="counter-card glass-card">
+                    <span class="counter-value" data-target="${currentPeople + pastPeople}">0</span>
+                    <span class="counter-label">Total Contributors</span>
+                    <span class="counter-sublabel">incl. past collaborators</span>
+                </div>
+            </section>
+
+            <!-- Research Highlights -->
+            <section class="home-directions">
+                <h2 class="section-title" style="margin-bottom: 1.5rem;">Research Highlights</h2>
+                <div class="grid-layout">
+                    ${data.directions.map(dir => `
+                        <div class="glass-card direction-card">
+                            <h3 class="card-title direction-title">${dir.title}</h3>
+                            <ul class="card-list direction-list">
+                                ${dir.items.map(item => `<li>${item}</li>`).join('')}
+                            </ul>
+                        </div>
+                    `).join('')}
+                </div>
+            </section>
+
         </div>
     `;
-    container.innerHTML = html;
+
+    // ── Animated counters ──────────────────────────────────────────────────────
+    const counters = container.querySelectorAll('.counter-value');
+    const duration = 1800;
+
+    const animateCounter = (el) => {
+        const target = parseInt(el.dataset.target, 10);
+        const start = performance.now();
+        const step = (now) => {
+            const elapsed = now - start;
+            const progress = Math.min(elapsed / duration, 1);
+            // ease-out quad
+            const eased = 1 - (1 - progress) * (1 - progress);
+            el.textContent = Math.floor(eased * target).toLocaleString();
+            if (progress < 1) requestAnimationFrame(step);
+        };
+        requestAnimationFrame(step);
+    };
+
+    // Trigger when counters scroll into view
+    const observer = new IntersectionObserver((entries, obs) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                animateCounter(entry.target);
+                obs.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.3 });
+
+    counters.forEach(c => observer.observe(c));
 }
+
 
 export function renderPeople(data, container) {
     let html = `<div class="fade-in">`;
-    
+
     data.categories.forEach(category => {
         if (category.collapsible) {
             html += `
@@ -40,13 +133,13 @@ export function renderPeople(data, container) {
                 <div class="glass-card" style="margin-bottom: 2rem;">
             `;
         }
-        
+
         category.people.forEach(person => {
             let linksHtml = '';
             if (person.links) {
                 linksHtml = person.links.map(link => `<a href="${link.url}" target="_blank">${link.text}</a>`).join('');
             }
-            
+
             const photoSrc = person.photo || 'assets/placeholder.png';
             html += `
                 <div class="person-item">
@@ -64,7 +157,7 @@ export function renderPeople(data, container) {
                 </div>
             `;
         });
-        
+
         if (category.collapsible) {
             html += `</div></details>`;
         } else {
@@ -81,26 +174,48 @@ export function renderResearch(data, container) {
         <div class="fade-in">
             <h2 class="hero-title">${data.title}</h2>
             <p class="hero-desc">${data.description}</p>
-            <div class="glass-card">
-                <ul class="card-list" style="font-size: 1.1rem;">
+            <div class="research-list">
     `;
 
-    data.topics.forEach(topic => {
+    data.topics.forEach((topic, i) => {
+        const hasDetails = topic.description || (topic.links && topic.links.length > 0);
+        const linksHtml = (topic.links && topic.links.length > 0)
+            ? `<div class="research-links">${topic.links.map(l => `<a href="${l.url}" target="_blank" class="custom-link" style="margin-top: 0; padding: 0.3rem 0.8rem; font-size: 0.88rem;">${l.text} &rarr;</a>`).join('')}</div>`
+            : '';
+
         html += `
-            <li style="margin-bottom: 1rem;">
-                <strong>${topic.name}</strong> 
-                <span style="color: #8b949e; display: block; font-size: 0.95rem;">Reference: ${topic.reference}</span>
-            </li>
+            <details class="research-item glass-card" id="research-topic-${i}">
+                <summary class="research-summary">
+                    <div class="research-header">
+                        <span class="research-name">${topic.name}</span>
+                        <span class="research-ref">Reference: ${topic.reference}</span>
+                    </div>
+                    ${hasDetails ? `<span class="research-chevron">▸</span>` : ''}
+                </summary>
+                ${hasDetails ? `
+                <div class="research-body">
+                    ${topic.description ? `<p class="research-desc">${topic.description}</p>` : ''}
+                    ${linksHtml}
+                </div>` : ''}
+            </details>
         `;
     });
 
     html += `
-                </ul>
             </div>
         </div>
     `;
     container.innerHTML = html;
+
+    // Rotate chevron on open/close
+    container.querySelectorAll('details.research-item').forEach(det => {
+        det.addEventListener('toggle', () => {
+            const chevron = det.querySelector('.research-chevron');
+            if (chevron) chevron.style.transform = det.open ? 'rotate(90deg)' : 'rotate(0deg)';
+        });
+    });
 }
+
 
 export function renderProjects(data, container) {
     let html = `
@@ -198,7 +313,7 @@ export function renderPublications(data, container) {
     `;
 
     html += `<div class="grid-layout publications-grid" id="publications-container" style="margin-bottom: 2rem;"></div>`;
-    
+
     html += `
         <div style="text-align: center; margin-bottom: 3rem;">
             <button id="load-more-btn" class="custom-link" style="border: none; cursor: pointer; font-size: 1.1rem; padding: 0.75rem 1.5rem;">Load More</button>
@@ -217,11 +332,11 @@ export function renderPublications(data, container) {
     const filterBtns = document.querySelectorAll('.filter-btn');
 
     let chartInstance = null;
-    
+
     function updateMetrics(filteredPapers) {
         const countEl = document.getElementById('total-pubs-count');
         if (countEl) countEl.innerText = 'Total Publications: ' + filteredPapers.length;
-        
+
         const yearCounts = {};
         filteredPapers.forEach(p => {
             const y = p.year || 'Unknown';
@@ -235,11 +350,11 @@ export function renderPublications(data, container) {
             const canvas = document.getElementById('pubsChart');
             if (!canvas) return;
             const ctx = canvas.getContext('2d');
-            
+
             if (chartInstance) {
                 chartInstance.destroy();
             }
-            
+
             if (typeof Chart === 'undefined') {
                 setTimeout(draw, 100);
                 return;
@@ -261,9 +376,9 @@ export function renderPublications(data, container) {
                 options: {
                     responsive: true,
                     scales: {
-                        y: { 
-                            beginAtZero: true, 
-                            ticks: { precision: 0 } 
+                        y: {
+                            beginAtZero: true,
+                            ticks: { precision: 0 }
                         }
                     }
                 }
@@ -283,13 +398,13 @@ export function renderPublications(data, container) {
 
     function renderPapersChunk(isNewFilter = false) {
         const filteredPapers = currentFilter === 'all' ? papers : papers.filter(p => p.owners && p.owners.includes(currentFilter));
-        
+
         if (isNewFilter) {
             updateMetrics(filteredPapers);
         }
-        
+
         const nextBatch = filteredPapers.slice(currentIndex, currentIndex + PAGE_SIZE);
-        
+
         let chunkHtml = '';
         let lastYear = pubContainer.dataset.lastYear || null;
         nextBatch.forEach(p => {
@@ -314,7 +429,7 @@ export function renderPublications(data, container) {
                 </div>
             `;
         });
-        
+
         pubContainer.insertAdjacentHTML('beforeend', chunkHtml);
         pubContainer.dataset.lastYear = lastYear || '';
         currentIndex += PAGE_SIZE;
@@ -336,12 +451,12 @@ export function renderPublications(data, container) {
         btn.addEventListener('click', (e) => {
             filterBtns.forEach(b => b.classList.remove('active'));
             e.target.classList.add('active');
-            
+
             currentFilter = e.target.getAttribute('data-filter');
             currentIndex = 0;
             pubContainer.innerHTML = '';
             pubContainer.dataset.lastYear = '';
-            
+
             renderPapersChunk(true);
         });
     });

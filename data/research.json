@@ -2,14 +2,75 @@
   "title": "Research at Netgroup",
   "description": "This page contains information related to the research activities in the Networking Group (NetGroup). The main research topics are related to:",
   "topics": [
-    { "name": "Formal methods/verification", "reference": "prof. Riccardo Sisto" },
-    { "name": "Communication protocol engineering", "reference": "prof. Claudio Casetti" },
-    { "name": "Software-defined networking", "reference": "prof. Guido Marchetto" },
-    { "name": "High-speed packet processing/forwarding", "reference": "prof. Fulvio Risso" },
-    { "name": "Machine learning-based network management", "reference": "dott. Alessio Sacco" },
-    { "name": "Techniques for network security analysis, verification and monitoring", "reference": "prof. Riccardo Sisto" },
-    { "name": "Network security policy", "reference": "dott. Fulvio Valenza" },
-    { "name": "Network security automation", "reference": "dott. Daniele Bringhenti" },
-    { "name": "Network functions virtualization", "reference": "various faculties" }
+    {
+      "name": "Formal methods and verification",
+      "reference": "prof. Riccardo Sisto",
+      "description": "We develop and apply formal methods to verify the correctness and security properties of network protocols, distributed systems, and security configurations. Our work includes model checking, theorem proving, and automated verification of cryptographic protocols and firewall policies.",
+      "links": [
+        { "text": "Riccardo Sisto's profile", "url": "http://staff.polito.it/riccardo.sisto/" }
+      ]
+    },
+    {
+      "name": "Communication protocol engineering",
+      "reference": "prof. Claudio Casetti",
+      "description": "We research the design, analysis, and optimization of communication protocols with a particular focus on vehicular networks (V2X/CCAM), wireless systems, and heterogeneous network environments. Current interests include ETSI ITS standards, cooperative driving, and 5G/6G protocol stacks.",
+      "links": [
+        { "text": "Claudio Casetti's profile", "url": "https://netgroup.polito.it/post/profiles/cc/" },
+        { "text": "ms-van3t simulator", "url": "https://github.com/ms-van3t-devs/ms-van3t" }
+      ]
+    },
+    {
+      "name": "Software-defined networking",
+      "reference": "prof. Guido Marchetto",
+      "description": "We investigate programmable data planes, intent-based networking, and AI-driven control for SDN environments. Research spans P4-based in-network processing, reinforcement learning for traffic engineering, and the use of large language models (LLMs) to bridge the gap between human intent and network configuration.",
+      "links": [
+        { "text": "Guido Marchetto's profile", "url": "https://netgroup.polito.it/post/profiles/gm/" }
+      ]
+    },
+    {
+      "name": "High-speed packet processing and forwarding",
+      "reference": "prof. Fulvio Risso",
+      "description": "We research kernel-bypass technologies, eBPF/XDP-based processing, and unikernel approaches for cloud and edge computing. A key focus is building lightweight, high-performance network function frameworks that work seamlessly in the computing continuum from IoT devices to cloud infrastructure.",
+      "links": [
+        { "text": "Fulvio Risso's profile", "url": "http://fulvio.frisso.net/" },
+        { "text": "FLUIDOS project", "url": "https://www.fluidos.eu/" }
+      ]
+    },
+    {
+      "name": "Machine learning-based network management",
+      "reference": "dott. Alessio Sacco",
+      "description": "We apply machine learning and deep reinforcement learning to network management problems including adaptive routing, congestion control, workload scheduling across the edge-cloud continuum, and anomaly detection. We work on both centralized and federated learning paradigms for network intelligence.",
+      "links": [
+        { "text": "Alessio Sacco's profile", "url": "http://www.dauin.polito.it/personale/scheda/(nominativo)/alessio_sacco" }
+      ]
+    },
+    {
+      "name": "Network security analysis, verification and monitoring",
+      "reference": "prof. Riccardo Sisto",
+      "description": "We develop formal and automated techniques to detect vulnerabilities, verify security configurations, and monitor network traffic. Research includes traffic flow modelling, firewall anomaly detection, formal verification of cryptographic handshake protocols, and security policy synthesis.",
+      "links": [
+        { "text": "Riccardo Sisto's profile", "url": "http://staff.polito.it/riccardo.sisto/" }
+      ]
+    },
+    {
+      "name": "Network security policy",
+      "reference": "dott. Fulvio Valenza",
+      "description": "We study the specification, enforcement, and automated management of network security policies. Topics include intent-based security configuration, anomaly resolution in firewall rule sets, VPN automation, and the application of formal methods to policy verification across distributed environments.",
+      "links": [
+        { "text": "Fulvio Valenza's profile", "url": "https://sites.google.com/view/fulviovalenza/home-page" }
+      ]
+    },
+    {
+      "name": "Network security automation",
+      "reference": "dott. Daniele Bringhenti",
+      "description": "We investigate autonomous and closed-loop approaches to cybersecurity management, including automated attack detection, firewall reconfiguration, and cyber-resilience in complex cloud and edge environments. Recent work focuses on integrating AI-driven decision making into security orchestration frameworks.",
+      "links": []
+    },
+    {
+      "name": "Network functions virtualization",
+      "reference": "various faculties",
+      "description": "We explore the softwarization of network functions through NFV frameworks, service function chaining, and microservice-based architectures. Research spans performance optimization, resource orchestration across heterogeneous infrastructure, and the integration of NFV with SDN and cloud-native technologies.",
+      "links": []
+    }
   ]
 }
