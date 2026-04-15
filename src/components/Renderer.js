@@ -461,3 +461,47 @@ export function renderPublications(data, container) {
         });
     });
 }
+
+export function renderTeaching(data, container) {
+    let html = `
+        <div class="fade-in">
+            <h2 class="hero-title">${data.title}</h2>
+            <p class="hero-desc">${data.description}</p>
+            <div class="grid-layout teaching-grid" style="margin-bottom: 2rem;">
+    `;
+
+    data.courses.forEach(course => {
+        let instructorsHtml = '';
+        if (course.instructors && course.instructors.length > 0) {
+            instructorsHtml = course.instructors.map(inst => 
+                `<a href="${inst.link}" target="_blank" class="teaching-instructor-link">${inst.name}</a>`
+            ).join(', ');
+            instructorsHtml = `<p style="font-size: 0.95rem; color: #666; margin-bottom: 0.5rem;"><strong>Instructors:</strong> ${instructorsHtml}</p>`;
+        }
+
+        html += `
+            <div class="glass-card teaching-card" style="display: flex; flex-direction: column; justify-content: space-between;">
+                <div>
+                    <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.5rem; gap: 1rem;">
+                        <h3 class="card-title" style="font-size: 1.3rem; margin-bottom: 0;">${course.name}</h3>
+                        <span class="project-year-badge" style="white-space: nowrap;">${course.code}</span>
+                    </div>
+                    ${instructorsHtml}
+                </div>
+                <a href="${course.link}" target="_blank" class="custom-link" style="align-self: flex-start; margin-top: 1rem;">Course Details &rarr;</a>
+            </div>
+        `;
+    });
+
+    html += `
+            </div>
+            <div style="text-align: center; margin-bottom: 3rem;">
+                <p style="color: var(--text-color); font-size: 0.95rem;">
+                    Can't find what you are looking for? <a href="${data.sourceUrl}" target="_blank" style="color: var(--accent-color); font-weight: 600;">Check the original page</a>.
+                </p>
+            </div>
+        </div>
+    `;
+
+    container.innerHTML = html;
+}

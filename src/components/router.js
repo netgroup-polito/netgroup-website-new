@@ -1,4 +1,4 @@
-import { renderHome, renderPeople, renderResearch, renderProjects, renderPublications } from './Renderer.js';
+import { renderHome, renderPeople, renderResearch, renderProjects, renderPublications, renderTeaching } from './Renderer.js';
 
 const routes = {
     'home': {
@@ -7,6 +7,7 @@ const routes = {
         renderer: renderHome
     },
     'people': { dataUrl: 'data/people.json', renderer: renderPeople },
+    'teaching': { dataUrl: 'data/teaching.json', renderer: renderTeaching },
     'research': { dataUrl: 'data/research.json', renderer: renderResearch },
     'projects': { dataUrl: 'data/projects.json', renderer: renderProjects },
     'publications': { dataUrl: 'data/publications.json', renderer: renderPublications },
