@@ -292,6 +292,16 @@
       "title": "Research Assistants",
       "people": [
         {
+          "name": "Ilkhom Abdusamatov",
+          "email": "ilkhom.abdusamatov@polito.it",
+          "links": [
+            {
+              "text": "homepage",
+              "url": "https://www.polito.it/personale?p=ilkhom.abdusamatov"
+            }
+          ]
+        },
+        {
           "name": "Cristian Zilli",
           "email": "cristian.zilli@polito.it",
           "links": [
