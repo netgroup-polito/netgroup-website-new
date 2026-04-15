@@ -6,149 +6,260 @@
       "code": "12CDUOA",
       "name": "Reti di Calcolatori",
       "link": "https://didattica.polito.it/pls/portal30/gap.pkg_guide.viewGap?p_cod_ins=12CDUOA",
+      "cdl": "Ing. Informatica",
+      "year": "3",
+      "period": "1",
       "instructors": [
-        { "name": "Marchetto", "link": "https://netgroup.polito.it/post/profiles/gm/" },
-        { "name": "Bringhenti", "link": "https://it.linkedin.com/in/daniele-bringhenti-348903192" }
+        {
+          "name": "Marchetto",
+          "link": "https://netgroup.polito.it/post/profiles/gm/"
+        },
+        {
+          "name": "Bringhenti",
+          "link": "https://it.linkedin.com/in/daniele-bringhenti-348903192"
+        }
       ]
     },
     {
       "code": "05KSILM",
       "name": "Computer Networks",
       "link": "https://didattica.polito.it/pls/portal30/gap.pkg_guide.viewGap?p_cod_ins=08KSILM",
+      "cdl": "Computer Engineering",
+      "year": "3",
+      "period": "1",
       "instructors": []
     },
     {
       "code": "15CDUXJ",
       "name": "Reti di Calcolatori",
       "link": "https://didattica.polito.it/pls/portal30/gap.pkg_guide.viewGap?p_cod_ins=15CDUXJ",
+      "cdl": "Ing. Cinema E Dei Media Digitali",
+      "year": "3",
+      "period": "1",
       "instructors": []
     },
     {
       "code": "02KPNOV",
       "name": "Tecnologie e Servizi di Rete",
       "link": "https://didattica.polito.it/pls/portal30/gap.pkg_guide.viewGap?p_cod_ins=02KPNOV",
+      "cdl": "Ing. Informatica",
+      "year": "1LS",
+      "period": "1",
       "instructors": [
-        { "name": "Sacco", "link": "http://www.dauin.polito.it/personale/scheda/(nominativo)/alessio_sacco" }
+        {
+          "name": "Sacco",
+          "link": "http://www.dauin.polito.it/personale/scheda/(nominativo)/alessio_sacco"
+        }
       ]
     },
     {
       "code": "01OTWOV",
       "name": "Computer Network Technologies and Services",
       "link": "https://didattica.polito.it/pls/portal30/gap.pkg_guide.viewGap?p_cod_ins=01OTWOV",
+      "cdl": "Ing. Informatica",
+      "year": "1LS",
+      "period": "1",
       "instructors": [
-        { "name": "Casetti", "link": "https://netgroup.polito.it/post/profiles/cc/" }
+        {
+          "name": "Casetti",
+          "link": "https://netgroup.polito.it/post/profiles/cc/"
+        }
       ]
     },
     {
       "code": "01HFQYG",
       "name": "Internet Architecture and Technologies",
       "link": "https://didattica.polito.it/pls/portal30/gap.pkg_guide.viewGap?p_cod_ins=01HFQYG",
+      "cdl": "Ing. Informatica",
+      "year": "1LS",
+      "period": "1",
       "instructors": [
-        { "name": "Sacco", "link": "http://www.dauin.polito.it/personale/scheda/(nominativo)/alessio_sacco" }
+        {
+          "name": "Sacco",
+          "link": "http://www.dauin.polito.it/personale/scheda/(nominativo)/alessio_sacco"
+        }
       ]
     },
     {
       "code": "01TXZOV",
       "name": "Distributed Systems Programming",
       "link": "https://didattica.polito.it/pls/portal30/gap.pkg_guide.viewGap?p_cod_ins=01TXZSM",
+      "cdl": "Ing. Informatica",
+      "year": "2LS",
+      "period": "1",
       "instructors": [
-        { "name": "Sisto", "link": "http://staff.polito.it/riccardo.sisto/" }
+        {
+          "name": "Sisto",
+          "link": "http://staff.polito.it/riccardo.sisto/"
+        }
       ]
     },
     {
       "code": "01SQPOV",
       "name": "Software Networking",
-      "link": "https://swnet.frisso.net/",
+      "link": "https://didattica.polito.it/pls/portal30/gap.pkg_guide.viewGap?p_cod_ins=01SQPOV",
+      "cdl": "Ing. Informatica",
+      "year": "1LS",
+      "period": "2",
       "instructors": [
-        { "name": "Risso", "link": "http://fulvio.frisso.net/" }
+        {
+          "name": "Risso",
+          "link": "http://fulvio.frisso.net/"
+        }
       ]
     },
     {
       "code": "01SQOOV",
       "name": "Enterprise Network Technologies",
-      "link": "https://landc.frisso.net/",
+      "link": "https://didattica.polito.it/pls/portal30/gap.pkg_guide.viewGap?p_cod_ins=01SQOOV",
+      "cdl": "Ing. Informatica",
+      "year": "2LS",
+      "period": "1",
       "instructors": [
-        { "name": "Marchetto", "link": "https://netgroup.polito.it/post/profiles/gm/" }
+        {
+          "name": "Marchetto",
+          "link": "https://netgroup.polito.it/post/profiles/gm/"
+        }
       ]
     },
     {
       "code": "02JEUOV",
       "name": "Formal languages and compilers",
       "link": "https://didattica.polito.it/pls/portal30/gap.pkg_guide.viewGap?p_cod_ins=02JEUOV",
+      "cdl": "Ing. Informatica",
+      "year": "1LS",
+      "period": "2",
       "instructors": [
-        { "name": "Sisto", "link": "http://staff.polito.it/riccardo.sisto/" }
+        {
+          "name": "Sisto",
+          "link": "http://staff.polito.it/riccardo.sisto/"
+        }
       ]
     },
     {
       "code": "01TXZYG",
-      "name": "Distributed Systems Programming",
+      "name": "Distributed Systems Progranmming",
       "link": "https://didattica.polito.it/pls/portal30/gap.pkg_guide.viewGap?p_cod_ins=01TXZYG",
+      "cdl": "Ing. Informatica",
+      "year": "1LS",
+      "period": "2",
       "instructors": [
-        { "name": "Sisto", "link": "http://staff.polito.it/riccardo.sisto/" }
+        {
+          "name": "Sisto",
+          "link": "http://staff.polito.it/riccardo.sisto/"
+        }
       ]
     },
     {
       "code": "01TYAOV",
       "name": "Security verification and testing",
       "link": "https://didattica.polito.it/pls/portal30/gap.pkg_guide.viewGap?p_cod_ins=01TYASM",
+      "cdl": "Cybersecurity Engineering",
+      "year": "1LS",
+      "period": "2",
       "instructors": [
-        { "name": "Sisto", "link": "http://staff.polito.it/riccardo.sisto/" }
+        {
+          "name": "Sisto",
+          "link": "http://staff.polito.it/riccardo.sisto/"
+        }
       ]
     },
     {
       "code": "01HFPYG",
       "name": "Cloud Computing Technologies",
-      "link": "https://cloud.frisso.net/",
+      "link": "https://didattica.polito.it/pls/portal30/gap.pkg_guide.viewGap?p_cod_ins=01HFPYG",
+      "cdl": "Ing. Informatica",
+      "year": "1LS",
+      "period": "1",
       "instructors": [
-        { "name": "Risso", "link": "http://fulvio.frisso.net/" }
+        {
+          "name": "Risso",
+          "link": "http://fulvio.frisso.net/"
+        }
       ]
     },
     {
       "code": "01HFSYG",
       "name": "Cloud Programming",
       "link": "https://didattica.polito.it/pls/portal30/gap.pkg_guide.viewGap?p_cod_ins=01HFSYG",
+      "cdl": "Ing. Informatica",
+      "year": "1LS",
+      "period": "1",
       "instructors": [
-        { "name": "Risso", "link": "http://fulvio.frisso.net/" }
+        {
+          "name": "Risso",
+          "link": "http://fulvio.frisso.net/"
+        }
       ]
     },
     {
       "code": "01NXIWQ",
       "name": "Computer networks and cloud technologies",
       "link": "https://didattica.polito.it/pls/portal30/gap.pkg_guide.viewGap?p_cod_ins=01NXIWQ",
+      "cdl": "Cybersecurity Engineering",
+      "year": "1LS",
+      "period": "1",
       "instructors": [
-        { "name": "Bringhenti", "link": "https://it.linkedin.com/in/daniele-bringhenti-348903192" }
+        {
+          "name": "Bringhenti",
+          "link": "https://it.linkedin.com/in/daniele-bringhenti-348903192"
+        }
       ]
     },
     {
       "code": "01NXIUV",
       "name": "Networks & Cloud Security",
-      "link": "https://didattica.polito.it/pls/portal30/gap.pkg_guide.viewGap?p_cod_ins=01NXIUV",
+      "link": "https://didattica.polito.it/pls/portal30/gap.pkg_guide.viewGap?p_cod_ins=01NXIWQ",
+      "cdl": "Cybersecurity Engineering",
+      "year": "1LS",
+      "period": "2",
       "instructors": [
-        { "name": "Valenza", "link": "https://sites.google.com/view/fulviovalenza/home-page" }
+        {
+          "name": "Valenza",
+          "link": "https://sites.google.com/view/fulviovalenza/home-page"
+        }
       ]
     },
     {
       "code": "01NXUWQ",
       "name": "Data protection, Privacy and Anonymity",
       "link": "https://didattica.polito.it/pls/portal30/gap.pkg_guide.viewGap?p_cod_ins=01NXUWQ",
+      "cdl": "Cybersecurity Engineering",
+      "year": "2LS",
+      "period": "1",
       "instructors": [
-        { "name": "Valenza", "link": "https://sites.google.com/view/fulviovalenza/home-page" }
+        {
+          "name": "Valenza",
+          "link": "https://sites.google.com/view/fulviovalenza/home-page"
+        }
       ]
     },
     {
       "code": "01TVRYP",
       "name": "Networking technologies for connected vehicles",
       "link": "https://didattica.polito.it/pls/portal30/gap.pkg_guide.viewGap?p_cod_ins=01TVRYP",
+      "cdl": "Ing. Meccatronica",
+      "year": "2LS",
+      "period": "1",
       "instructors": [
-        { "name": "Rapelli", "link": "https://www.linkedin.com/in/marco-rapelli-a14760148/" }
+        {
+          "name": "Rapelli",
+          "link": "https://www.linkedin.com/in/marco-rapelli-a14760148/"
+        }
       ]
     },
     {
       "code": "01NXEWR",
       "name": "Threat Intelligence and Incident Management",
       "link": "https://didattica.polito.it/pls/portal30/gap.pkg_guide.viewGap?p_cod_ins=01NXEWR",
+      "cdl": "Cybersecurity Engineering",
+      "year": "2LS",
+      "period": "2",
       "instructors": [
-        { "name": "Valenza", "link": "https://sites.google.com/view/fulviovalenza/home-page" }
+        {
+          "name": "Valenza",
+          "link": "https://sites.google.com/view/fulviovalenza/home-page"
+        }
       ]
     }
   ],
