@@ -730,6 +730,10 @@ footer {
     letter-spacing: 0.04em;
 }
 
+.teaching-grid {
+    grid-template-columns: 1fr;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     .header-container {

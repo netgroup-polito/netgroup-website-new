@@ -1,4 +1,4 @@
-import { renderHome, renderPeople, renderResearch, renderProjects, renderPublications, renderTeaching } from './Renderer.js';
+import { renderHome, renderPeople, renderResearch, renderProjects, renderPublications, renderTeaching, renderProfile } from './Renderer.js';
 
 const routes = {
     'home': {
@@ -11,13 +11,21 @@ const routes = {
     'research': { dataUrl: 'data/research.json', renderer: renderResearch },
     'projects': { dataUrl: 'data/projects.json', renderer: renderProjects },
     'publications': { dataUrl: 'data/publications.json', renderer: renderPublications },
+    'profile': { 
+        dataUrl: 'data/people.json', 
+        extraUrls: ['data/teaching.json', 'data/projects.json', 'data/publications.json'],
+        renderer: renderProfile 
+    },
 };
 
 async function loadRoute() {
-    let hash = window.location.hash.substring(1);
+    let hashStr = window.location.hash.substring(1);
+    let [hash, queryString] = hashStr.split('?');
+    
     if (!hash || !routes[hash]) {
         hash = 'home';
         window.location.hash = '#home';
+        queryString = '';
     }
 
     // Update active nav link
@@ -39,7 +47,12 @@ async function loadRoute() {
         for (const r of responses) { if (!r.ok) throw new Error(`HTTP error! status: ${r.status}`); }
         const [data, ...extras] = await Promise.all(responses.map(r => r.json()));
 
-        route.renderer(data, appContent, ...extras);
+        let params = new URLSearchParams(queryString || '');
+        if (hash === 'profile') {
+            route.renderer(data, appContent, params, ...extras);
+        } else {
+            route.renderer(data, appContent, ...extras);
+        }
 
     } catch (error) {
         console.error("Failed to load content: ", error);

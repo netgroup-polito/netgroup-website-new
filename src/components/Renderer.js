@@ -141,8 +141,10 @@ export function renderPeople(data, container) {
             }
 
             const photoSrc = person.photo || 'assets/placeholder.png';
+            const profileLink = `#profile?id=${encodeURIComponent(person.name)}`;
+            
             html += `
-                <div class="person-item">
+                <div class="person-item" onclick="window.location.href='${profileLink}'" style="cursor: pointer;" onmouseover="this.style.backgroundColor='rgba(0,0,0,0.02)'" onmouseout="this.style.backgroundColor='transparent'">
                     <div class="person-left">
                         <img src="${photoSrc}" alt="${person.name}" class="person-avatar" onerror="this.src='assets/placeholder.png'">
                         <div class="person-info">
@@ -150,10 +152,10 @@ export function renderPeople(data, container) {
                                 <span class="person-name">${person.name}</span>
                                 ${person.role ? `<span class="person-role">${person.role}</span>` : ''}
                             </div>
-                            ${linksHtml ? `<div class="person-links">${linksHtml}</div>` : ''}
+                            ${linksHtml ? `<div class="person-links" onclick="event.stopPropagation();">${linksHtml}</div>` : ''}
                         </div>
                     </div>
-                    ${person.email ? `<a href="mailto:${person.email}" class="person-email">${person.email}</a>` : ''}
+                    ${person.email ? `<span onclick="event.stopPropagation();"><a href="mailto:${person.email}" class="person-email">${person.email}</a></span>` : ''}
                 </div>
             `;
         });
@@ -474,7 +476,7 @@ export function renderTeaching(data, container) {
         let instructorsHtml = '';
         if (course.instructors && course.instructors.length > 0) {
             instructorsHtml = course.instructors.map(inst => 
-                `<a href="${inst.link}" target="_blank" class="teaching-instructor-link">${inst.name}</a>`
+                `<a href="#profile?id=${encodeURIComponent(inst.name)}" class="teaching-instructor-link">${inst.name}</a>`
             ).join(', ');
             instructorsHtml = `<p style="font-size: 0.95rem; color: #666; margin-bottom: 0.5rem;"><strong>Instructors:</strong> ${instructorsHtml}</p>`;
         }
@@ -486,6 +488,8 @@ export function renderTeaching(data, container) {
                         <h3 class="card-title" style="font-size: 1.3rem; margin-bottom: 0;">${course.name}</h3>
                         <span class="project-year-badge" style="white-space: nowrap;">${course.code}</span>
                     </div>
+                    ${course.cdl ? `<p style="font-size: 0.9rem; color: #555; margin-bottom: 0.2rem;"><strong>CDL:</strong> ${course.cdl}</p>` : ''}
+                    ${course.year || course.period ? `<p style="font-size: 0.9rem; color: #555; margin-bottom: 0.5rem;"><strong>Year:</strong> ${course.year || '-'} &nbsp;&bull;&nbsp; <strong>Period:</strong> ${course.period || '-'}</p>` : ''}
                     ${instructorsHtml}
                 </div>
                 <a href="${course.link}" target="_blank" class="custom-link" style="align-self: flex-start; margin-top: 1rem;">Course Details &rarr;</a>
@@ -503,5 +507,159 @@ export function renderTeaching(data, container) {
         </div>
     `;
 
+    container.innerHTML = html;
+}
+
+export function renderProfile(data, container, params, teachingData, projectsData, publicationsData) {
+    const personId = params.get('id');
+    if (!personId) {
+        container.innerHTML = '<div class="error">No person specified.</div>';
+        return;
+    }
+
+    let person = null;
+    for (const cat of data.categories) {
+        const found = cat.people.find(p => p.name === personId);
+        if (found) { person = found; break; }
+    }
+
+    if (!person) {
+        container.innerHTML = `<div class="error">Person not found: ${personId}</div>`;
+        return;
+    }
+
+    const photoSrc = person.photo || 'assets/placeholder.png';
+    let linksHtml = '';
+    if (person.links) {
+        linksHtml = person.links.map(link => `<a href="${link.url}" target="_blank" class="custom-link" style="margin-top: 0; padding: 0.3rem 0.8rem; font-size: 0.88rem;">${link.text} &rarr;</a>`).join(' ');
+    }
+
+    // Filter aggregated data
+    // 1. Teaching
+    const personCourses = teachingData ? teachingData.courses.filter(c => 
+        c.instructors && c.instructors.some(inst => inst.name.includes(person.name) || person.name.includes(inst.name) || (person.name.split(' ').pop() === inst.name))
+    ) : [];
+
+    // 2. Projects
+    let personProjects = [];
+    if (projectsData) {
+        projectsData.categories.forEach(cat => {
+            if (cat.items) {
+                const matched = cat.items.filter(p => p.referencePerson === person.name);
+                if (matched.length > 0) personProjects = personProjects.concat(matched);
+            }
+        });
+    }
+
+    // 3. Publications
+    const personNameParts = person.name.split(' ');
+    const lastName = personNameParts[personNameParts.length - 1];
+    let personPublications = [];
+    if (publicationsData && publicationsData.papers) {
+        personPublications = publicationsData.papers.filter(p => {
+             // Basic matching rule: check if their last name or full name is in owners or authors string
+             if (p.owners && p.owners.includes(lastName)) return true;
+             if (p.owners && p.owners.includes(person.name)) return true;
+             if (p.authors && p.authors.includes(lastName)) return true;
+             return false;
+        });
+    }
+
+    let html = `
+        <div class="fade-in profile-page" style="display: flex; flex-direction: column; gap: 3rem;">
+            <!-- Profile Hero -->
+            <div class="glass-card" style="display: flex; flex-wrap: wrap; gap: 2rem; align-items: flex-start;">
+                <img src="${photoSrc}" onerror="this.src='assets/placeholder.png'" alt="${person.name}" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; border: 3px solid var(--glass-border);">
+                <div style="flex: 1; min-width: 250px;">
+                    <h1 style="font-size: 2.5rem; color: var(--heading-color); margin-bottom: 0.5rem; line-height: 1.1;">${person.name}</h1>
+                    ${person.role ? `<p style="color: var(--accent-color); font-weight: 600; font-size: 1.1rem; margin-bottom: 1rem;">${person.role}</p>` : ''}
+                    <p style="font-size: 1rem; color: var(--text-color); margin-bottom: 1rem; max-width: 800px; line-height: 1.6;">${person.description || ''}</p>
+                    <div style="display: flex; flex-wrap: wrap; gap: 0.8rem; align-items: center;">
+                        ${person.email ? `<a href="mailto:${person.email}" style="color: var(--heading-color); font-weight: 500; text-decoration: none; border: 1px solid #ddd; padding: 0.3rem 0.8rem; border-radius: 4px; font-size: 0.9rem;">Email Me</a>` : ''}
+                        ${linksHtml}
+                    </div>
+                </div>
+            </div>
+    `;
+
+    // Teaching section
+    if (personCourses.length > 0) {
+        html += `
+            <section>
+                <h2 class="section-title">Teaching</h2>
+                <div class="grid-layout">
+        `;
+        personCourses.forEach(course => {
+            html += `
+                <div class="glass-card teaching-card">
+                    <h3 class="card-title" style="margin-bottom: 0.25rem;">${course.name}</h3>
+                    <span class="project-year-badge">${course.code}</span>
+                    <div style="margin-top: 1rem; font-size: 0.9rem; color: #555;">
+                        ${course.cdl ? `<strong>CDL:</strong> ${course.cdl}<br>` : ''}
+                        ${course.year || course.period ? `<strong>Year:</strong> ${course.year || '-'} &nbsp;&bull;&nbsp; <strong>Period:</strong> ${course.period || '-'}` : ''}
+                    </div>
+                    <a href="${course.link}" target="_blank" class="custom-link" style="margin-top: 1rem; display: inline-block;">Course Details &rarr;</a>
+                </div>
+            `;
+        });
+        html += `</div></section>`;
+    }
+
+    // Projects section
+    if (personProjects.length > 0) {
+        html += `
+            <section>
+                <h2 class="section-title">Supervised Projects</h2>
+                <div class="grid-layout">
+        `;
+        personProjects.forEach(item => {
+            const logoHtml = item.logo
+                ? `<img src="${item.logo}" alt="${item.name} logo" class="project-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                   <div class="project-logo-fallback" style="display:none;">${item.name}</div>`
+                : `<div class="project-logo-fallback">${item.name}</div>`;
+
+            html += `
+                <div class="glass-card project-card">
+                    <div class="project-card-header">
+                        <div class="project-logo-wrap">${logoHtml}</div>
+                        <div class="project-meta">
+                            <h3 class="card-title project-name">${item.name}</h3>
+                            ${item.year ? `<span class="project-year-badge">${item.year}</span>` : ''}
+                        </div>
+                    </div>
+                    ${item.url ? `<a href="${item.url}" target="_blank" class="custom-link" style="align-self: flex-start; margin-top: 0.5rem;">Visit Project &rarr;</a>` : ''}
+                </div>
+            `;
+        });
+        html += `</div></section>`;
+    }
+
+    // Publications section
+    if (personPublications.length > 0) {
+        html += `
+            <section>
+                <details class="glass-card" style="padding: 1.5rem; cursor: pointer;">
+                    <summary style="font-size: 1.5rem; font-weight: 600; color: var(--heading-color); outline: none;">
+                        Publications (${personPublications.length}) <span style="font-size: 1rem; color: var(--accent-color);">▼ Click to expand</span>
+                    </summary>
+                    <div style="margin-top: 1.5rem; display: flex; flex-direction: column; gap: 1rem;">
+        `;
+        personPublications.forEach(p => {
+            html += `
+                <div style="border-bottom: 1px solid var(--glass-border); padding-bottom: 1rem;">
+                    <h4 style="font-size: 1.1rem; color: var(--heading-color); margin-bottom: 0.25rem;">${p.title}</h4>
+                    <p style="font-size: 0.9rem; color: #666; margin-bottom: 0.25rem;">${p.authors}</p>
+                    <p style="font-size: 0.85rem; color: #888;">${p.venue} ${p.year ? `(${p.year})` : ''} - <a href="${p.link}" target="_blank" style="color: var(--accent-color);">View</a></p>
+                </div>
+            `;
+        });
+        html += `
+                    </div>
+                </details>
+            </section>
+        `;
+    }
+
+    html += `</div>`;
     container.innerHTML = html;
 }
