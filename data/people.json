@@ -10,14 +10,15 @@
           "email": "riccardo.sisto@polito.it",
           "links": [
             {
-              "text": "homepage",
+              "text": "Personal Webpage",
               "url": "http://staff.polito.it/riccardo.sisto/"
             },
             {
-              "text": "publications",
+              "text": "Publications",
               "url": "https://scholar.google.com/citations?user=qLTxTQkAAAAJ&hl=it&oi=ao"
             }
-          ]
+          ],
+          "description": ""
         },
         {
           "name": "Claudio Casetti",
@@ -26,14 +27,15 @@
           "email": "claudio.casetti@polito.it",
           "links": [
             {
-              "text": "homepage",
+              "text": "Personal Webpage",
               "url": "https://netgroup.polito.it/post/profiles/cc/"
             },
             {
-              "text": "publications",
+              "text": "Publications",
               "url": "https://scholar.google.com/citations?user=4AQxu0oAAAAJ&hl=it&oi=ao"
             }
-          ]
+          ],
+          "description": ""
         },
         {
           "name": "Fulvio Risso",
@@ -42,14 +44,15 @@
           "email": "fulvio.risso@polito.it",
           "links": [
             {
-              "text": "homepage",
+              "text": "Personal Webpage",
               "url": "http://fulvio.frisso.net/"
             },
             {
-              "text": "publications",
+              "text": "Publications",
               "url": "https://scholar.google.com/citations?user=kheKGUAAAAAJ"
             }
-          ]
+          ],
+          "description": ""
         },
         {
           "name": "Guido Marchetto",
@@ -58,14 +61,15 @@
           "email": "guido.marchetto@polito.it",
           "links": [
             {
-              "text": "homepage",
+              "text": "Personal Webpage",
               "url": "https://netgroup.polito.it/post/profiles/gm/"
             },
             {
-              "text": "publications",
+              "text": "Publications",
               "url": "https://scholar.google.com/citations?user=Y_MA4P8AAAAJ&hl=it&oi=ao"
             }
-          ]
+          ],
+          "description": ""
         },
         {
           "name": "Fulvio Valenza",
@@ -74,14 +78,15 @@
           "email": "fulvio.valenza@polito.it",
           "links": [
             {
-              "text": "homepage",
+              "text": "Personal Webpage",
               "url": "https://sites.google.com/view/fulviovalenza/home-page"
             },
             {
-              "text": "publications",
+              "text": "Publications",
               "url": "https://scholar.google.com/citations?user=oaKhcyEAAAAJ&hl=it&oi=ao"
             }
-          ]
+          ],
+          "description": ""
         },
         {
           "name": "Alessio Sacco",
@@ -90,14 +95,15 @@
           "email": "alessio_sacco@polito.it",
           "links": [
             {
-              "text": "homepage",
+              "text": "Personal Webpage",
               "url": "http://www.dauin.polito.it/personale/scheda/(nominativo)/alessio_sacco"
             },
             {
-              "text": "publications",
+              "text": "Publications",
               "url": "https://scholar.google.com/citations?user=lRa2k3QAAAAJ&hl=it&oi=ao"
             }
-          ]
+          ],
+          "description": ""
         },
         {
           "name": "Marco Rapelli",
@@ -106,14 +112,15 @@
           "email": "marco.rapelli@polito.it",
           "links": [
             {
-              "text": "homepage",
+              "text": "Personal Webpage",
               "url": "https://www.linkedin.com/in/marco-rapelli-a14760148/"
             },
             {
-              "text": "publications",
+              "text": "Publications",
               "url": "https://scholar.google.com/citations?user=4XpgP4MAAAAJ&hl=it&oi=ao"
             }
-          ]
+          ],
+          "description": ""
         },
         {
           "name": "Daniele Bringhenti",
@@ -122,14 +129,15 @@
           "email": "daniele.bringhenti@polito.it",
           "links": [
             {
-              "text": "homepage",
+              "text": "Personal Webpage",
               "url": "https://it.linkedin.com/in/daniele-bringhenti-348903192"
             },
             {
-              "text": "publications",
+              "text": "Publications",
               "url": "https://scholar.google.com/citations?user=C67JRU0AAAAJ&hl=it&oi=ao"
             }
-          ]
+          ],
+          "description": ""
         }
       ]
     },
@@ -142,14 +150,15 @@
           "email": "stefano.galantino@polito.it",
           "links": [
             {
-              "text": "homepage",
+              "text": "Personal Webpage",
               "url": "https://stegala.github.io/"
             },
             {
-              "text": "publications",
+              "text": "Publications",
               "url": "https://scholar.google.com/citations?user=E2J5xZcAAAAJ&hl=it&oi=ao"
             }
-          ]
+          ],
+          "description": ""
         }
       ]
     },
@@ -161,130 +170,143 @@
           "email": "jacopo.marino@polito.it",
           "links": [
             {
-              "text": "homepage",
+              "text": "Personal Webpage",
               "url": "https://www.linkedin.com/in/jacopo-marino-4b8a0618b"
             }
-          ]
+          ],
+          "description": ""
         },
         {
           "name": "Doriana Monaco",
           "email": "doriana.monaco@polito.it",
           "links": [
             {
-              "text": "homepage",
+              "text": "Personal Webpage",
               "url": "https://www.linkedin.com/in/doriana-monaco-0abb16243/"
             }
-          ]
+          ],
+          "description": ""
         },
         {
           "name": "Diego Gasco",
           "email": "diego.gasco@polito.it",
           "links": [
             {
-              "text": "homepage",
+              "text": "Personal Webpage",
               "url": "https://www.linkedin.com/in/diego-gasco-677484210/"
             }
-          ]
+          ],
+          "description": ""
         },
         {
           "name": "Francesco Pizzato",
           "email": "francesco.pizzato@polito.it",
           "links": [
             {
-              "text": "homepage",
+              "text": "Personal Webpage",
               "url": "https://www.linkedin.com/in/francesco-pizzato-19831a151/"
             }
-          ]
+          ],
+          "description": ""
         },
         {
           "name": "Gianmarco Bachiorrini",
           "email": "gianmarco.bachiorrini@polito.it",
           "links": [
             {
-              "text": "homepage",
+              "text": "Personal Webpage",
               "url": "https://www.linkedin.com/in/gianmarco-bachiorrini-8aa826224/"
             }
-          ]
+          ],
+          "description": ""
         },
         {
           "name": "Davide Miola",
           "email": "davide.miola@polito.it",
           "links": [
             {
-              "text": "homepage",
+              "text": "Personal Webpage",
               "url": "https://netgroup.polito.it/post/people/"
             }
-          ]
+          ],
+          "description": ""
         },
         {
           "name": "Attilio Oliva",
           "email": "attilio.oliva@polito.it",
           "links": [
             {
-              "text": "homepage",
+              "text": "Personal Webpage",
               "url": "https://www.linkedin.com/in/attilio-oliva/"
             }
-          ]
+          ],
+          "description": ""
         },
         {
           "name": "Giuseppe Perrone",
           "email": "giuseppe.perrone@polito.it",
           "links": [
             {
-              "text": "homepage",
+              "text": "Personal Webpage",
               "url": "https://www.linkedin.com/in/giuseppe-perrone-7680b3322/"
             }
-          ]
+          ],
+          "description": ""
         },
         {
           "name": "Federico Rinaudi",
           "email": "federico.rinaudi@polito.it",
           "links": [
             {
-              "text": "homepage",
+              "text": "Personal Webpage",
               "url": "https://www.linkedin.com/in/federico-rinaudi-031b842b2/"
             }
-          ]
+          ],
+          "description": ""
         },
         {
           "name": "Rosario Rizza",
           "email": "rosario.rizza@polito.it",
           "links": [
             {
-              "text": "homepage",
+              "text": "Personal Webpage",
               "url": "https://www.linkedin.com/in/rosario-rizza-6b0ab11a5/"
             }
-          ]
+          ],
+          "description": ""
         },
         {
           "name": "Christian Coduri",
           "email": "christian.coduri@polito.it",
           "links": [
             {
-              "text": "homepage",
+              "text": "Personal Webpage",
               "url": "https://www.linkedin.com/in/christiancoduri/"
             }
-          ]
+          ],
+          "description": ""
         },
         {
           "name": "Francesca Coriale",
           "email": "francesca.coriale@polito.it",
           "links": [
             {
-              "text": "homepage",
+              "text": "Personal Webpage",
               "url": "https://www.polito.it/personale?p=francesca.coriale"
             }
-          ]
+          ],
+          "description": ""
         },
         {
           "name": "Riccardo Miracapillo",
           "email": "riccardo.miracapillo@polito.it",
           "links": [
             {
-              "text": "homepage",
+              "text": "Personal Webpage",
               "url": "https://www.polito.it/personale?p=riccardo.miracapillo"
             }
-          ]
+          ],
+          "description": ""
         }
       ]
     },
@@ -296,39 +318,43 @@
           "email": "ilkhom.abdusamatov@polito.it",
           "links": [
             {
-              "text": "homepage",
+              "text": "Personal Webpage",
               "url": "https://www.polito.it/personale?p=ilkhom.abdusamatov"
             }
-          ]
+          ],
+          "description": ""
         },
         {
           "name": "Cristian Zilli",
           "email": "cristian.zilli@polito.it",
           "links": [
             {
-              "text": "homepage",
+              "text": "Personal Webpage",
               "url": "https://www.polito.it/personale?p=cristian.zilli"
             }
-          ]
+          ],
+          "description": ""
         },
         {
           "name": "Cristiano Serra",
           "email": "cristiano.serra@polito.it",
           "links": [
             {
-              "text": "homepage",
+              "text": "Personal Webpage",
               "url": "https://www.linkedin.com/in/cristiano-serra-624808262/"
             }
-          ]
+          ],
+          "description": ""
         },
         {
           "name": "Vincenzo Cosi",
           "links": [
             {
-              "text": "homepage",
+              "text": "Personal Webpage",
               "url": "https://www.linkedin.com/in/vincenzo-cosi/"
             }
-          ]
+          ],
+          "description": ""
         }
       ]
     },
@@ -341,496 +367,551 @@
           "email": "riccardo.medina@polito.it",
           "links": [
             {
-              "text": "homepage",
+              "text": "Personal Webpage",
               "url": "https://www.polito.it/personale?p=riccardo.medina"
             }
-          ]
+          ],
+          "description": ""
         },
         {
           "name": "Luca Francescato",
           "links": [
             {
-              "text": "homepage",
+              "text": "Personal Webpage",
               "url": "https://www.linkedin.com/in/luca-francescato/"
             }
-          ]
+          ],
+          "description": ""
         },
         {
           "name": "Daniele Cacciabue",
           "links": [
             {
-              "text": "homepage",
+              "text": "Personal Webpage",
               "url": "https://www.linkedin.com/in/daniele-cacciabue-28674929b/"
             }
-          ]
+          ],
+          "description": ""
         },
         {
           "name": "Antonino Angi, PhD",
           "links": [
             {
-              "text": "homepage",
+              "text": "Personal Webpage",
               "url": "https://www.linkedin.com/in/antonino-angi/"
             }
-          ]
+          ],
+          "description": ""
         },
         {
           "name": "Simone Bussa, PhD",
           "links": [
             {
-              "text": "homepage",
+              "text": "Personal Webpage",
               "url": "https://www.linkedin.com/in/simone-bussa-46219717b/"
             }
-          ]
+          ],
+          "description": ""
         },
         {
           "name": "Carlos Mateo Risma Carletti, PhD",
           "links": [
             {
-              "text": "homepage",
+              "text": "Personal Webpage",
               "url": "https://www.linkedin.com/in/carlosrisma/"
             }
-          ]
+          ],
+          "description": ""
         },
         {
           "name": "Federico Parola, PhD",
           "links": [
             {
-              "text": "homepage",
+              "text": "Personal Webpage",
               "url": "https://it.linkedin.com/in/federico-parola-5b496b200"
             }
-          ]
+          ],
+          "description": ""
         },
         {
           "name": "Alessandro Colli-Vignarelli",
           "links": [
             {
-              "text": "homepage",
+              "text": "Personal Webpage",
               "url": "https://www.polito.it/en/staff?p=andrea.collivignarelli"
             }
-          ]
+          ],
+          "description": ""
         },
         {
           "name": "Francesco Cappa",
           "links": [
             {
-              "text": "homepage",
+              "text": "Personal Webpage",
               "url": "https://www.linkedin.com/in/francesco-cappa-7a1758188/"
             }
-          ]
+          ],
+          "description": ""
         },
         {
           "name": "Marco Iorio, PhD",
           "links": [
             {
-              "text": "homepage",
+              "text": "Personal Webpage",
               "url": "https://www.linkedin.com/in/giorio94"
             }
-          ]
+          ],
+          "description": ""
         },
         {
           "name": "Giuseppe Ognibene",
           "links": [
             {
-              "text": "homepage",
+              "text": "Personal Webpage",
               "url": "https://pinoogni.github.io/"
             }
-          ]
+          ],
+          "description": ""
         },
         {
           "name": "Alex Palesandro, PhD",
           "links": [
             {
-              "text": "homepage",
+              "text": "Personal Webpage",
               "url": "https://palexster.github.io/"
             }
-          ]
+          ],
+          "description": ""
         },
         {
           "name": "Aldo Lacuku",
           "links": [
             {
-              "text": "homepage",
+              "text": "Personal Webpage",
               "url": "https://it.linkedin.com/in/aldo-lacuku-059ba91b7"
             }
-          ]
+          ],
+          "description": ""
         },
         {
           "name": "Gabriele Castellano, PhD",
           "links": [
             {
-              "text": "homepage",
+              "text": "Personal Webpage",
               "url": "https://www.linkedin.com/in/gabriele-castellano-a94172114/"
             }
-          ]
+          ],
+          "description": ""
         },
         {
           "name": "Sebastiano Miano, PhD",
           "links": [
             {
-              "text": "homepage",
+              "text": "Personal Webpage",
               "url": "https://www.linkedin.com/in/sebymiano92/"
             }
-          ]
+          ],
+          "description": ""
         },
         {
           "name": "Francesco Lucrezia, PhD",
           "links": [
             {
-              "text": "homepage",
+              "text": "Personal Webpage",
               "url": "https://it.linkedin.com/in/francesco-lucrezia-56273520b"
             }
-          ]
+          ],
+          "description": ""
         },
         {
           "name": "Jaloliddin Yusupov, PhD",
           "links": [
             {
-              "text": "homepage",
+              "text": "Personal Webpage",
               "url": "https://www.linkedin.com/in/yujboss/"
             }
-          ]
+          ],
+          "description": ""
         },
         {
           "name": "Mauricio Vasquez Bernal",
           "links": [
             {
-              "text": "homepage",
+              "text": "Personal Webpage",
               "url": "https://www.linkedin.com/in/mauriciovasquezbernal/"
             }
-          ]
+          ],
+          "description": ""
         },
         {
           "name": "Matteo Bertrone",
           "links": [
             {
-              "text": "homepage",
+              "text": "Personal Webpage",
               "url": "http://www.linkedin.com/in/bertrone/"
             }
-          ]
+          ],
+          "description": ""
         },
         {
           "name": "Stefano Petrangeli",
           "links": [
             {
-              "text": "homepage",
+              "text": "Personal Webpage",
               "url": "https://www.linkedin.com/in/stefano-petrangeli-068991108/"
             }
-          ]
+          ],
+          "description": ""
         },
         {
           "name": "Fabio Mignini",
           "links": [
             {
-              "text": "homepage",
+              "text": "Personal Webpage",
               "url": "https://it.linkedin.com/in/fabio-mignini-703a08bb/en"
             }
-          ]
+          ],
+          "description": ""
         },
         {
           "name": "Matteo Virgilio, PhD",
           "links": [
             {
-              "text": "homepage",
+              "text": "Personal Webpage",
               "url": "https://it.linkedin.com/in/matteo-virgilio-72211961/en"
             }
-          ]
+          ],
+          "description": ""
         },
         {
           "name": "Marco Leogrande, PhD",
           "links": [
             {
-              "text": "homepage",
+              "text": "Personal Webpage",
               "url": "https://www.linkedin.com/in/mleogrande"
             }
-          ]
+          ],
+          "description": ""
         },
         {
           "name": "Ju Liu",
           "links": [
             {
-              "text": "homepage",
+              "text": "Personal Webpage",
               "url": "http://www.linkedin.com/in/juliu/"
             }
-          ]
+          ],
+          "description": ""
         },
         {
           "name": "Nicolo\u2019 Cascarano, PhD",
           "links": [
             {
-              "text": "homepage",
+              "text": "Personal Webpage",
               "url": "https://www.linkedin.com/in/ncascarano"
             }
-          ]
+          ],
+          "description": ""
         },
         {
           "name": "Marco Papa Manzillo, PhD",
           "links": [
             {
-              "text": "homepage",
+              "text": "Personal Webpage",
               "url": "http://it.linkedin.com/in/mpapamanz"
             }
-          ]
+          ],
+          "description": ""
         },
         {
           "name": "Lorenzo De Carli, PhD",
           "links": [
             {
-              "text": "homepage",
+              "text": "Personal Webpage",
               "url": "http://www.linkedin.com/pub/lorenzo-de-carli/8/b38/a9a"
             }
-          ]
+          ],
+          "description": ""
         },
         {
           "name": "Giorgio Moscardi",
           "links": [
             {
-              "text": "homepage",
+              "text": "Personal Webpage",
               "url": "http://it.linkedin.com/in/gmoscardi"
             }
-          ]
+          ],
+          "description": ""
         },
         {
           "name": "Riccardo Giacomelli, PhD",
           "links": [
             {
-              "text": "homepage",
+              "text": "Personal Webpage",
               "url": "http://it.linkedin.com/pub/riccardo-giacomelli/36/705/644"
             }
-          ]
+          ],
+          "description": ""
         },
         {
           "name": "Andrea Vesco, PhD",
           "links": [
             {
-              "text": "homepage",
+              "text": "Personal Webpage",
               "url": "https://it.linkedin.com/in/avesco"
             }
-          ]
+          ],
+          "description": ""
         },
         {
           "name": "Luca De Marco",
           "links": [
             {
-              "text": "homepage",
+              "text": "Personal Webpage",
               "url": "http://it.linkedin.com/pub/luca-de-marco/5/770/327"
             }
-          ]
+          ],
+          "description": ""
         },
         {
           "name": "Livio Torrero, PhD",
           "links": [
             {
-              "text": "homepage",
+              "text": "Personal Webpage",
               "url": "https://it.linkedin.com/in/livio-torrero-ab12552"
             }
-          ]
+          ],
+          "description": ""
         },
         {
           "name": "Olivier Morandi, PhD",
           "links": [
             {
-              "text": "homepage",
+              "text": "Personal Webpage",
               "url": "https://it.linkedin.com/in/oliviermorandi"
             }
-          ]
+          ],
+          "description": ""
         },
         {
           "name": "Flavio Marinone",
           "links": [
             {
-              "text": "homepage",
+              "text": "Personal Webpage",
               "url": "https://nl.linkedin.com/in/flavio-marinone-2912592"
             }
-          ]
+          ],
+          "description": ""
         },
         {
           "name": "Andrea Scozzaro",
           "links": [
             {
-              "text": "homepage",
+              "text": "Personal Webpage",
               "url": "http://ch.linkedin.com/in/scozzy"
             }
-          ]
+          ],
+          "description": ""
         },
         {
           "name": "Francesco Andriani",
           "links": [
             {
-              "text": "homepage",
+              "text": "Personal Webpage",
               "url": "http://it.linkedin.com/in/andriani"
             }
-          ]
+          ],
+          "description": ""
         },
         {
           "name": "Gianluca Varenni, PhD",
           "links": [
             {
-              "text": "homepage",
+              "text": "Personal Webpage",
               "url": "https://www.linkedin.com/in/gianluca-varenni-9704b72"
             }
-          ]
+          ],
+          "description": ""
         },
         {
           "name": "Riccardo Scandariato, PhD",
           "links": [
             {
-              "text": "homepage",
+              "text": "Personal Webpage",
               "url": "http://www.scandariato.eu/"
             }
-          ]
+          ],
+          "description": ""
         },
         {
           "name": "Alberto Blanc, PhD",
           "links": [
             {
-              "text": "homepage",
+              "text": "Personal Webpage",
               "url": "http://fr.linkedin.com/pub/alberto-blanc/10/3/14a"
             }
-          ]
+          ],
+          "description": ""
         },
         {
           "name": "Loris Degioanni, PhD",
           "links": [
             {
-              "text": "homepage",
+              "text": "Personal Webpage",
               "url": "https://www.linkedin.com/in/degio"
             }
-          ]
+          ],
+          "description": ""
         },
         {
           "name": "Paolo Falcarin, PhD",
           "links": [
             {
-              "text": "homepage",
+              "text": "Personal Webpage",
               "url": "http://it.linkedin.com/in/falcarin"
             }
-          ]
+          ],
+          "description": ""
         },
         {
           "name": "Salvatore Iacono",
           "links": [
             {
-              "text": "homepage",
+              "text": "Personal Webpage",
               "url": "https://it.linkedin.com/in/salvatore-iacono-84aa0a"
             }
-          ]
+          ],
+          "description": ""
         },
         {
           "name": "Davide Bergamasco, PhD",
           "links": [
             {
-              "text": "homepage",
+              "text": "Personal Webpage",
               "url": "https://www.linkedin.com/in/bergamasco"
             }
-          ]
+          ],
+          "description": ""
         },
         {
           "name": "Dante Malagrino, PhD",
           "links": [
             {
-              "text": "homepage",
+              "text": "Personal Webpage",
               "url": "http://www.linkedin.com/in/dantemalagrino/"
             }
-          ]
+          ],
+          "description": ""
         },
         {
           "name": "Gian Pietro Picco, PhD",
           "links": [
             {
-              "text": "homepage",
+              "text": "Personal Webpage",
               "url": "http://it.linkedin.com/pub/gian-pietro-picco/0/454/4a"
             }
-          ]
+          ],
+          "description": ""
         },
         {
           "name": "Patricia Lago, PhD",
           "links": [
             {
-              "text": "homepage",
+              "text": "Personal Webpage",
               "url": "https://nl.linkedin.com/in/lagopatr"
             }
-          ]
+          ],
+          "description": ""
         },
         {
           "name": "Giovanni Malnati, PhD",
           "links": [
             {
-              "text": "homepage",
+              "text": "Personal Webpage",
               "url": "https://www.swas.polito.it/rubrica/list.asp?lang=it&freetext=malnati"
             }
-          ]
+          ],
+          "description": ""
         },
         {
           "name": "Silvano Gai, Netgroup Founder",
           "links": [
             {
-              "text": "homepage",
+              "text": "Personal Webpage",
               "url": "https://www.linkedin.com/in/silvano-gai-15263b1"
             }
-          ]
+          ],
+          "description": ""
         },
         {
           "name": "Maria Letizia Jaccheri, PhD",
           "links": [
             {
-              "text": "homepage",
+              "text": "Personal Webpage",
               "url": "https://no.linkedin.com/in/letizia"
             }
-          ]
+          ],
+          "description": ""
         },
         {
           "name": "Pierluca Montessoro, Netgroup Founder",
           "links": [
             {
-              "text": "homepage",
+              "text": "Personal Webpage",
               "url": "https://it.linkedin.com/in/pier-luca-montessoro-8462773"
             }
-          ]
+          ],
+          "description": ""
         },
         {
           "name": "Sarosh Tahir, PhD",
           "links": [
             {
-              "text": "homepage",
+              "text": "Personal Webpage",
               "url": "https://www.linkedin.com/in/sarosh-tahir-86245022/"
             }
-          ]
+          ],
+          "description": ""
         },
         {
           "name": "Amedeo Sapio, PhD",
           "links": [
             {
-              "text": "homepage",
+              "text": "Personal Webpage",
               "url": "https://www.linkedin.com/in/amedeosapio/"
             }
-          ]
+          ],
+          "description": ""
         },
         {
           "name": "Roberto Bonafiglia, PhD",
           "links": [
             {
-              "text": "homepage",
+              "text": "Personal Webpage",
               "url": "https://www.linkedin.com/in/roberto-bonafiglia-38731214a/"
             }
-          ]
+          ],
+          "description": ""
         },
         {
           "name": "Ivano Cerrato, PhD",
           "links": [
             {
-              "text": "homepage",
+              "text": "Personal Webpage",
               "url": "https://www.linkedin.com/in/ivanocerrato/"
             }
-          ]
+          ],
+          "description": ""
         },
         {
           "name": "Serena Spinoso, PhD",
           "links": [
             {
-              "text": "homepage",
+              "text": "Personal Webpage",
               "url": "https://www.linkedin.com/in/serena-spinoso-9b3610a7/"
             }
-          ]
+          ],
+          "description": ""
         }
       ]
     }
