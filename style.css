@@ -184,7 +184,7 @@ main {
 
 .grid-layout {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr));
     gap: 2rem;
 }
 
@@ -521,6 +521,7 @@ ul.card-list li::before {
 .person-email {
     color: var(--accent-color);
     text-decoration: none;
+    word-break: break-all;
 }
 .person-email:hover {
     text-decoration: underline;
@@ -734,8 +735,47 @@ footer {
     .header-container {
         flex-direction: column;
         gap: 1rem;
+        padding: 1rem;
+    }
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.75rem;
+    }
+    .nav-links a {
+        font-size: 0.95rem;
+    }
+    .home-counters {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
     }
     .hero-title {
         font-size: 2rem;
+    }
+    main {
+        padding: 2rem 1rem;
+    }
+    .glass-card {
+        padding: 1.5rem;
+    }
+    .home-hero {
+        flex-direction: column;
+        text-align: center;
+    }
+    .home-hero-actions {
+        justify-content: center;
+    }
+    .person-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.75rem;
+    }
+    .person-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+    .person-links a {
+        margin-left: 0;
     }
 }
