@@ -141,8 +141,10 @@ export function renderPeople(data, container) {
             }
 
             const photoSrc = person.photo || 'assets/placeholder.png';
+            const profileLink = `#profile?id=${encodeURIComponent(person.name)}`;
+
             html += `
-                <div class="person-item">
+                <div class="person-item" onclick="window.location.href='${profileLink}'" style="cursor: pointer;" onmouseover="this.style.backgroundColor='rgba(0,0,0,0.02)'" onmouseout="this.style.backgroundColor='transparent'">
                     <div class="person-left">
                         <img src="${photoSrc}" alt="${person.name}" class="person-avatar" onerror="this.src='assets/placeholder.png'">
                         <div class="person-info">
@@ -150,10 +152,10 @@ export function renderPeople(data, container) {
                                 <span class="person-name">${person.name}</span>
                                 ${person.role ? `<span class="person-role">${person.role}</span>` : ''}
                             </div>
-                            ${linksHtml ? `<div class="person-links">${linksHtml}</div>` : ''}
+                            ${linksHtml ? `<div class="person-links" onclick="event.stopPropagation();">${linksHtml}</div>` : ''}
                         </div>
                     </div>
-                    ${person.email ? `<a href="mailto:${person.email}" class="person-email">${person.email}</a>` : ''}
+                    ${person.email ? `<span onclick="event.stopPropagation();"><a href="mailto:${person.email}" class="person-email">${person.email}</a></span>` : ''}
                 </div>
             `;
         });
@@ -256,19 +258,21 @@ export function renderProjects(data, container) {
 
                 html += `
                     <div class="glass-card project-card">
-                        <div class="project-card-header">
-                            <div class="project-logo-wrap">
-                                ${logoHtml}
+                        ${item.year ? `<div class="project-card-banner">${item.year}</div>` : ''}
+                        <div class="project-card-inner">
+                            <div class="project-card-header">
+                                <div class="project-logo-wrap">
+                                    ${logoHtml}
+                                </div>
+                                <div class="project-meta">
+                                    <h3 class="card-title project-name" style="margin-bottom: 0.25rem;">${item.name}</h3>
+                                    ${item.fullName ? `<p class="project-fullname">${item.fullName}</p>` : ''}
+                                </div>
                             </div>
-                            <div class="project-meta">
-                                <h3 class="card-title project-name">${item.name}</h3>
-                                ${item.fullName ? `<p class="project-fullname">${item.fullName}</p>` : ''}
-                                ${item.year ? `<span class="project-year-badge">${item.year}</span>` : ''}
+                            ${item.description ? `<p class="project-desc">${item.description}</p>` : ''}
+                            <div style="margin-top: auto; padding-top: 1rem;">
+                                ${linkHtml}
                             </div>
-                        </div>
-                        ${item.description ? `<p class="project-desc">${item.description}</p>` : ''}
-                        <div style="margin-top: auto; padding-top: 1rem;">
-                            ${linkHtml}
                         </div>
                     </div>
                 `;
@@ -460,4 +464,249 @@ export function renderPublications(data, container) {
             renderPapersChunk(true);
         });
     });
+}
+
+export function renderTeaching(data, container) {
+    let html = `
+        <div class="fade-in">
+            <h2 class="hero-title">${data.title}</h2>
+            <p class="hero-desc">${data.description}</p>
+            <div class="grid-layout teaching-grid" style="margin-bottom: 2rem;">
+    `;
+
+    const sortedCourses = [...data.courses].sort((a, b) => a.name.localeCompare(b.name));
+
+    sortedCourses.forEach(course => {
+        let instructorsHtml = '';
+        if (course.instructors && course.instructors.length > 0) {
+            instructorsHtml = course.instructors.map(inst =>
+                `<a href="${inst.link || `#profile?id=${encodeURIComponent(inst.name)}`}" class="custom-link" style="font-size: 0.8rem; padding: 0.2rem 0.5rem; margin: 0.1rem; display: inline-block;">${inst.name}</a>`
+            ).join('');
+            instructorsHtml = `<div style="display: flex; align-items: center; flex-wrap: wrap; margin-top: 0.8rem;"><strong style="font-size: 0.95rem; color: #666; margin-right: 0.5rem;">Instructors:</strong> ${instructorsHtml}</div>`;
+        }
+
+        html += `
+            <div class="glass-card teaching-card" style="display: flex; flex-direction: column;">
+                <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.8rem; gap: 1rem; flex-wrap: wrap;">
+                    <h3 class="card-title" style="font-size: 1.3rem; margin-bottom: 0;">${course.name}</h3>
+                    <div style="display: flex; gap: 0.5rem; align-items: center; flex-wrap: wrap;">
+                        <span class="project-year-badge" style="white-space: nowrap;">${course.code}</span>
+                        <a href="${course.link}" target="_blank" class="custom-link" style="font-size: 0.8rem; padding: 0.25rem 0.6rem; margin: 0; white-space: nowrap;">Course Details &rarr;</a>
+                    </div>
+                </div>
+                ${course.cdl ? `<p style="font-size: 0.9rem; color: #555; margin-bottom: 0.2rem;"><strong>CDL:</strong> ${course.cdl}</p>` : ''}
+                ${course.year || course.period ? `<p style="font-size: 0.9rem; color: #555; margin-bottom: 0.5rem;"><strong>Year:</strong> ${course.year || '-'} &nbsp;&bull;&nbsp; <strong>Period:</strong> ${course.period || '-'}</p>` : ''}
+                ${instructorsHtml}
+            </div>
+        `;
+    });
+
+    html += `
+            </div>
+            <div style="text-align: center; margin-bottom: 3rem;">
+                <p style="color: var(--text-color); font-size: 0.95rem;">
+                    Can't find what you are looking for? <a href="${data.sourceUrl}" target="_blank" style="color: var(--accent-color); font-weight: 600;">Check the original page</a>.
+                </p>
+            </div>
+        </div>
+    `;
+
+    container.innerHTML = html;
+}
+
+export function renderProfile(data, container, params, teachingData, projectsData, publicationsData) {
+    const personId = params.get('id');
+    if (!personId) {
+        container.innerHTML = '<div class="error">No person specified.</div>';
+        return;
+    }
+
+    let person = null;
+    for (const cat of data.categories) {
+        const found = cat.people.find(p => p.name === personId);
+        if (found) { person = found; break; }
+    }
+
+    if (!person) {
+        container.innerHTML = `<div class="error">Person not found: ${personId}</div>`;
+        return;
+    }
+
+    const photoSrc = person.photo || 'assets/placeholder.png';
+    let linksHtml = '';
+    if (person.links) {
+        linksHtml = person.links.map(link => `<a href="${link.url}" target="_blank" class="custom-link" style="margin-top: 0; padding: 0.3rem 0.8rem; font-size: 0.88rem;">${link.text} &rarr;</a>`).join(' ');
+    }
+
+    // Filter aggregated data
+    // 1. Teaching
+    const personCourses = teachingData ? teachingData.courses.filter(c =>
+        c.instructors && c.instructors.some(inst => inst.name.includes(person.name) || person.name.includes(inst.name) || (person.name.split(' ').pop() === inst.name))
+    ) : [];
+
+    // 2. Projects
+    let personProjects = [];
+    if (projectsData) {
+        projectsData.categories.forEach(cat => {
+            if (cat.items) {
+                const matched = cat.items.filter(p => p.referencePerson === person.name);
+                if (matched.length > 0) personProjects = personProjects.concat(matched);
+            }
+        });
+    }
+
+    // 3. Publications
+    const personNameParts = person.name.split(' ');
+    const lastName = personNameParts[personNameParts.length - 1];
+    let personPublications = [];
+    if (publicationsData && publicationsData.papers) {
+        personPublications = publicationsData.papers.filter(p => {
+            // Basic matching rule: check if their last name or full name is in owners or authors string
+            if (p.owners && p.owners.includes(lastName)) return true;
+            if (p.owners && p.owners.includes(person.name)) return true;
+            if (p.authors && p.authors.includes(lastName)) return true;
+            return false;
+        });
+    }
+
+    let html = `
+        <div class="fade-in profile-page" style="display: flex; flex-direction: column; gap: 3rem;">
+            <!-- Profile Hero -->
+            <div class="glass-card" style="display: flex; flex-wrap: wrap; gap: 2rem; align-items: flex-start;">
+                <img src="${photoSrc}" onerror="this.src='assets/placeholder.png'" alt="${person.name}" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; border: 3px solid var(--glass-border);">
+                <div style="flex: 1; min-width: 250px;">
+                    <h1 style="font-size: 2.5rem; color: var(--heading-color); margin-bottom: 0.5rem; line-height: 1.1;">${person.name}</h1>
+                    ${person.role ? `<p style="color: var(--accent-color); font-weight: 600; font-size: 1.1rem; margin-bottom: 1rem;">${person.role}</p>` : ''}
+                    <p style="font-size: 1rem; color: var(--text-color); margin-bottom: 1rem; max-width: 800px; line-height: 1.6;">${person.description || ''}</p>
+                    <div style="display: flex; flex-wrap: wrap; gap: 0.8rem; align-items: center;">
+                        ${person.email ? `<a href="mailto:${person.email}" style="color: var(--heading-color); font-weight: 500; text-decoration: none; border: 1px solid #ddd; padding: 0.3rem 0.8rem; border-radius: 4px; font-size: 0.9rem;">Email Me</a>` : ''}
+                        ${linksHtml}
+                    </div>
+                </div>
+            </div>
+    `;
+
+    // Thesis Proposals section — shown first
+    if (person.thesisProposals) {
+        html += `
+            <section>
+                <h2 class="section-title">Thesis Proposals</h2>
+                <div class="glass-card" style="padding: 1.5rem;">
+                    <p style="font-size: 1rem; color: var(--text-color); margin-bottom: 1.25rem; line-height: 1.6;">Interested in doing a thesis or internship? Browse the available proposals below.</p>
+                    <a href="${person.thesisProposals}" target="_blank" class="custom-link" style="font-size: 1rem;">View Thesis Proposals &rarr;</a>
+                </div>
+            </section>
+        `;
+    }
+
+    // Teaching section
+    if (personCourses.length > 0) {
+        html += `
+            <section>
+                <h2 class="section-title">Teaching</h2>
+                <div class="grid-layout">
+        `;
+        const sortedPersonCourses = [...personCourses].sort((a, b) => a.name.localeCompare(b.name));
+        sortedPersonCourses.forEach(course => {
+            html += `
+                <div class="glass-card teaching-card" style="display: flex; flex-direction: column;">
+                    <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.8rem; gap: 1rem; flex-wrap: wrap;">
+                        <h3 class="card-title" style="font-size: 1.15rem; margin-bottom: 0; flex: 1;">${course.name}</h3>
+                        <div style="display: flex; gap: 0.5rem; align-items: center; flex-wrap: wrap;">
+                            <span class="project-year-badge" style="white-space: nowrap; flex-shrink: 0;">${course.code}</span>
+                            <a href="${course.link}" target="_blank" class="custom-link" style="font-size: 0.8rem; padding: 0.25rem 0.6rem; margin: 0; white-space: nowrap;">Course Details &rarr;</a>
+                        </div>
+                    </div>
+                    <div style="font-size: 0.9rem; color: #555; display: flex; flex-direction: column; gap: 0.2rem; flex: 1;">
+                        ${course.cdl ? `<p style="margin: 0;"><strong>CDL:</strong> ${course.cdl}</p>` : '<p style="margin: 0; opacity: 0;">–</p>'}
+                        ${course.year || course.period ? `<p style="margin: 0;"><strong>Year:</strong> ${course.year || '-'} &nbsp;&bull;&nbsp; <strong>Period:</strong> ${course.period || '-'}</p>` : '<p style="margin: 0; opacity: 0;">–</p>'}
+                    </div>
+                </div>
+            `;
+        });
+        html += `</div></section>`;
+    }
+
+    // Projects section
+    if (personProjects.length > 0) {
+        html += `
+            <section>
+                <h2 class="section-title">Supervised Projects</h2>
+                <div class="grid-layout">
+        `;
+        personProjects.forEach(item => {
+            const logoHtml = item.logo
+                ? `<img src="${item.logo}" alt="${item.name} logo" class="project-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                   <div class="project-logo-fallback" style="display:none;">${item.name}</div>`
+                : `<div class="project-logo-fallback">${item.name}</div>`;
+
+            html += `
+                <div class="glass-card project-card">
+                    ${item.year ? `<div class="project-card-banner">${item.year}</div>` : ''}
+                    <div class="project-card-inner">
+                        <div class="project-card-header">
+                            <div class="project-logo-wrap">${logoHtml}</div>
+                            <div class="project-meta">
+                                <h3 class="card-title project-name" style="margin-bottom: 0;">${item.name}</h3>
+                            </div>
+                        </div>
+                        ${item.url ? `<a href="${item.url}" target="_blank" class="custom-link" style="align-self: flex-start; margin-top: 0.5rem;">Visit Project &rarr;</a>` : ''}
+                    </div>
+                </div>
+            `;
+        });
+        html += `</div></section>`;
+    }
+
+    // Publications section — 10 visible by default, expandable
+    if (personPublications.length > 0) {
+        const PUBS_PREVIEW = 10;
+        const hasMore = personPublications.length > PUBS_PREVIEW;
+        const previewPubs = personPublications.slice(0, PUBS_PREVIEW);
+        const extraPubs = personPublications.slice(PUBS_PREVIEW);
+
+        const pubItemHtml = (p) => `
+            <div style="border-bottom: 1px solid var(--glass-border); padding-bottom: 1rem;">
+                <h4 style="font-size: 1.05rem; color: var(--heading-color); margin-bottom: 0.25rem;">${p.title}</h4>
+                <p style="font-size: 0.9rem; color: #666; margin-bottom: 0.25rem;">${p.authors}</p>
+                <p style="font-size: 0.85rem; color: #888;">${p.venue} ${p.year ? `(${p.year})` : ''} — <a href="${p.link}" target="_blank" style="color: var(--accent-color);">View</a></p>
+            </div>
+        `;
+
+        html += `
+            <section>
+                <h2 class="section-title">Publications <span style="font-size: 1rem; font-weight: 400; color: var(--accent-color);">${personPublications.length}</span></h2>
+                <div class="glass-card" id="profile-pubs-card" style="padding: 1.5rem; display: flex; flex-direction: column; gap: 1rem;">
+                    ${previewPubs.map(pubItemHtml).join('')}
+                    ${hasMore ? `
+                    <div id="profile-pubs-extra" style="display: none; flex-direction: column; gap: 1rem;">
+                        ${extraPubs.map(pubItemHtml).join('')}
+                    </div>
+                    <div style="text-align: center; margin-top: 0.5rem;">
+                        <button id="profile-pubs-toggle" class="custom-link" style="border: none; cursor: pointer; font-size: 0.95rem; padding: 0.5rem 1.25rem;">
+                            Show all ${personPublications.length} publications &#9662;
+                        </button>
+                    </div>` : ''}
+                </div>
+            </section>
+        `;
+    }
+
+    html += `</div>`;
+    container.innerHTML = html;
+
+    // Wire up publications expand toggle
+    const pubsToggle = container.querySelector('#profile-pubs-toggle');
+    if (pubsToggle) {
+        const pubsExtra = container.querySelector('#profile-pubs-extra');
+        const totalCount = personPublications.length;
+        let expanded = false;
+        pubsToggle.addEventListener('click', () => {
+            expanded = !expanded;
+            pubsExtra.style.display = expanded ? 'flex' : 'none';
+            pubsToggle.innerHTML = expanded
+                ? 'Show fewer &#9652;'
+                : `Show all ${totalCount} publications &#9662;`;
+        });
+    }
 }

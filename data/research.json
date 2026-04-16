@@ -7,7 +7,10 @@
       "reference": "prof. Riccardo Sisto",
       "description": "We develop and apply formal methods to verify the correctness and security properties of network protocols, distributed systems, and security configurations. Our work includes model checking, theorem proving, and automated verification of cryptographic protocols and firewall policies.",
       "links": [
-        { "text": "Riccardo Sisto's profile", "url": "http://staff.polito.it/riccardo.sisto/" }
+        {
+          "text": "Riccardo Sisto's profile",
+          "url": "#profile?id=Riccardo%20Sisto"
+        }
       ]
     },
     {
@@ -15,8 +18,14 @@
       "reference": "prof. Claudio Casetti",
       "description": "We research the design, analysis, and optimization of communication protocols with a particular focus on vehicular networks (V2X/CCAM), wireless systems, and heterogeneous network environments. Current interests include ETSI ITS standards, cooperative driving, and 5G/6G protocol stacks.",
       "links": [
-        { "text": "Claudio Casetti's profile", "url": "https://netgroup.polito.it/post/profiles/cc/" },
-        { "text": "ms-van3t simulator", "url": "https://github.com/ms-van3t-devs/ms-van3t" }
+        {
+          "text": "Claudio Casetti's profile",
+          "url": "#profile?id=Claudio%20Casetti"
+        },
+        {
+          "text": "ms-van3t simulator",
+          "url": "https://github.com/ms-van3t-devs/ms-van3t"
+        }
       ]
     },
     {
@@ -24,7 +33,10 @@
       "reference": "prof. Guido Marchetto",
       "description": "We investigate programmable data planes, intent-based networking, and AI-driven control for SDN environments. Research spans P4-based in-network processing, reinforcement learning for traffic engineering, and the use of large language models (LLMs) to bridge the gap between human intent and network configuration.",
       "links": [
-        { "text": "Guido Marchetto's profile", "url": "https://netgroup.polito.it/post/profiles/gm/" }
+        {
+          "text": "Guido Marchetto's profile",
+          "url": "#profile?id=Guido%20Marchetto"
+        }
       ]
     },
     {
@@ -32,8 +44,14 @@
       "reference": "prof. Fulvio Risso",
       "description": "We research kernel-bypass technologies, eBPF/XDP-based processing, and unikernel approaches for cloud and edge computing. A key focus is building lightweight, high-performance network function frameworks that work seamlessly in the computing continuum from IoT devices to cloud infrastructure.",
       "links": [
-        { "text": "Fulvio Risso's profile", "url": "http://fulvio.frisso.net/" },
-        { "text": "FLUIDOS project", "url": "https://www.fluidos.eu/" }
+        {
+          "text": "Fulvio Risso's profile",
+          "url": "#profile?id=Fulvio%20Risso"
+        },
+        {
+          "text": "FLUIDOS project",
+          "url": "https://www.fluidos.eu/"
+        }
       ]
     },
     {
@@ -41,7 +59,10 @@
       "reference": "dott. Alessio Sacco",
       "description": "We apply machine learning and deep reinforcement learning to network management problems including adaptive routing, congestion control, workload scheduling across the edge-cloud continuum, and anomaly detection. We work on both centralized and federated learning paradigms for network intelligence.",
       "links": [
-        { "text": "Alessio Sacco's profile", "url": "http://www.dauin.polito.it/personale/scheda/(nominativo)/alessio_sacco" }
+        {
+          "text": "Alessio Sacco's profile",
+          "url": "#profile?id=Alessio%20Sacco"
+        }
       ]
     },
     {
@@ -49,7 +70,10 @@
       "reference": "prof. Riccardo Sisto",
       "description": "We develop formal and automated techniques to detect vulnerabilities, verify security configurations, and monitor network traffic. Research includes traffic flow modelling, firewall anomaly detection, formal verification of cryptographic handshake protocols, and security policy synthesis.",
       "links": [
-        { "text": "Riccardo Sisto's profile", "url": "http://staff.polito.it/riccardo.sisto/" }
+        {
+          "text": "Riccardo Sisto's profile",
+          "url": "#profile?id=Riccardo%20Sisto"
+        }
       ]
     },
     {
@@ -57,7 +81,10 @@
       "reference": "dott. Fulvio Valenza",
       "description": "We study the specification, enforcement, and automated management of network security policies. Topics include intent-based security configuration, anomaly resolution in firewall rule sets, VPN automation, and the application of formal methods to policy verification across distributed environments.",
       "links": [
-        { "text": "Fulvio Valenza's profile", "url": "https://sites.google.com/view/fulviovalenza/home-page" }
+        {
+          "text": "Fulvio Valenza's profile",
+          "url": "#profile?id=Fulvio%20Valenza"
+        }
       ]
     },
     {

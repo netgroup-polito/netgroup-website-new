@@ -3,91 +3,141 @@
   "categories": [
     {
       "title": "EU-Funded Projects",
-      "funding": "eu",
+      "funding": "EU",
       "items": [
         {
           "name": "ELASTIC",
           "fullName": "Efficient, portabLe And Secure orchesTration for reliable servICes",
-          "year": "2024–2027",
+          "year": "2024\u20132027",
           "url": "https://elasticproject.eu/",
           "logo": "https://elasticproject.eu/wp-content/uploads/2024/03/elastic-logo.png",
-          "description": "ELASTIC redefines 6G network orchestration for edge and IoT workloads using cutting-edge technologies including eBPF/XDP, WebAssembly, Confidential Computing, and Federated Learning. NetGroup contributes core research on eBPF security, accelerated microservice interconnection, and distributed state management."
+          "description": "ELASTIC redefines 6G network orchestration for edge and IoT workloads using cutting-edge technologies including eBPF/XDP, WebAssembly, Confidential Computing, and Federated Learning. NetGroup contributes core research on eBPF security, accelerated microservice interconnection, and distributed state management.",
+          "referencePerson": "Riccardo Sisto"
         },
         {
           "name": "MIRANDA",
           "fullName": "Monitoring, Investigation and Response to cyber-attacks with an Adaptive digital twiN moDel for Agile services",
-          "year": "2024–2027",
+          "year": "2024\u20132027",
           "url": "https://www.mirandaproject.eu/",
           "logo": "https://www.mirandaproject.eu/wp-content/uploads/2024/10/miranda-logo.png",
-          "description": "MIRANDA develops a Cybersecurity Digital Twin (CDT) framework to model and continuously monitor the security posture of complex, multi-ownership ICT systems. It enables proactive monitoring, attack detection, and autonomous response across service supply chains in the computing continuum."
+          "description": "MIRANDA develops a Cybersecurity Digital Twin (CDT) framework to model and continuously monitor the security posture of complex, multi-ownership ICT systems. It enables proactive monitoring, attack detection, and autonomous response across service supply chains in the computing continuum.",
+          "referencePerson": "Riccardo Sisto"
         },
         {
           "name": "PREDICT-6G",
           "fullName": "PRogrammable AI-Enabled DeterminIstiC neTworking for 6G",
-          "year": "2023–2025",
+          "year": "2023\u20132025",
           "url": "https://predict-6g.eu/",
           "logo": "https://predict-6g.eu/wp-content/uploads/2022/12/predict6g-logo.png",
-          "description": "PREDICT-6G builds an end-to-end deterministic 6G network architecture ensuring high reliability and precise timing. It combines a multi-domain AI-driven control plane, digital twin framework, and multi-technology data plane. NetGroup leads the task on predictability and resource allocation in multi-domain environments."
+          "description": "PREDICT-6G builds an end-to-end deterministic 6G network architecture ensuring high reliability and precise timing. It combines a multi-domain AI-driven control plane, digital twin framework, and multi-technology data plane. NetGroup leads the task on predictability and resource allocation in multi-domain environments.",
+          "referencePerson": "Claudio Casetti"
         },
         {
           "name": "CONNECT",
           "fullName": "Continuous and Efficient Cooperative Trust Management for Resilient CCAM",
-          "year": "2022–2025",
+          "year": "2022\u20132025",
           "url": "https://horizon-connect.eu/",
           "logo": "https://horizon-connect.eu/wp-content/uploads/2022/09/CONNECT-Logo-1.png",
-          "description": "CONNECT builds a dynamic trust management framework for Connected, Cooperative and Automated Mobility (CCAM). Combining on-board vehicle systems with cloud intelligence, it enables cooperative and safer decision-making for intersection management, autonomous driving, and V2X applications across 16 partners from 8 countries."
+          "description": "CONNECT builds a dynamic trust management framework for Connected, Cooperative and Automated Mobility (CCAM). Combining on-board vehicle systems with cloud intelligence, it enables cooperative and safer decision-making for intersection management, autonomous driving, and V2X applications across 16 partners from 8 countries.",
+          "referencePerson": "Claudio Casetti"
         },
         {
           "name": "FLUIDOS",
           "fullName": "Flexible, scaLable and secUre decentralIzeD Operating System",
-          "year": "2022–2025",
+          "year": "2022\u20132025",
           "url": "https://www.fluidos.eu/",
           "logo": "https://www.fluidos.eu/wp-content/uploads/2022/09/fluidos-logo.png",
-          "description": "FLUIDOS creates a decentralized MetaOS that seamlessly unifies edge, cloud, and IoT resources into a trustworthy computing continuum. Built on top of Kubernetes, it introduces the REAR protocol for secure resource discovery and AI-powered workload orchestration. Politecnico di Torino serves as Project Technical Coordinator."
+          "description": "FLUIDOS creates a decentralized MetaOS that seamlessly unifies edge, cloud, and IoT resources into a trustworthy computing continuum. Built on top of Kubernetes, it introduces the REAR protocol for secure resource discovery and AI-powered workload orchestration. Politecnico di Torino serves as Project Technical Coordinator.",
+          "referencePerson": "Fulvio Risso"
         },
         {
           "name": "TOSHI",
           "fullName": "TOtal System SHIeld",
-          "year": "2020–2020",
+          "year": "2020\u20132020",
           "url": "https://www.eitdigital.eu/fileadmin/files/2020/factsheets/digital-tech/EIT-Digital-Factsheet-TOSHII.pdf",
           "logo": "TBD",
-          "description": "TOSHI combines recent Linux kernel technologies that are now reaching their maturity with AI/ML-based techniques to analyze events and detect anomalies. These two main pillars have not been integrated in any product to enforce host security and their unique combination has the potential to address a constantly growing security market."
+          "description": "TOSHI combines recent Linux kernel technologies that are now reaching their maturity with AI/ML-based techniques to analyze events and detect anomalies. These two main pillars have not been integrated in any product to enforce host security and their unique combination has the potential to address a constantly growing security market.",
+          "referencePerson": "Fulvio Risso"
         },
         {
           "name": "5GROWTH",
           "fullName": "5G-enabled Growth in Vertical Industries",
-          "year": "2019–2020",
+          "year": "2019\u20132020",
           "url": "https://tech.nextworks.it/projects/5growth-5g-enabled-growth-in-vertical-industries/",
           "logo": "TBD",
-          "description": "Validate through field-trials the actual performance of 5G system deployed on the premises of vertical industries, and optimize the performance using automation and Artificial Intelligence (AI)-driven solutions. Nine use cases in three pilot sectors, Industry 4.0, Transport, and Energy, to be field-trialed on four vertical-owned sites in Spain, Italy, and Portugal."
+          "description": "Validate through field-trials the actual performance of 5G system deployed on the premises of vertical industries, and optimize the performance using automation and Artificial Intelligence (AI)-driven solutions. Nine use cases in three pilot sectors, Industry 4.0, Transport, and Energy, to be field-trialed on four vertical-owned sites in Spain, Italy, and Portugal.",
+          "referencePerson": "Claudio Casetti"
         },
         {
           "name": "ASTRID",
           "fullName": "Addressing threats for virtualised services",
-          "year": "2018–2020",
+          "year": "2018\u20132020",
           "url": "https://www.surrey.ac.uk/research-projects/astrid-addressing-threats-virtualised-services",
           "logo": "TBD",
-          "description": "ASTRID project aims to build situational awareness for virtualised services to facilitate the detection of sophisticated cyber-attacks and prompt an automated response. This would effectively shift the responsibility for security, privacy and trustworthiness from developers or end users to service providers."
+          "description": "ASTRID project aims to build situational awareness for virtualised services to facilitate the detection of sophisticated cyber-attacks and prompt an automated response. This would effectively shift the responsibility for security, privacy and trustworthiness from developers or end users to service providers.",
+          "referencePerson": "Fulvio Risso"
+        },
+        {
+          "name": "NFV@EDGE",
+          "fullName": "SoftFIRE 1st Open Call",
+          "year": "2016\u20132017",
+          "logo": "TBD",
+          "referencePerson": "Fulvio Risso"
+        },
+        {
+          "name": "SDN@EDGE",
+          "year": "2015\u20132015",
+          "logo": "TBD",
+          "referencePerson": "Fulvio Risso"
+        },
+        {
+          "name": "ASTIB",
+          "fullName": "Development of Advanced Systems Technologies and hardware",
+          "year": "2015\u20132021",
+          "logo": "TBD",
+          "referencePerson": "Riccardo Sisto"
+        },
+        {
+          "name": "SECURED",
+          "fullName": "Security at the Network Edge",
+          "year": "2013\u20132016",
+          "logo": "TBD",
+          "referencePerson": "Fulvio Risso"
         }
       ]
     },
     {
       "title": "Research Projects Supported by Structural and National Funds",
-      "funding": "national",
+      "funding": "National",
       "items": [
         {
           "name": "SERICS",
           "fullName": "SEcurity and RIghts In the CyberSpace",
-          "year": "2022–2025",
+          "year": "2022\u20132025",
           "url": "https://serics.eu/",
           "logo": "https://serics.eu/wp-content/uploads/2022/11/logo-serics.png",
-          "description": "SERICS is Italy's extended national partnership on cybersecurity, funded via the PNRR and NextGenerationEU programmes. Operating in a hub-and-spoke model with 30+ universities and research centres, it advances research in critical infrastructure protection, network security, AI-based defenses, and digital rights. NetGroup contributes through network security, formal verification, and AI-driven threat detection."
+          "description": "SERICS is Italy's extended national partnership on cybersecurity, funded via the PNRR and NextGenerationEU programmes. Operating in a hub-and-spoke model with 30+ universities and research centres, it advances research in critical infrastructure protection, network security, AI-based defenses, and digital rights. NetGroup contributes through network security, formal verification, and AI-driven threat detection.",
+          "referencePerson": ""
         },
         {
           "name": "ECCO",
           "fullName": "Edge-Cloud COntinuum for connected vehicles",
-          "year": "2021–2022",
-          "logo": "TBD"
+          "year": "2021\u20132022",
+          "logo": "TBD",
+          "referencePerson": ""
+        },
+        {
+          "name": "Digital Vehicles",
+          "year": "2017\u20132017",
+          "logo": "TBD",
+          "referencePerson": "Claudio Casetti"
+        },
+        {
+          "name": "ITS",
+          "fullName": "Sistema di Trasporto Intelligente",
+          "year": "2014\u20132019",
+          "logo": "TBD",
+          "referencePerson": "Claudio Casetti"
         }
       ]
     }
