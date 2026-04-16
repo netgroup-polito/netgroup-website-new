@@ -11,12 +11,12 @@
       "period": "1",
       "instructors": [
         {
-          "name": "Marchetto",
-          "link": "https://netgroup.polito.it/post/profiles/gm/"
+          "name": "Guido Marchetto",
+          "link": "#profile?id=Guido%20Marchetto"
         },
         {
-          "name": "Bringhenti",
-          "link": "https://it.linkedin.com/in/daniele-bringhenti-348903192"
+          "name": "Daniele Bringhenti",
+          "link": "#profile?id=Daniele%20Bringhenti"
         }
       ]
     },
@@ -47,8 +47,8 @@
       "period": "1",
       "instructors": [
         {
-          "name": "Sacco",
-          "link": "http://www.dauin.polito.it/personale/scheda/(nominativo)/alessio_sacco"
+          "name": "Alessio Sacco",
+          "link": "#profile?id=Alessio%20Sacco"
         }
       ]
     },
@@ -61,8 +61,8 @@
       "period": "1",
       "instructors": [
         {
-          "name": "Casetti",
-          "link": "https://netgroup.polito.it/post/profiles/cc/"
+          "name": "Claudio Casetti",
+          "link": "#profile?id=Claudio%20Casetti"
         }
       ]
     },
@@ -75,8 +75,8 @@
       "period": "1",
       "instructors": [
         {
-          "name": "Sacco",
-          "link": "http://www.dauin.polito.it/personale/scheda/(nominativo)/alessio_sacco"
+          "name": "Alessio Sacco",
+          "link": "#profile?id=Alessio%20Sacco"
         }
       ]
     },
@@ -89,8 +89,8 @@
       "period": "1",
       "instructors": [
         {
-          "name": "Sisto",
-          "link": "http://staff.polito.it/riccardo.sisto/"
+          "name": "Riccardo Sisto",
+          "link": "#profile?id=Riccardo%20Sisto"
         }
       ]
     },
@@ -103,8 +103,8 @@
       "period": "2",
       "instructors": [
         {
-          "name": "Risso",
-          "link": "http://fulvio.frisso.net/"
+          "name": "Fulvio Risso",
+          "link": "#profile?id=Fulvio%20Risso"
         }
       ]
     },
@@ -117,8 +117,8 @@
       "period": "1",
       "instructors": [
         {
-          "name": "Marchetto",
-          "link": "https://netgroup.polito.it/post/profiles/gm/"
+          "name": "Guido Marchetto",
+          "link": "#profile?id=Guido%20Marchetto"
         }
       ]
     },
@@ -131,8 +131,8 @@
       "period": "2",
       "instructors": [
         {
-          "name": "Sisto",
-          "link": "http://staff.polito.it/riccardo.sisto/"
+          "name": "Riccardo Sisto",
+          "link": "#profile?id=Riccardo%20Sisto"
         }
       ]
     },
@@ -145,8 +145,8 @@
       "period": "2",
       "instructors": [
         {
-          "name": "Sisto",
-          "link": "http://staff.polito.it/riccardo.sisto/"
+          "name": "Riccardo Sisto",
+          "link": "#profile?id=Riccardo%20Sisto"
         }
       ]
     },
@@ -159,8 +159,8 @@
       "period": "2",
       "instructors": [
         {
-          "name": "Sisto",
-          "link": "http://staff.polito.it/riccardo.sisto/"
+          "name": "Riccardo Sisto",
+          "link": "#profile?id=Riccardo%20Sisto"
         }
       ]
     },
@@ -173,8 +173,12 @@
       "period": "1",
       "instructors": [
         {
-          "name": "Risso",
-          "link": "http://fulvio.frisso.net/"
+          "name": "Fulvio Risso",
+          "link": "#profile?id=Fulvio%20Risso"
+        },
+        {
+          "name": "Stefano Galantino",
+          "link": "#profile?id=Stefano%20Galantino"
         }
       ]
     },
@@ -187,8 +191,8 @@
       "period": "1",
       "instructors": [
         {
-          "name": "Risso",
-          "link": "http://fulvio.frisso.net/"
+          "name": "Fulvio Risso",
+          "link": "#profile?id=Fulvio%20Risso"
         }
       ]
     },
@@ -201,8 +205,8 @@
       "period": "1",
       "instructors": [
         {
-          "name": "Bringhenti",
-          "link": "https://it.linkedin.com/in/daniele-bringhenti-348903192"
+          "name": "Daniele Bringhenti",
+          "link": "#profile?id=Daniele%20Bringhenti"
         }
       ]
     },
@@ -215,8 +219,8 @@
       "period": "2",
       "instructors": [
         {
-          "name": "Valenza",
-          "link": "https://sites.google.com/view/fulviovalenza/home-page"
+          "name": "Fulvio Valenza",
+          "link": "#profile?id=Fulvio%20Valenza"
         }
       ]
     },
@@ -229,8 +233,8 @@
       "period": "1",
       "instructors": [
         {
-          "name": "Valenza",
-          "link": "https://sites.google.com/view/fulviovalenza/home-page"
+          "name": "Fulvio Valenza",
+          "link": "#profile?id=Fulvio%20Valenza"
         }
       ]
     },
@@ -243,8 +247,8 @@
       "period": "1",
       "instructors": [
         {
-          "name": "Rapelli",
-          "link": "https://www.linkedin.com/in/marco-rapelli-a14760148/"
+          "name": "Marco Rapelli",
+          "link": "#profile?id=Marco%20Rapelli"
         }
       ]
     },
@@ -257,8 +261,8 @@
       "period": "2",
       "instructors": [
         {
-          "name": "Valenza",
-          "link": "https://sites.google.com/view/fulviovalenza/home-page"
+          "name": "Fulvio Valenza",
+          "link": "#profile?id=Fulvio%20Valenza"
         }
       ]
     }

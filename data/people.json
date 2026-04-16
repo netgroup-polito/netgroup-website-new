@@ -40,7 +40,7 @@
         {
           "name": "Fulvio Risso",
           "role": "Full Professor",
-          "photo": "assets/people/fulvio_risso.jpg",
+          "photo": "assets/people/fulvio_risso.jpeg",
           "email": "fulvio.risso@polito.it",
           "links": [
             {
@@ -52,7 +52,8 @@
               "url": "https://scholar.google.com/citations?user=kheKGUAAAAAJ"
             }
           ],
-          "description": ""
+          "description": "My research began in high-speed packet processing, where I developed tools like NetPDL, NetVM, and the NetBee library to achieve flexible 10Gbps+ performance. This work extended into traffic classification and hardware acceleration, notably producing the iNFAnt GPU pattern-matching engine. With the shift toward cloud and virtualization, I pivoted to programmable network services, launching open-source initiatives like FROG, CrownLabs for remote education, and Liqo for seamless computing continuums. I remain active in networking through eBPF via the Polycube framework, which enables high-performance network services directly within the Linux kernel.",
+          "thesisProposals": "https://docs.google.com/document/d/14IdFSIaYfNivkf74nr7bCOGUTkdyL8iFefn1mrCxMs0/edit?usp=sharing"
         },
         {
           "name": "Guido Marchetto",
