@@ -178,6 +178,17 @@
           "description": ""
         },
         {
+          "name": "Yuee Zhou",
+          "email": "yuee.zhou@polito.it",
+          "links": [
+            {
+              "text": "Personal Webpage",
+              "url": "https://www.polito.it/personale?p=yuee.zhou"
+            }
+          ],
+          "description": ""
+        },
+        {
           "name": "Doriana Monaco",
           "email": "doriana.monaco@polito.it",
           "links": [
