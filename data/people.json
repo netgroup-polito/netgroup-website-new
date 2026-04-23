@@ -344,6 +344,17 @@
           "description": ""
         },
         {
+          "name": "Kazem Bigdeli",
+          "email": "kazem.bigdeli@polito.it",
+          "links": [
+            {
+              "text": "Personal Webpage",
+              "url": "https://www.polito.it/personale?p=kazem.bigdeli"
+            }
+          ],
+          "description": ""
+        },
+        {
           "name": "Cristian Zilli",
           "email": "cristian.zilli@polito.it",
           "links": [
