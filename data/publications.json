@@ -1,6 +1,17 @@
 {
   "title": "Our Publications",
   "description": "Here you can explore the research output of the NetGroup members. Filter by author to see individual contributions, or view all to explore our entire output.",
+  "filters": [
+    "Riccardo Sisto",
+    "Claudio Casetti",
+    "Fulvio Risso",
+    "Guido Marchetto",
+    "Fulvio Valenza",
+    "Alessio Sacco",
+    "Marco Rapelli",
+    "Daniele Bringhenti",
+    "Stefano Galantino"
+  ],
   "papers": [
     {
       "title": "FDO Protocol: A Possible Solution to Protect the Ownership Voucher Against Untrusted Supply Chain",
@@ -509,7 +520,8 @@
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=kheKGUAAAAAJ&cstart=100&pagesize=100&citation_for_view=kheKGUAAAAAJ:KUbvn5osdkgC",
       "owners": [
         "Fulvio Risso",
-        "Stefano Galantino"
+        "Stefano Galantino",
+        "Attilio Oliva"
       ]
     },
     {
@@ -1300,6 +1312,16 @@
       ]
     },
     {
+      "title": "Multi-Tenancy in Kubernetes Clusters",
+      "authors": "A Oliva",
+      "venue": "Politecnico di Torino",
+      "year": "2024",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=SJXQ6TsAAAAJ&pagesize=100&citation_for_view=SJXQ6TsAAAAJ:u-x6o8ySG0sC",
+      "owners": [
+        "Attilio Oliva"
+      ]
+    },
+    {
       "title": "Automation for network security configuration: State of the art and research trends",
       "authors": "D Bringhenti, G Marchetto, R Sisto, F Valenza",
       "venue": "ACM Computing Surveys 56 (3), 1-37",
@@ -1976,7 +1998,8 @@
       "year": "2022",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=kheKGUAAAAAJ&pagesize=100&citation_for_view=kheKGUAAAAAJ:uLbwQdceFCQC",
       "owners": [
-        "Fulvio Risso"
+        "Fulvio Risso",
+        "Stefano Galantino"
       ]
     },
     {
@@ -2424,7 +2447,8 @@
       "year": "2021",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=kheKGUAAAAAJ&cstart=100&pagesize=100&citation_for_view=kheKGUAAAAAJ:PR6Y55bgFSsC",
       "owners": [
-        "Fulvio Risso"
+        "Fulvio Risso",
+        "Stefano Galantino"
       ]
     },
     {
@@ -2994,6 +3018,16 @@
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=oaKhcyEAAAAJ&pagesize=100&citation_for_view=oaKhcyEAAAAJ:kRWSkSYxWN8C",
       "owners": [
         "Fulvio Valenza"
+      ]
+    },
+    {
+      "title": "Enabling Job-aware scheduling on Kubernetes clusters",
+      "authors": "S Galantino",
+      "venue": "Politecnico di Torino",
+      "year": "2020",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=E2J5xZcAAAAJ&pagesize=100&citation_for_view=E2J5xZcAAAAJ:2osOgNQ5qMEC",
+      "owners": [
+        "Stefano Galantino"
       ]
     },
     {

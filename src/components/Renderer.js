@@ -303,7 +303,8 @@ export function renderPublications(data, container) {
             <p class="hero-desc">${data.description}</p>
     `;
 
-    const uniqueOwners = [...new Set(data.papers.flatMap(p => p.owners || []))].sort();
+    const scrapeOwners = new Set(data.papers.flatMap(p => p.owners || []));
+    let uniqueOwners = data.filters ? data.filters.filter(f => scrapeOwners.has(f)).sort() : [...scrapeOwners].sort();
 
     html += `
         <div class="filter-bar" style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 2rem;">
@@ -563,16 +564,10 @@ export function renderProfile(data, container, params, teachingData, projectsDat
     }
 
     // 3. Publications
-    const personNameParts = person.name.split(' ');
-    const lastName = personNameParts[personNameParts.length - 1];
     let personPublications = [];
     if (publicationsData && publicationsData.papers) {
         personPublications = publicationsData.papers.filter(p => {
-            // Basic matching rule: check if their last name or full name is in owners or authors string
-            if (p.owners && p.owners.includes(lastName)) return true;
-            if (p.owners && p.owners.includes(person.name)) return true;
-            if (p.authors && p.authors.includes(lastName)) return true;
-            return false;
+            return p.owners && p.owners.includes(person.name);
         });
     }
 

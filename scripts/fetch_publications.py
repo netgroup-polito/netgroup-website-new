@@ -128,6 +128,19 @@ def main():
 
     print(f"\nTotal unique papers extracted: {len(papers_map)}")
     
+    # Generate allowed filters for frontend (only Faculties and Post-docs)
+    allowed_filters = []
+    try:
+        with open("data/people.json", "r") as f:
+            ppl_data = json.load(f)
+            for cat in ppl_data.get("categories", []):
+                title = cat.get("title", "").strip().lower()
+                if "faculties" in title or "faculty" in title or "post-doc" in title:
+                    for person in cat.get("people", []):
+                        allowed_filters.append(person["name"])
+    except:
+        pass
+    
     # Sort papers by year descending
     all_papers = list(papers_map.values())
     
@@ -142,6 +155,7 @@ def main():
     output_data = {
         "title": "Our Publications",
         "description": "Here you can explore the research output of the NetGroup members. Filter by author to see individual contributions, or view all to explore our entire output.",
+        "filters": allowed_filters,
         "papers": all_papers
     }
     
