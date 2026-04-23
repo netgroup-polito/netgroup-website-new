@@ -226,11 +226,19 @@
         },
         {
           "name": "Gianmarco Bachiorrini",
+          "role": "PhD Student",
+          "photo": "assets/placeholder.png",
           "email": "gianmarco.bachiorrini@polito.it",
+          "joined": 2024,
+          "left": null,
           "links": [
             {
               "text": "Personal Webpage",
               "url": "https://www.linkedin.com/in/gianmarco-bachiorrini-8aa826224/"
+            },
+            {
+              "text": "Publications",
+              "url": "https://scholar.google.com/citations?user=3cd9hcYAAAAJ&hl=it&oi=ao"
             }
           ],
           "description": ""
