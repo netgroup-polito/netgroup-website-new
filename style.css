@@ -541,6 +541,20 @@ ul.card-list li::before {
     letter-spacing: 0.02em;
 }
 
+.person-tenure {
+    display: inline-block;
+    margin-left: 0.4rem;
+    font-size: 0.78rem;
+    font-weight: 500;
+    color: #3b82f6; /* Blueish tone */
+    background: rgba(59, 130, 246, 0.1);
+    border: 1px solid rgba(59, 130, 246, 0.25);
+    border-radius: 20px;
+    padding: 0.1rem 0.55rem;
+    vertical-align: middle;
+    letter-spacing: 0.02em;
+}
+
 .person-email {
     color: var(--accent-color);
     text-decoration: none;

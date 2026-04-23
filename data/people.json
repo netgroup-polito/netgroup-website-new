@@ -149,6 +149,8 @@
           "name": "Stefano Galantino",
           "photo": "assets/people/stefano_galantino.jpg",
           "email": "stefano.galantino@polito.it",
+          "joined": 2020,
+          "left": null,
           "links": [
             {
               "text": "Personal Webpage",

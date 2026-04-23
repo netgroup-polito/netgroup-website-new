@@ -78,7 +78,7 @@ def main():
     for cat in data.get("categories", []):
         for person in cat.get("people", []):
             for link in person.get("links", []):
-                if link["text"] == "publications" and "user=" in link["url"]:
+                if link["text"].lower() == "publications" and "user=" in link["url"]:
                     user_id_match = re.search(r'user=([^&]+)', link["url"])
                     if not user_id_match: continue
                     user_id = user_id_match.group(1)
@@ -88,7 +88,26 @@ def main():
                     
                     added = 0
                     merged = 0
+                    ignored = 0
+                    
+                    person_joined = int(person.get("joined")) if person.get("joined") else None
+                    person_left = int(person.get("left")) if person.get("left") else None
+                    
                     for p in papers:
+                        if person_joined or person_left:
+                            try:
+                                py_str = re.sub(r'\D', '', p.get("year", ""))
+                                if py_str:
+                                    p_year = int(py_str)
+                                    if person_joined and p_year < person_joined:
+                                        ignored += 1
+                                        continue
+                                    if person_left and p_year > person_left:
+                                        ignored += 1
+                                        continue
+                            except ValueError:
+                                pass
+
                         phash = re.sub(r'[^a-z0-9]', '', p["title"].lower())
                         
                         if phash not in papers_map:
@@ -104,7 +123,7 @@ def main():
                                 papers_map[phash]["year"] = p["year"]
                             merged += 1
                     
-                    print(f"  -> Added {added} new unique papers, merged {merged} as co-authors.")
+                    print(f"  -> Added {added} new unique papers, merged {merged} as co-authors, ignored {ignored} due to date range limit.")
                     time.sleep(1.5) # Prevent rate limiting
 
     print(f"\nTotal unique papers extracted: {len(papers_map)}")
