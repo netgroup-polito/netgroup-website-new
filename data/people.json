@@ -149,6 +149,8 @@
           "name": "Stefano Galantino",
           "photo": "assets/people/stefano_galantino.jpg",
           "email": "stefano.galantino@polito.it",
+          "joined": 2020,
+          "left": null,
           "links": [
             {
               "text": "Personal Webpage",
@@ -159,7 +161,7 @@
               "url": "https://scholar.google.com/citations?user=E2J5xZcAAAAJ&hl=it&oi=ao"
             }
           ],
-          "description": ""
+          "description": "As a member of the NETGROUP (Computer Networks Group), my work primarily focuses on the orchestration of computational resources across the edge-to-cloud continuum, exploring how network software engineering and distributed systems intersect to create more efficient and dynamic infrastructures. My research interests lie in the areas of orchestration for edge-to-cloud computing resources with a focus also on energy consumption."
         }
       ]
     },
@@ -173,6 +175,18 @@
             {
               "text": "Personal Webpage",
               "url": "https://www.linkedin.com/in/jacopo-marino-4b8a0618b"
+            }
+          ],
+          "description": ""
+        },
+        {
+          "name": "Yuee Zhou",
+          "email": "yuee.zhou@polito.it",
+          "photo": "assets/people/moony.jpg",
+          "links": [
+            {
+              "text": "Personal Webpage",
+              "url": "https://www.polito.it/personale?p=yuee.zhou"
             }
           ],
           "description": ""
@@ -236,6 +250,10 @@
           "name": "Attilio Oliva",
           "email": "attilio.oliva@polito.it",
           "links": [
+            {
+              "text": "Publications",
+              "url": "https://scholar.google.com/citations?user=SJXQ6TsAAAAJ&hl=it&oi=ao"
+            },
             {
               "text": "Personal Webpage",
               "url": "https://www.linkedin.com/in/attilio-oliva/"
@@ -321,6 +339,17 @@
             {
               "text": "Personal Webpage",
               "url": "https://www.polito.it/personale?p=ilkhom.abdusamatov"
+            }
+          ],
+          "description": ""
+        },
+        {
+          "name": "Kazem Bigdeli",
+          "email": "kazem.bigdeli@polito.it",
+          "links": [
+            {
+              "text": "Personal Webpage",
+              "url": "https://www.polito.it/personale?p=kazem.bigdeli"
             }
           ],
           "description": ""

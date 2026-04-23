@@ -1,7 +1,29 @@
 {
   "title": "Our Publications",
   "description": "Here you can explore the research output of the NetGroup members. Filter by author to see individual contributions, or view all to explore our entire output.",
+  "filters": [
+    "Riccardo Sisto",
+    "Claudio Casetti",
+    "Fulvio Risso",
+    "Guido Marchetto",
+    "Fulvio Valenza",
+    "Alessio Sacco",
+    "Marco Rapelli",
+    "Daniele Bringhenti",
+    "Stefano Galantino"
+  ],
   "papers": [
+    {
+      "title": "FDO Protocol: A Possible Solution to Protect the Ownership Voucher Against Untrusted Supply Chain",
+      "authors": "S Bussa, R Sisto, F Valenza",
+      "venue": "IEEE Transactions on Dependable and Secure Computing",
+      "year": "2026",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=qLTxTQkAAAAJ&cstart=100&pagesize=100&citation_for_view=qLTxTQkAAAAJ:YohjEiUPhakC",
+      "owners": [
+        "Riccardo Sisto",
+        "Fulvio Valenza"
+      ]
+    },
     {
       "title": "Formal Verification and Mitigation of Vulnerabilities in the IMDGuard Protocol",
       "authors": "C Coduri, A Sacco, G Marchetto, R Sisto",
@@ -34,6 +56,26 @@
       "owners": [
         "Riccardo Sisto",
         "Fulvio Valenza"
+      ]
+    },
+    {
+      "title": "Intelligent UAV Surveillance Networks With Edge-Assisted Execution of Computer Vision Tasks",
+      "authors": "N Varshney, C Puligheddu, C Casetti, S De, CF Chiasserini",
+      "venue": "IEEE Transactions on Vehicular Technology",
+      "year": "2026",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=4AQxu0oAAAAJ&cstart=200&pagesize=100&citation_for_view=4AQxu0oAAAAJ:3A3nxV7CjKIC",
+      "owners": [
+        "Claudio Casetti"
+      ]
+    },
+    {
+      "title": "Deploying Intelligence in Vehicle Electronics [From the Editor]",
+      "authors": "C Casetti",
+      "venue": "IEEE Vehicular Technology Magazine 21 (1), 3-4",
+      "year": "2026",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=4AQxu0oAAAAJ&cstart=200&pagesize=100&citation_for_view=4AQxu0oAAAAJ:BAanoTsO0WEC",
+      "owners": [
+        "Claudio Casetti"
       ]
     },
     {
@@ -111,6 +153,16 @@
       ]
     },
     {
+      "title": "Homogeneous Control of Security Functions via Cross-Domain Delegation",
+      "authors": "N Poidomani, D Canavese, D Bringhenti, F Valenza, M Repetto",
+      "venue": "41st IFIP TC11 Information Security &amp; Privacy Conference",
+      "year": "2026",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=oaKhcyEAAAAJ&pagesize=100&citation_for_view=oaKhcyEAAAAJ:yB1At4FlUx8C",
+      "owners": [
+        "Fulvio Valenza"
+      ]
+    },
+    {
       "title": "GreenShield-E2C: A Sustainable Energy-Aware Firewall Configuration Mechanism for Edge-to-Cloud Continuum",
       "authors": "D Bringhenti, F Valenza",
       "venue": "Computer Networks, 112279",
@@ -127,16 +179,6 @@
       "venue": "NOMS 2026-2026 IEEE Network Operations and Management Symposium",
       "year": "2026",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=oaKhcyEAAAAJ&pagesize=100&citation_for_view=oaKhcyEAAAAJ:0KyAp5RtaNEC",
-      "owners": [
-        "Fulvio Valenza"
-      ]
-    },
-    {
-      "title": "Homogeneous Control of Security Functions via Cross-Domain Delegation",
-      "authors": "N Poidomani, D Canavese, D Bringhenti, F Valenza, M Repetto",
-      "venue": "41st IFIP TC11 Information Security &amp; Privacy Conference",
-      "year": "2026",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=oaKhcyEAAAAJ&pagesize=100&citation_for_view=oaKhcyEAAAAJ:yB1At4FlUx8C",
       "owners": [
         "Fulvio Valenza"
       ]
@@ -185,18 +227,6 @@
       ]
     },
     {
-      "title": "A demonstration of a network isolation solution for the computing continuum",
-      "authors": "F Pizzato, D Bringhenti, L Cetino, R Sisto, F Valenza",
-      "venue": "2025 IEEE Conference on Network Function Virtualization and Software-Defined\u00a0\u2026",
-      "year": "2025",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=qLTxTQkAAAAJ&cstart=100&pagesize=100&citation_for_view=qLTxTQkAAAAJ:0N-VGjzr574C",
-      "owners": [
-        "Riccardo Sisto",
-        "Fulvio Valenza",
-        "Daniele Bringhenti"
-      ]
-    },
-    {
       "title": "A demonstration of an autonomous approach for cyberattack mitigation",
       "authors": "F Pizzato, D Bringhenti, R Sisto, F Valenza",
       "venue": "2025 21st International Conference on Network and Service Management (CNSM), 1-3",
@@ -209,22 +239,34 @@
       ]
     },
     {
-      "title": "Analysis of the eBPF Vulnerabilities in the Linux Kernel",
+      "title": "Design and implementation of a tool to improve error reporting for eBPF code",
       "authors": "R Rizza, R Sisto, F Valenza",
-      "venue": "Lecture Notes in Computer Science (LNCS)",
+      "venue": "2025 IEEE International Conference on Cyber Security and Resilience (CSR\u00a0\u2026",
       "year": "2025",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=qLTxTQkAAAAJ&cstart=100&pagesize=100&citation_for_view=qLTxTQkAAAAJ:ClCfbGk0d_YC",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=qLTxTQkAAAAJ&cstart=100&pagesize=100&citation_for_view=qLTxTQkAAAAJ:Ug5p-4gJ2f0C",
       "owners": [
         "Riccardo Sisto",
         "Fulvio Valenza"
       ]
     },
     {
-      "title": "Design and implementation of a tool to improve error reporting for eBPF code",
-      "authors": "R Rizza, R Sisto, F Valenza",
-      "venue": "2025 IEEE International Conference on Cyber Security and Resilience (CSR\u00a0\u2026",
+      "title": "A demonstration of a network isolation solution for the computing continuum",
+      "authors": "F Pizzato, D Bringhenti, L Cetino, R Sisto, F Valenza",
+      "venue": "2025 IEEE Conference on Network Function Virtualization and Software-Defined\u00a0\u2026",
       "year": "2025",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=qLTxTQkAAAAJ&cstart=100&pagesize=100&citation_for_view=qLTxTQkAAAAJ:Ug5p-4gJ2f0C",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=qLTxTQkAAAAJ&cstart=100&pagesize=100&citation_for_view=qLTxTQkAAAAJ:0N-VGjzr574C",
+      "owners": [
+        "Riccardo Sisto",
+        "Fulvio Valenza",
+        "Daniele Bringhenti"
+      ]
+    },
+    {
+      "title": "Analysis of the eBPF Vulnerabilities in the Linux Kernel",
+      "authors": "R Rizza, R Sisto, F Valenza",
+      "venue": "Lecture Notes in Computer Science (LNCS)",
+      "year": "2025",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=qLTxTQkAAAAJ&cstart=100&pagesize=100&citation_for_view=qLTxTQkAAAAJ:ClCfbGk0d_YC",
       "owners": [
         "Riccardo Sisto",
         "Fulvio Valenza"
@@ -285,6 +327,16 @@
       ]
     },
     {
+      "title": "Edge-V: Vehicular Edge Intelligence Through Multi-Band Unlicensed Spectrum Access",
+      "authors": "F Raviglione, C Casetti, F Restuccia",
+      "venue": "IEEE Transactions on Vehicular Technology",
+      "year": "2025",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=4AQxu0oAAAAJ&cstart=200&pagesize=100&citation_for_view=4AQxu0oAAAAJ:PlWzFYVEG4EC",
+      "owners": [
+        "Claudio Casetti"
+      ]
+    },
+    {
       "title": "MARS: Multi-Agent Deep Reinforcement Learning for Complex Environment Exploration",
       "authors": "F Gervino, A Eirale, M Chiaberge, A Sacco, G Marchetto, C Casetti",
       "venue": "2025 IEEE 22nd Consumer Communications &amp; Networking Conference (CCNC), 1-6",
@@ -321,7 +373,7 @@
       "authors": "G Perrone, CE Casetti, M Rapelli",
       "venue": "2025 21st International Conference on Network and Service Management (CNSM), 1-4",
       "year": "2025",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=4AQxu0oAAAAJ&cstart=200&pagesize=100&citation_for_view=4AQxu0oAAAAJ:9shLKfS_uJEC",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=4AQxu0oAAAAJ&cstart=300&pagesize=100&citation_for_view=4AQxu0oAAAAJ:9shLKfS_uJEC",
       "owners": [
         "Claudio Casetti",
         "Marco Rapelli"
@@ -332,7 +384,7 @@
       "authors": "WAM Alromaema, CE Casetti, AF Dragoni",
       "venue": "2025 IEEE International Conference on Metrology for eXtended Reality\u00a0\u2026",
       "year": "2025",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=4AQxu0oAAAAJ&cstart=200&pagesize=100&citation_for_view=4AQxu0oAAAAJ:U0iAMwwPxtsC",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=4AQxu0oAAAAJ&cstart=300&pagesize=100&citation_for_view=4AQxu0oAAAAJ:U0iAMwwPxtsC",
       "owners": [
         "Claudio Casetti"
       ]
@@ -342,17 +394,7 @@
       "authors": "F Raviglione, F RESTUCCIA, C Casetti",
       "venue": "US Patent App. 18/844,869",
       "year": "2025",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=4AQxu0oAAAAJ&cstart=200&pagesize=100&citation_for_view=4AQxu0oAAAAJ:aEW5N-EHWIMC",
-      "owners": [
-        "Claudio Casetti"
-      ]
-    },
-    {
-      "title": "Edge-V: Vehicular Edge Intelligence Through Multi-Band Unlicensed Spectrum Access",
-      "authors": "F Raviglione, C Casetti, F Restuccia",
-      "venue": "IEEE Transactions on Vehicular Technology",
-      "year": "2025",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=4AQxu0oAAAAJ&cstart=300&pagesize=100&citation_for_view=4AQxu0oAAAAJ:PlWzFYVEG4EC",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=4AQxu0oAAAAJ&cstart=300&pagesize=100&citation_for_view=4AQxu0oAAAAJ:aEW5N-EHWIMC",
       "owners": [
         "Claudio Casetti"
       ]
@@ -478,7 +520,8 @@
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=kheKGUAAAAAJ&cstart=100&pagesize=100&citation_for_view=kheKGUAAAAAJ:KUbvn5osdkgC",
       "owners": [
         "Fulvio Risso",
-        "Stefano Galantino"
+        "Stefano Galantino",
+        "Attilio Oliva"
       ]
     },
     {
@@ -547,22 +590,22 @@
       ]
     },
     {
-      "title": "Intent-Based Kubernetes Configuration via LLMs: Current Trends and Open Challenges",
-      "authors": "A Sacco, C Zilli, G Marchetto",
-      "venue": "2025 IEEE 50th Conference on Local Computer Networks (LCN), 1-7",
+      "title": "Dealing With Challenged IoT Networks in Hierarchical Federated Learning",
+      "authors": "A Sacco, D Monaco, G Marchetto, P Montuschi",
+      "venue": "IEEE Internet of Things Journal",
       "year": "2025",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Y_MA4P8AAAAJ&cstart=100&pagesize=100&citation_for_view=Y_MA4P8AAAAJ:hkOj_22Ku90C",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Y_MA4P8AAAAJ&pagesize=100&citation_for_view=Y_MA4P8AAAAJ:ZuybSZzF8UAC",
       "owners": [
         "Guido Marchetto",
         "Alessio Sacco"
       ]
     },
     {
-      "title": "Dealing With Challenged IoT Networks in Hierarchical Federated Learning",
-      "authors": "A Sacco, D Monaco, G Marchetto, P Montuschi",
-      "venue": "IEEE Internet of Things Journal",
+      "title": "Intent-Based Kubernetes Configuration via LLMs: Current Trends and Open Challenges",
+      "authors": "A Sacco, C Zilli, G Marchetto",
+      "venue": "2025 IEEE 50th Conference on Local Computer Networks (LCN), 1-7",
       "year": "2025",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Y_MA4P8AAAAJ&cstart=100&pagesize=100&citation_for_view=Y_MA4P8AAAAJ:ZuybSZzF8UAC",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Y_MA4P8AAAAJ&cstart=100&pagesize=100&citation_for_view=Y_MA4P8AAAAJ:hkOj_22Ku90C",
       "owners": [
         "Guido Marchetto",
         "Alessio Sacco"
@@ -884,17 +927,6 @@
       ]
     },
     {
-      "title": "ms-van3t-CARLA: an open-source co-simulation framework for cooperative perception evaluation",
-      "authors": "CMR Carletti, C Casetti, J H\u00e4rri, F Risso",
-      "venue": "2024 19th Wireless On-Demand Network Systems and Services Conference (WONS\u00a0\u2026",
-      "year": "2024",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=4AQxu0oAAAAJ&cstart=100&pagesize=100&citation_for_view=4AQxu0oAAAAJ:DXE8ND7PrJAC",
-      "owners": [
-        "Claudio Casetti",
-        "Fulvio Risso"
-      ]
-    },
-    {
       "title": "OScar: An ETSI-compliant C-ITS stack for field-testing with embedded hardware devices",
       "authors": "M Rapelli, F Raviglione, C Casetti",
       "venue": "2024 22nd Mediterranean Communication and Computer Networking Conference\u00a0\u2026",
@@ -903,6 +935,17 @@
       "owners": [
         "Claudio Casetti",
         "Marco Rapelli"
+      ]
+    },
+    {
+      "title": "ms-van3t-CARLA: an open-source co-simulation framework for cooperative perception evaluation",
+      "authors": "CMR Carletti, C Casetti, J H\u00e4rri, F Risso",
+      "venue": "2024 19th Wireless On-Demand Network Systems and Services Conference (WONS\u00a0\u2026",
+      "year": "2024",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=4AQxu0oAAAAJ&cstart=100&pagesize=100&citation_for_view=4AQxu0oAAAAJ:DXE8ND7PrJAC",
+      "owners": [
+        "Claudio Casetti",
+        "Fulvio Risso"
       ]
     },
     {
@@ -1072,21 +1115,21 @@
       ]
     },
     {
-      "title": "Achieving linear cpu scaling in wireguard with an efficient multi-tunnel architecture",
-      "authors": "M Barone, D Miola, F Parola, F Risso",
-      "venue": "Proceedings of Netdev 0x18, Santa Clara, California",
-      "year": "2024",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=kheKGUAAAAAJ&cstart=100&pagesize=100&citation_for_view=kheKGUAAAAAJ:epqYDVWIO7EC",
-      "owners": [
-        "Fulvio Risso"
-      ]
-    },
-    {
       "title": "Measuring the Cost of the Linux Network Stack in Real-Time",
       "authors": "D Miola, F Risso, F Parola",
       "venue": "2024 IEEE 10th International Conference on Network Softwarization (NetSoft\u00a0\u2026",
       "year": "2024",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=kheKGUAAAAAJ&cstart=100&pagesize=100&citation_for_view=kheKGUAAAAAJ:uc_IGeMz5qoC",
+      "owners": [
+        "Fulvio Risso"
+      ]
+    },
+    {
+      "title": "Achieving linear cpu scaling in wireguard with an efficient multi-tunnel architecture",
+      "authors": "M Barone, D Miola, F Parola, F Risso",
+      "venue": "Proceedings of Netdev 0x18, Santa Clara, California",
+      "year": "2024",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=kheKGUAAAAAJ&cstart=100&pagesize=100&citation_for_view=kheKGUAAAAAJ:epqYDVWIO7EC",
       "owners": [
         "Fulvio Risso"
       ]
@@ -1165,22 +1208,22 @@
       ]
     },
     {
-      "title": "Inferring visibility of internet traffic matrices using explainable AI",
-      "authors": "C Zilli, A Sacco, D Monaco, O Okafor, F Esposito, G Marchetto",
-      "venue": "NOMS 2024-2024 IEEE Network Operations and Management Symposium, 1-6",
+      "title": "Routing with ART: Adaptive routing for P4 switches with in-network decision trees",
+      "authors": "A Angi, A Sacco, F Esposito, G Marchetto",
+      "venue": "GLOBECOM 2024-2024 IEEE Global Communications Conference, 3291-3296",
       "year": "2024",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Y_MA4P8AAAAJ&pagesize=100&citation_for_view=Y_MA4P8AAAAJ:PELIpwtuRlgC",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Y_MA4P8AAAAJ&pagesize=100&citation_for_view=Y_MA4P8AAAAJ:JoZmwDi-zQgC",
       "owners": [
         "Guido Marchetto",
         "Alessio Sacco"
       ]
     },
     {
-      "title": "Routing with ART: Adaptive routing for P4 switches with in-network decision trees",
-      "authors": "A Angi, A Sacco, F Esposito, G Marchetto",
-      "venue": "GLOBECOM 2024-2024 IEEE Global Communications Conference, 3291-3296",
+      "title": "Inferring visibility of internet traffic matrices using explainable AI",
+      "authors": "C Zilli, A Sacco, D Monaco, O Okafor, F Esposito, G Marchetto",
+      "venue": "NOMS 2024-2024 IEEE Network Operations and Management Symposium, 1-6",
       "year": "2024",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Y_MA4P8AAAAJ&pagesize=100&citation_for_view=Y_MA4P8AAAAJ:JoZmwDi-zQgC",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Y_MA4P8AAAAJ&pagesize=100&citation_for_view=Y_MA4P8AAAAJ:PELIpwtuRlgC",
       "owners": [
         "Guido Marchetto",
         "Alessio Sacco"
@@ -1269,6 +1312,16 @@
       ]
     },
     {
+      "title": "Multi-Tenancy in Kubernetes Clusters",
+      "authors": "A Oliva",
+      "venue": "Politecnico di Torino",
+      "year": "2024",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=SJXQ6TsAAAAJ&pagesize=100&citation_for_view=SJXQ6TsAAAAJ:u-x6o8ySG0sC",
+      "owners": [
+        "Attilio Oliva"
+      ]
+    },
+    {
       "title": "Automation for network security configuration: State of the art and research trends",
       "authors": "D Bringhenti, G Marchetto, R Sisto, F Valenza",
       "venue": "ACM Computing Surveys 56 (3), 1-37",
@@ -1353,6 +1406,17 @@
       ]
     },
     {
+      "title": "Formal Verification of the FDO Protocol",
+      "authors": "S Bussa, R Sisto, F Valenza",
+      "venue": "2023 IEEE Conference on Standards for Communications and Networking (CSCN\u00a0\u2026",
+      "year": "2023",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=qLTxTQkAAAAJ&cstart=100&pagesize=100&citation_for_view=qLTxTQkAAAAJ:gsN89kCJA0AC",
+      "owners": [
+        "Riccardo Sisto",
+        "Fulvio Valenza"
+      ]
+    },
+    {
       "title": "Introduction to Formal Methods for the Analysis and Design of Cryptographic Protocols",
       "authors": "D Bringhenti, R Sisto, F Valenza, J Yusupov",
       "venue": "Handbook of Formal Analysis and Verification in Cryptography, 57-104",
@@ -1362,17 +1426,6 @@
         "Riccardo Sisto",
         "Fulvio Valenza",
         "Daniele Bringhenti"
-      ]
-    },
-    {
-      "title": "Formal Verification of the FDO Protocol",
-      "authors": "S Bussa, R Sisto, F Valenza",
-      "venue": "2023 IEEE Conference on Standards for Communications and Networking (CSCN\u00a0\u2026",
-      "year": "2023",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=qLTxTQkAAAAJ&cstart=100&pagesize=100&citation_for_view=qLTxTQkAAAAJ:gsN89kCJA0AC",
-      "owners": [
-        "Riccardo Sisto",
-        "Fulvio Valenza"
       ]
     },
     {
@@ -1428,16 +1481,6 @@
       ]
     },
     {
-      "title": "5G standalone deployments are on the rise [Mobile Radio]",
-      "authors": "C Casetti",
-      "venue": "IEEE Vehicular Technology Magazine 18 (1), 5-11",
-      "year": "2023",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=4AQxu0oAAAAJ&cstart=100&pagesize=100&citation_for_view=4AQxu0oAAAAJ:zUl2_INMlC4C",
-      "owners": [
-        "Claudio Casetti"
-      ]
-    },
-    {
       "title": "Platoon-Local Dynamic Map: Micro cloud support for platooning cooperative perception",
       "authors": "CMR Carletti, C Casetti, J H\u00e4rri, F Risso",
       "venue": "2023 19th International Conference on Wireless and Mobile Computing\u00a0\u2026",
@@ -1446,6 +1489,16 @@
       "owners": [
         "Claudio Casetti",
         "Fulvio Risso"
+      ]
+    },
+    {
+      "title": "5G standalone deployments are on the rise [Mobile Radio]",
+      "authors": "C Casetti",
+      "venue": "IEEE Vehicular Technology Magazine 18 (1), 5-11",
+      "year": "2023",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=4AQxu0oAAAAJ&cstart=100&pagesize=100&citation_for_view=4AQxu0oAAAAJ:zUl2_INMlC4C",
+      "owners": [
+        "Claudio Casetti"
       ]
     },
     {
@@ -1479,21 +1532,21 @@
       ]
     },
     {
-      "title": "Spotlight on Reconfigurable Intelligent Surfaces [Mobile Radio]",
-      "authors": "C Casetti",
-      "venue": "IEEE Vehicular Technology Magazine 18 (3), 8-14",
-      "year": "2023",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=4AQxu0oAAAAJ&cstart=200&pagesize=100&citation_for_view=4AQxu0oAAAAJ:2vr6o8x5NLkC",
-      "owners": [
-        "Claudio Casetti"
-      ]
-    },
-    {
       "title": "Intelligent Execution of Computer Vision Tasks in Delay-Constrained UAV-aided Networks",
       "authors": "N Varshney, C Puligheddu, CF Chiasserini, C Casetti, S De",
       "venue": "2023 IEEE Globecom Workshops (GC Wkshps), 86-91",
       "year": "2023",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=4AQxu0oAAAAJ&cstart=200&pagesize=100&citation_for_view=4AQxu0oAAAAJ:m4fbC6XIj1kC",
+      "owners": [
+        "Claudio Casetti"
+      ]
+    },
+    {
+      "title": "Spotlight on Reconfigurable Intelligent Surfaces [Mobile Radio]",
+      "authors": "C Casetti",
+      "venue": "IEEE Vehicular Technology Magazine 18 (3), 8-14",
+      "year": "2023",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=4AQxu0oAAAAJ&cstart=200&pagesize=100&citation_for_view=4AQxu0oAAAAJ:2vr6o8x5NLkC",
       "owners": [
         "Claudio Casetti"
       ]
@@ -3047,9 +3100,9 @@
       ]
     },
     {
-      "title": "A VNF modeling approach for verification purposes.",
+      "title": "A VNF modeling approach for verification purposes",
       "authors": "G Marchetto, R Sisto, M Virgilio, J Yusupov",
-      "venue": "International Journal of Electrical &amp; Computer Engineering (2088-8708) 9 (4)",
+      "venue": "International Journal of Electrical and Computer Engineering 9 (4), 2627",
       "year": "2019",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=qLTxTQkAAAAJ&cstart=100&pagesize=100&citation_for_view=qLTxTQkAAAAJ:dTyEYWd-f8wC",
       "owners": [
@@ -8838,7 +8891,7 @@
       "authors": "C Demartini, P Montuschi, A Valenzano, L Ciminiera, R Sisto",
       "venue": "[1992] Proceedings 17th Conference on Local Computer Networks, 473-482",
       "year": "1992",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=qLTxTQkAAAAJ&cstart=100&pagesize=100&citation_for_view=qLTxTQkAAAAJ:vV6vV6tmYwMC",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=qLTxTQkAAAAJ&cstart=200&pagesize=100&citation_for_view=qLTxTQkAAAAJ:vV6vV6tmYwMC",
       "owners": [
         "Riccardo Sisto"
       ]
@@ -9229,7 +9282,7 @@
       "authors": "AF Zorzo, BJ van Beijnum, C Zeferino, CE Casetti, EDS Moreira, ...",
       "venue": "",
       "year": "",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=4AQxu0oAAAAJ&cstart=300&pagesize=100&citation_for_view=4AQxu0oAAAAJ:_Ybze24A_UAC",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=4AQxu0oAAAAJ&cstart=400&pagesize=100&citation_for_view=4AQxu0oAAAAJ:_Ybze24A_UAC",
       "owners": [
         "Claudio Casetti"
       ]
@@ -9239,7 +9292,7 @@
       "authors": "S Affes, P Agrawal, AN Akansu, S Akkarakaran, E Aktas, J Alhava, M Ah, ...",
       "venue": "",
       "year": "",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=4AQxu0oAAAAJ&cstart=300&pagesize=100&citation_for_view=4AQxu0oAAAAJ:uLbwQdceFCQC",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=4AQxu0oAAAAJ&cstart=400&pagesize=100&citation_for_view=4AQxu0oAAAAJ:uLbwQdceFCQC",
       "owners": [
         "Claudio Casetti"
       ]

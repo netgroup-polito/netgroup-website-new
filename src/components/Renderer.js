@@ -139,6 +139,12 @@ export function renderPeople(data, container) {
             if (person.links) {
                 linksHtml = person.links.map(link => `<a href="${link.url}" target="_blank">${link.text}</a>`).join('');
             }
+            
+            let tenureHtml = '';
+            if (person.joined) {
+                const leftText = person.left || 'present';
+                tenureHtml = `<span class="person-tenure">${person.joined} &ndash; ${leftText}</span>`;
+            }
 
             const photoSrc = person.photo || 'assets/placeholder.png';
             const profileLink = `#profile?id=${encodeURIComponent(person.name)}`;
@@ -151,6 +157,7 @@ export function renderPeople(data, container) {
                             <div class="person-name-row">
                                 <span class="person-name">${person.name}</span>
                                 ${person.role ? `<span class="person-role">${person.role}</span>` : ''}
+                                ${tenureHtml}
                             </div>
                             ${linksHtml ? `<div class="person-links" onclick="event.stopPropagation();">${linksHtml}</div>` : ''}
                         </div>
@@ -296,7 +303,8 @@ export function renderPublications(data, container) {
             <p class="hero-desc">${data.description}</p>
     `;
 
-    const uniqueOwners = [...new Set(data.papers.flatMap(p => p.owners || []))].sort();
+    const scrapeOwners = new Set(data.papers.flatMap(p => p.owners || []));
+    let uniqueOwners = data.filters ? data.filters.filter(f => scrapeOwners.has(f)).sort() : [...scrapeOwners].sort();
 
     html += `
         <div class="filter-bar" style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 2rem;">
@@ -556,17 +564,17 @@ export function renderProfile(data, container, params, teachingData, projectsDat
     }
 
     // 3. Publications
-    const personNameParts = person.name.split(' ');
-    const lastName = personNameParts[personNameParts.length - 1];
     let personPublications = [];
     if (publicationsData && publicationsData.papers) {
         personPublications = publicationsData.papers.filter(p => {
-            // Basic matching rule: check if their last name or full name is in owners or authors string
-            if (p.owners && p.owners.includes(lastName)) return true;
-            if (p.owners && p.owners.includes(person.name)) return true;
-            if (p.authors && p.authors.includes(lastName)) return true;
-            return false;
+            return p.owners && p.owners.includes(person.name);
         });
+    }
+
+    let tenureProfileHtml = '';
+    if (person.joined) {
+        const leftText = person.left || 'present';
+        tenureProfileHtml = ` <span style="font-weight: 500; color: #6b7280; font-size: 0.95rem; margin-left: 0.5rem;">(${person.joined} &ndash; ${leftText})</span>`;
     }
 
     let html = `
@@ -576,7 +584,7 @@ export function renderProfile(data, container, params, teachingData, projectsDat
                 <img src="${photoSrc}" onerror="this.src='assets/placeholder.png'" alt="${person.name}" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; border: 3px solid var(--glass-border);">
                 <div style="flex: 1; min-width: 250px;">
                     <h1 style="font-size: 2.5rem; color: var(--heading-color); margin-bottom: 0.5rem; line-height: 1.1;">${person.name}</h1>
-                    ${person.role ? `<p style="color: var(--accent-color); font-weight: 600; font-size: 1.1rem; margin-bottom: 1rem;">${person.role}</p>` : ''}
+                    ${person.role ? `<p style="color: var(--accent-color); font-weight: 600; font-size: 1.1rem; margin-bottom: 1rem; display: flex; align-items: center;">${person.role}${tenureProfileHtml}</p>` : (tenureProfileHtml ? `<p style="margin-bottom: 1rem;">${tenureProfileHtml}</p>` : '')}
                     <p style="font-size: 1rem; color: var(--text-color); margin-bottom: 1rem; max-width: 800px; line-height: 1.6;">${person.description || ''}</p>
                     <div style="display: flex; flex-wrap: wrap; gap: 0.8rem; align-items: center;">
                         ${person.email ? `<a href="mailto:${person.email}" style="color: var(--heading-color); font-weight: 500; text-decoration: none; border: 1px solid #ddd; padding: 0.3rem 0.8rem; border-radius: 4px; font-size: 0.9rem;">Email Me</a>` : ''}
