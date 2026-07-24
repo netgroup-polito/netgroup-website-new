@@ -91,13 +91,13 @@
         },
         {
           "name": "Alessio Sacco",
-          "role": "TBD",
+          "role": "Tenure-Track Assistant Professor",
           "photo": "assets/people/alessio_sacco.jpg",
           "email": "alessio_sacco@polito.it",
           "links": [
             {
               "text": "Personal Webpage",
-              "url": "http://www.dauin.polito.it/personale/scheda/(nominativo)/alessio_sacco"
+              "url": "https://alessiosac.gitlab.io/"
             },
             {
               "text": "Publications",
@@ -108,7 +108,7 @@
         },
         {
           "name": "Marco Rapelli",
-          "role": "TBD",
+          "role": "Non-tenure Track Assistant Professor",
           "photo": "assets/people/marco_rapelli.jpg",
           "email": "marco.rapelli@polito.it",
           "links": [
@@ -125,7 +125,7 @@
         },
         {
           "name": "Daniele Bringhenti",
-          "role": "TBD",
+          "role": "Non-tenure Track Assistant Professor",
           "photo": "assets/people/daniele_bringhenti.jpg",
           "email": "daniele.bringhenti@polito.it",
           "links": [

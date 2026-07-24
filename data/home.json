@@ -6,15 +6,18 @@
       "title": "Cloud, Edge & Fog Computing",
       "items": [
         "Kubernetes, serverless, FaaS",
-        "Multi-cloud (e.g., with Liqo.io)"
+        "Multi-cloud (e.g., with Liqo.io)",
+        "Resource-constrained infrastructure"
       ]
     },
     {
-      "title": "Network Softwarization",
+      "title": "AI/ML for Networking",
       "items": [
-        "Software-Defined Networks (SDN) and Network Functions Virtualization (NFV)",
-        "Resource and Service orchestration",
-        "Formal methods applied to multi-domain cloud/fog-oriented SDN/NFV-based networks"
+        "LLM-based orchestration",
+        "Resource prediction",
+        "ML-based traffic analysis",
+        "Resource-efficient model design",
+        "In-network Machine Learning"
       ]
     },
     {
@@ -22,16 +25,30 @@
       "items": [
         "Efficient data plane networking (e.g., Linux kernel, eBPF/XDP, DPDK, SmartNICs)",
         "Model-based and policy-based development",
-        "Machine Learning-based network management",
-        "Network security automation"
+        "Networking for AI processes (training and inference)",
+        "High-speed packet processing/forwarding",
+        "Responsive Software-Defined Networks (SDN)",
+        "Software-based network infrastructures and services"
       ]
     },
     {
-      "title": "Protocol Engineering",
+      "title": "5G/6G Networks",
       "items": [
-        "Languages for protocol description",
+        "Resource and Service orchestration",
+        "Connected Cooperative and Automated Mobility",
+        "Cloud-native network function",
+        "Vehicular Networks"
+      ]
+    },
+    {
+      "title": "Cybersecurity Automation",
+      "items": [
+        "Languages for protocol description and modeling", 
+        "Network security automation",
         "Formal verification of security protocols",
-        "Security function allocation"
+        "Security function allocation",
+        "Network security analysis and verification",
+        "Formal methods applied to multi-domain cloud/fog-oriented SDN/NFV-based networks"
       ]
     }
   ]
