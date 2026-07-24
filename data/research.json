@@ -3,65 +3,134 @@
   "description": "This page contains information related to the research activities in the Networking Group (NetGroup). The main research topics are related to:",
   "topics": [
     {
-      "name": "Formal methods and verification",
+      "name": "Network security analysis and verification",
       "reference": "prof. Riccardo Sisto",
-      "description": "We develop and apply formal methods to verify the correctness and security properties of network protocols, distributed systems, and security configurations. Our work includes model checking, theorem proving, and automated verification of cryptographic protocols and firewall policies.",
+      "description": "We develop formal and automated techniques to analyze, verify, and validate the security of networked systems. Research includes vulnerability analysis, policy verification, firewall analysis, protocol verification, traffic monitoring, and methods for ensuring the correctness of security configurations.",
       "links": [
         {
           "text": "Riccardo Sisto's profile",
           "url": "#profile?id=Riccardo%20Sisto"
+        },
+        {
+          "text": "Fulvio Valenza's profile",
+          "url": "#profile?id=Fulvio%20Valenza"
+        },
+        {
+          "text": "Daniele Bringhenti's profile",
+          "url": "#profile?id=Daniele%20Bringhenti"
         }
       ]
     },
     {
-      "name": "Communication protocol engineering",
+      "name": "Connected Cooperative and Automated Mobility",
       "reference": "prof. Claudio Casetti",
-      "description": "We research the design, analysis, and optimization of communication protocols with a particular focus on vehicular networks (V2X/CCAM), wireless systems, and heterogeneous network environments. Current interests include ETSI ITS standards, cooperative driving, and 5G/6G protocol stacks.",
+      "description": "We research communication technologies for connected and automated vehicles, focusing on V2X communications, cooperative driving, intelligent transportation systems, and ETSI ITS standards. Our work includes low-latency networking, vehicular applications, and reliable communication protocols for future mobility services.",
       "links": [
         {
           "text": "Claudio Casetti's profile",
           "url": "#profile?id=Claudio%20Casetti"
         },
         {
-          "text": "ms-van3t simulator",
-          "url": "https://github.com/ms-van3t-devs/ms-van3t"
+          "text": "Marco Rapelli's profile",
+          "url": "#profile?id=Marco%20Rapelli"
         }
       ]
     },
     {
-      "name": "Software-defined networking",
+      "name": "Network software engineering",
       "reference": "prof. Guido Marchetto",
-      "description": "We investigate programmable data planes, intent-based networking, and AI-driven control for SDN environments. Research spans P4-based in-network processing, reinforcement learning for traffic engineering, and the use of large language models (LLMs) to bridge the gap between human intent and network configuration.",
+      "description": "We develop software engineering methodologies, programming abstractions, and development frameworks for building reliable, maintainable, and high-performance networked systems. Our research includes network programmability (e.g., P4-based in-network processing), reusable software components, verification-aware development, and tools that simplify the implementation of modern network functions.",
       "links": [
         {
           "text": "Guido Marchetto's profile",
           "url": "#profile?id=Guido%20Marchetto"
+        },
+        {
+          "text": "Alessio Sacco's profile",
+          "url": "#profile?id=Alessio%20Sacco"
+        },
+        {
+          "text": "Fulvio Risso's profile",
+          "url": "#profile?id=Fulvio%20Risso"
         }
       ]
     },
     {
-      "name": "High-speed packet processing and forwarding",
+    "name": "AI/ML for networks",
+    "reference": "dott. Alessio Sacco",
+    "description": "We apply artificial intelligence and machine learning to improve network management, operation, and security. Research topics include network automation via LLMs, traffic engineering, anomaly detection, intent-based management, federated learning, reinforcement learning, and large language models for autonomous network operations.",
+    "links": [
+        {
+          "text": "Guido Marchetto's profile",
+          "url": "#profile?id=Guido%20Marchetto"
+        },
+        {
+          "text": "Alessio Sacco's profile",
+          "url": "#profile?id=Alessio%20Sacco"
+        }
+      ]
+    },
+    {
+    "name": "Networking for AI",
+    "reference": "dott. Alessio Sacco",
+    "description": "We investigate networking systems and protocols that enable efficient distributed AI training and inference. Our work focuses on communication-efficient AI, in-network computing, high-performance data movement, edge AI infrastructures, and scalable architectures supporting AI workloads across cloud and edge environments.",
+    "links": [
+        {
+          "text": "Guido Marchetto's profile",
+          "url": "#profile?id=Guido%20Marchetto"
+        },
+        {
+          "text": "Alessio Sacco's profile",
+          "url": "#profile?id=Alessio%20Sacco"
+        }
+      ]
+    },
+    {
+      "name": "5G/6G Networks",
+      "reference": "prof. Claudio Casetti",
+      "description": "We investigate next-generation mobile network architectures, protocols, and services. Research spans network slicing, Open RAN, edge-native mobile systems, AI-native network management, ultra-low latency communications, and resource optimization for emerging 5G and 6G infrastructures.",
+      "links": [
+        {
+          "text": "Claudio Casetti's profile",
+          "url": "#profile?id=Claudio%20Casetti"
+        },
+        {
+          "text": "Marco Rapelli's profile",
+          "url": "#profile?id=Marco%20Rapelli"
+        }
+      ]
+    },
+    {
+      "name": "High-speed packet processing/forwarding",
       "reference": "prof. Fulvio Risso",
-      "description": "We research kernel-bypass technologies, eBPF/XDP-based processing, and unikernel approaches for cloud and edge computing. A key focus is building lightweight, high-performance network function frameworks that work seamlessly in the computing continuum from IoT devices to cloud infrastructure.",
+      "description": "We develop high-performance networking technologies based on programmable data planes, eBPF/XDP, DPDK, SmartNICs, and hardware accelerators. Our research focuses on scalable packet processing frameworks, in-network computing, and low-latency forwarding across cloud and edge infrastructures.",
       "links": [
         {
           "text": "Fulvio Risso's profile",
           "url": "#profile?id=Fulvio%20Risso"
         },
         {
-          "text": "FLUIDOS project",
-          "url": "https://www.fluidos.eu/"
+          "text": "Alessio Sacco's profile",
+          "url": "#profile?id=Alessio%20Sacco"
         }
       ]
     },
     {
-      "name": "Machine learning-based network management",
-      "reference": "dott. Alessio Sacco",
-      "description": "We apply machine learning and deep reinforcement learning to network management problems including adaptive routing, congestion control, workload scheduling across the edge-cloud continuum, and anomaly detection. We work on both centralized and federated learning paradigms for network intelligence.",
+      "name": "Edge/cloud computing",
+      "reference": "prof. Fulvio Risso",
+      "description": "We investigate distributed computing systems spanning cloud, edge, and IoT environments. Research includes workload orchestration, resource scheduling, virtualization, serverless computing, and AI-driven management of applications operating across the computing continuum.",
       "links": [
+        {
+          "text": "Fulvio Risso's profile",
+          "url": "#profile?id=Fulvio%20Risso"
+        },
         {
           "text": "Alessio Sacco's profile",
           "url": "#profile?id=Alessio%20Sacco"
+        },
+        {
+          "text": "Guido Marchetto's profile",
+          "url": "#profile?id=Guido%20Marchetto"
         }
       ]
     },
@@ -73,17 +142,29 @@
         {
           "text": "Riccardo Sisto's profile",
           "url": "#profile?id=Riccardo%20Sisto"
+        },
+        {
+          "text": "Daniele Bringhenti's profile",
+          "url": "#profile?id=Daniele%20Bringhenti"
         }
       ]
     },
     {
-      "name": "Network security policy",
-      "reference": "dott. Fulvio Valenza",
-      "description": "We study the specification, enforcement, and automated management of network security policies. Topics include intent-based security configuration, anomaly resolution in firewall rule sets, VPN automation, and the application of formal methods to policy verification across distributed environments.",
+      "name": "Software-based network infrastructures and services",
+      "reference": "prof. Guido Marchetto",
+      "description": "We study software-defined and virtualized network infrastructures, including SDN, NFV, cloud-native networking, and programmable networks. Our work focuses on network orchestration, service deployment, intent-based management, and automation of network services across distributed infrastructures.",
       "links": [
         {
-          "text": "Fulvio Valenza's profile",
-          "url": "#profile?id=Fulvio%20Valenza"
+          "text": "Guido Marchetto's profile",
+          "url": "#profile?id=Guido%20Marchetto"
+        },
+        {
+          "text": "Alessio Sacco's profile",
+          "url": "#profile?id=Alessio%20Sacco"
+        },
+        {
+          "text": "Fulvio Risso's profile",
+          "url": "#profile?id=Fulvio%20Risso"
         }
       ]
     },
@@ -91,13 +172,20 @@
       "name": "Network security automation",
       "reference": "dott. Daniele Bringhenti",
       "description": "We investigate autonomous and closed-loop approaches to cybersecurity management, including automated attack detection, firewall reconfiguration, and cyber-resilience in complex cloud and edge environments. Recent work focuses on integrating AI-driven decision making into security orchestration frameworks.",
-      "links": []
-    },
-    {
-      "name": "Network functions virtualization",
-      "reference": "various faculties",
-      "description": "We explore the softwarization of network functions through NFV frameworks, service function chaining, and microservice-based architectures. Research spans performance optimization, resource orchestration across heterogeneous infrastructure, and the integration of NFV with SDN and cloud-native technologies.",
-      "links": []
+      "links": [
+        {
+          "text": "Daniele Bringhenti's profile",
+          "url": "#profile?id=Daniele%20Bringhenti"
+        },
+        {
+          "text": "Riccardo Sisto's profile",
+          "url": "#profile?id=Riccardo%20Sisto"
+        },
+        {
+          "text": "Fulvio Valenza's profile",
+          "url": "#profile?id=Fulvio%20Valenza"
+        }
+      ]
     }
   ]
 }
