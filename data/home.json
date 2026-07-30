@@ -1,6 +1,6 @@
 {
   "title": "Welcome to the NetGroup at Politecnico di Torino",
-  "description": "The Computer Networks Group (NetGroup) is a research group focused on computer networks. It is involved in several teaching activities (courses), research projects (both academic and applied research), and consulting activities.",
+  "description": "Computer Networks Group (NetGroup) is a research group focused on network infrastructures that interconnect devices, along with their associated quality and security aspects. Its main research directions include communication protocol engineering, network software design, high-performance packet processing, and novel network architectures. The integration of emerging technologies such as cloud computing and 5G/6G networks represents a key opportunity for innovation. Artificial Intelligence is leveraged both to enhance network functionalities and as an application domain that requires advanced networking infrastructures. The security of these systems is analyzed through formal methods as well as complementary approaches. The group is also involved in teaching activities, research projects (both academic and applied), and consulting.",
   "directions": [
     {
       "title": "Cloud, Edge & Fog Computing",
