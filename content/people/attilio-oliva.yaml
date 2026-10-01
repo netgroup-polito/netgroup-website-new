@@ -1,10 +1,10 @@
 name: Attilio Oliva
 category: PhD Students
 order: 70
+role: PhD Student
 email: attilio.oliva@polito.it
 links:
-- text: Publications
-  url: https://scholar.google.com/citations?user=SJXQ6TsAAAAJ&hl=it&oi=ao
-- text: Personal Webpage
-  url: https://www.linkedin.com/in/attilio-oliva/
-description: ''
+  - text: Publications
+    url: https://scholar.google.com/citations?user=SJXQ6TsAAAAJ&hl=it&oi=ao
+  - text: Personal Webpage
+    url: https://www.linkedin.com/in/attilio-oliva/
