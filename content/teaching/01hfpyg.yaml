@@ -1,12 +1,12 @@
 code: 01HFPYG
-order: 130
 name: Cloud Computing Technologies
+order: 130
 link: https://didattica.polito.it/pls/portal30/gap.pkg_guide.viewGap?p_cod_ins=01HFPYG
 cdl: Ing. Informatica
 year: 1LS
-period: '1'
+period: "1"
 instructors:
-- name: Fulvio Risso
-  link: '#profile?id=Fulvio%20Risso'
-- name: Stefano Galantino
-  link: '#profile?id=Stefano%20Galantino'
+  - name: Fulvio Risso
+    link: "#profile?id=Fulvio%20Risso"
+  - name: Stefano Galantino
+    link: "#profile?id=Stefano%20Galantino"

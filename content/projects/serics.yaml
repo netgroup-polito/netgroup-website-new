@@ -1,13 +1,14 @@
 name: SERICS
+fullName: SEcurity and RIghts In the CyberSpace
 funding: National
 order: 10
-fullName: SEcurity and RIghts In the CyberSpace
 year: 2022–2025
 url: https://serics.eu/
 logo: https://serics.eu/wp-content/uploads/2022/11/logo-serics.png
-description: >-
-  SERICS is Italy's extended national partnership on cybersecurity, funded via the PNRR and NextGenerationEU
-  programmes. Operating in a hub-and-spoke model with 30+ universities and research centres, it advances
-  research in critical infrastructure protection, network security, AI-based defenses, and digital rights.
-  NetGroup contributes through network security, formal verification, and AI-driven threat detection.
 referencePerson: Riccardo Sisto
+description: SERICS is Italy's extended national partnership on cybersecurity,
+  funded via the PNRR and NextGenerationEU programmes. Operating in a
+  hub-and-spoke model with 30+ universities and research centres, it advances
+  research in critical infrastructure protection, network security, AI-based
+  defenses, and digital rights. NetGroup contributes through network security,
+  formal verification, and AI-driven threat detection.

@@ -5,8 +5,7 @@ role: Non-tenure Track Assistant Professor
 photo: assets/people/daniele_bringhenti.jpg
 email: daniele.bringhenti@polito.it
 links:
-- text: Personal Webpage
-  url: https://it.linkedin.com/in/daniele-bringhenti-348903192
-- text: Publications
-  url: https://scholar.google.com/citations?user=C67JRU0AAAAJ&hl=it&oi=ao
-description: ''
+  - text: Personal Webpage
+    url: https://it.linkedin.com/in/daniele-bringhenti-348903192
+  - text: Publications
+    url: https://scholar.google.com/citations?user=C67JRU0AAAAJ&hl=it&oi=ao

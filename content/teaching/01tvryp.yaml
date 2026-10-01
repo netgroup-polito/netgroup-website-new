@@ -1,10 +1,10 @@
 code: 01TVRYP
-order: 180
 name: Networking technologies for connected vehicles
+order: 180
 link: https://didattica.polito.it/pls/portal30/gap.pkg_guide.viewGap?p_cod_ins=01TVRYP
 cdl: Ing. Meccatronica
 year: 2LS
-period: '1'
+period: "1"
 instructors:
-- name: Marco Rapelli
-  link: '#profile?id=Marco%20Rapelli'
+  - name: Marco Rapelli
+    link: "#profile?id=Marco%20Rapelli"

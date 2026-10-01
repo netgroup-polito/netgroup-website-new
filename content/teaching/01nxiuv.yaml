@@ -1,10 +1,10 @@
 code: 01NXIUV
-order: 160
 name: Networks & Cloud Security
+order: 160
 link: https://didattica.polito.it/pls/portal30/gap.pkg_guide.viewGap?p_cod_ins=01NXIWQ
 cdl: Cybersecurity Engineering
 year: 1LS
-period: '2'
+period: "2"
 instructors:
-- name: Fulvio Valenza
-  link: '#profile?id=Fulvio%20Valenza'
+  - name: Fulvio Valenza
+    link: "#profile?id=Fulvio%20Valenza"

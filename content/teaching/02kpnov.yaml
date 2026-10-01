@@ -1,10 +1,10 @@
 code: 02KPNOV
-order: 40
 name: Tecnologie e Servizi di Rete
+order: 40
 link: https://didattica.polito.it/pls/portal30/gap.pkg_guide.viewGap?p_cod_ins=02KPNOV
 cdl: Ing. Informatica
 year: 1LS
-period: '1'
+period: "1"
 instructors:
-- name: Alessio Sacco
-  link: '#profile?id=Alessio%20Sacco'
+  - name: Alessio Sacco
+    link: "#profile?id=Alessio%20Sacco"

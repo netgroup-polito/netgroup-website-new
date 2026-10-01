@@ -3,6 +3,5 @@ category: PhD Students
 order: 40
 email: francesco.pizzato@polito.it
 links:
-- text: Personal Webpage
-  url: https://www.linkedin.com/in/francesco-pizzato-19831a151/
-description: ''
+  - text: Personal Webpage
+    url: https://www.linkedin.com/in/francesco-pizzato-19831a151/

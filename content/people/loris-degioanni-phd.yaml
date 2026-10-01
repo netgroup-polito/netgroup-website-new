@@ -2,6 +2,5 @@ name: Loris Degioanni, PhD
 category: Past Collaborators
 order: 420
 links:
-- text: Personal Webpage
-  url: https://www.linkedin.com/in/degio
-description: ''
+  - text: Personal Webpage
+    url: https://www.linkedin.com/in/degio

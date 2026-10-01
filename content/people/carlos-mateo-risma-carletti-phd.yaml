@@ -2,6 +2,5 @@ name: Carlos Mateo Risma Carletti, PhD
 category: Past Collaborators
 order: 80
 links:
-- text: Personal Webpage
-  url: https://www.linkedin.com/in/carlosrisma/
-description: ''
+  - text: Personal Webpage
+    url: https://www.linkedin.com/in/carlosrisma/

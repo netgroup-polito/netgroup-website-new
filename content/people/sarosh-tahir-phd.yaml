@@ -2,6 +2,5 @@ name: Sarosh Tahir, PhD
 category: Past Collaborators
 order: 530
 links:
-- text: Personal Webpage
-  url: https://www.linkedin.com/in/sarosh-tahir-86245022/
-description: ''
+  - text: Personal Webpage
+    url: https://www.linkedin.com/in/sarosh-tahir-86245022/

@@ -1,0 +1,12 @@
+{
+  "name": "netgroup-website",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "format": "node scripts/format_content.mjs",
+    "format:check": "node scripts/format_content.mjs --check"
+  },
+  "devDependencies": {
+    "yaml": "2.8.3"
+  }
+}

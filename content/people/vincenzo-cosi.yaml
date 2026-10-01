@@ -3,6 +3,5 @@ category: Past Collaborators
 order: 20
 email: vincenzo.cosi@polito.it
 links:
-- text: Personal Webpage
-  url: https://www.linkedin.com/in/vincenzo-cosi/
-description: ''
+  - text: Personal Webpage
+    url: https://www.linkedin.com/in/vincenzo-cosi/

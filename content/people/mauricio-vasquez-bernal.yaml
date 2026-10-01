@@ -2,6 +2,5 @@ name: Mauricio Vasquez Bernal
 category: Past Collaborators
 order: 200
 links:
-- text: Personal Webpage
-  url: https://www.linkedin.com/in/mauriciovasquezbernal/
-description: ''
+  - text: Personal Webpage
+    url: https://www.linkedin.com/in/mauriciovasquezbernal/

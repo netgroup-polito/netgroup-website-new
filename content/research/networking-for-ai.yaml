@@ -1,12 +1,13 @@
 name: Networking for AI
 order: 50
 reference: dott. Alessio Sacco
-description: >-
-  We investigate networking systems and protocols that enable efficient distributed AI training and inference.
-  Our work focuses on communication-efficient AI, in-network computing, high-performance data movement,
-  edge AI infrastructures, and scalable architectures supporting AI workloads across cloud and edge environments.
+description: We investigate networking systems and protocols that enable
+  efficient distributed AI training and inference. Our work focuses on
+  communication-efficient AI, in-network computing, high-performance data
+  movement, edge AI infrastructures, and scalable architectures supporting AI
+  workloads across cloud and edge environments.
 links:
-- text: Guido Marchetto's profile
-  url: '#profile?id=Guido%20Marchetto'
-- text: Alessio Sacco's profile
-  url: '#profile?id=Alessio%20Sacco'
+  - text: Guido Marchetto's profile
+    url: "#profile?id=Guido%20Marchetto"
+  - text: Alessio Sacco's profile
+    url: "#profile?id=Alessio%20Sacco"

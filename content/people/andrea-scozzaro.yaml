@@ -2,6 +2,5 @@ name: Andrea Scozzaro
 category: Past Collaborators
 order: 370
 links:
-- text: Personal Webpage
-  url: http://ch.linkedin.com/in/scozzy
-description: ''
+  - text: Personal Webpage
+    url: http://ch.linkedin.com/in/scozzy

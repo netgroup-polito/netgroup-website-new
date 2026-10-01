@@ -5,8 +5,7 @@ role: Full Professor
 photo: assets/people/claudio_casetti.jpg
 email: claudio.casetti@polito.it
 links:
-- text: Personal Webpage
-  url: https://netgroup.polito.it/post/profiles/cc/
-- text: Publications
-  url: https://scholar.google.com/citations?user=4AQxu0oAAAAJ&hl=it&oi=ao
-description: ''
+  - text: Personal Webpage
+    url: https://netgroup.polito.it/post/profiles/cc/
+  - text: Publications
+    url: https://scholar.google.com/citations?user=4AQxu0oAAAAJ&hl=it&oi=ao

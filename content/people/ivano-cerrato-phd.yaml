@@ -2,6 +2,5 @@ name: Ivano Cerrato, PhD
 category: Past Collaborators
 order: 560
 links:
-- text: Personal Webpage
-  url: https://www.linkedin.com/in/ivanocerrato/
-description: ''
+  - text: Personal Webpage
+    url: https://www.linkedin.com/in/ivanocerrato/

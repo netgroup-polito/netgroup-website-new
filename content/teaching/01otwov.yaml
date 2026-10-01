@@ -1,10 +1,10 @@
 code: 01OTWOV
-order: 50
 name: Computer Network Technologies and Services
+order: 50
 link: https://didattica.polito.it/pls/portal30/gap.pkg_guide.viewGap?p_cod_ins=01OTWOV
 cdl: Ing. Informatica
 year: 1LS
-period: '1'
+period: "1"
 instructors:
-- name: Claudio Casetti
-  link: '#profile?id=Claudio%20Casetti'
+  - name: Claudio Casetti
+    link: "#profile?id=Claudio%20Casetti"

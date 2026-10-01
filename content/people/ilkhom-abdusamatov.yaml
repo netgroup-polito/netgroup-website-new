@@ -3,6 +3,5 @@ category: Research Assistants
 order: 20
 email: ilkhom.abdusamatov@polito.it
 links:
-- text: Personal Webpage
-  url: https://www.polito.it/personale?p=ilkhom.abdusamatov
-description: ''
+  - text: Personal Webpage
+    url: https://www.polito.it/personale?p=ilkhom.abdusamatov

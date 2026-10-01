@@ -2,6 +2,5 @@ name: Flavio Marinone
 category: Past Collaborators
 order: 360
 links:
-- text: Personal Webpage
-  url: https://nl.linkedin.com/in/flavio-marinone-2912592
-description: ''
+  - text: Personal Webpage
+    url: https://nl.linkedin.com/in/flavio-marinone-2912592

@@ -2,6 +2,5 @@ name: Gabriele Castellano, PhD
 category: Past Collaborators
 order: 160
 links:
-- text: Personal Webpage
-  url: https://www.linkedin.com/in/gabriele-castellano-a94172114/
-description: ''
+  - text: Personal Webpage
+    url: https://www.linkedin.com/in/gabriele-castellano-a94172114/

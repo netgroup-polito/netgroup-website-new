@@ -2,6 +2,5 @@ name: Alex Palesandro, PhD
 category: Past Collaborators
 order: 140
 links:
-- text: Personal Webpage
-  url: https://palexster.github.io/
-description: ''
+  - text: Personal Webpage
+    url: https://palexster.github.io/

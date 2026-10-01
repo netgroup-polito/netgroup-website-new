@@ -1,14 +1,14 @@
 name: MIRANDA
+fullName: Monitoring, Investigation and Response to cyber-attacks with an
+  Adaptive digital twiN moDel for Agile services
 funding: EU
 order: 20
-fullName: >-
-  Monitoring, Investigation and Response to cyber-attacks with an Adaptive digital twiN moDel for Agile
-  services
 year: 2024–2027
 url: https://www.mirandaproject.eu/
 logo: https://www.mirandaproject.eu/wp-content/uploads/2024/10/miranda-logo.png
-description: >-
-  MIRANDA develops a Cybersecurity Digital Twin (CDT) framework to model and continuously monitor the
-  security posture of complex, multi-ownership ICT systems. It enables proactive monitoring, attack detection,
-  and autonomous response across service supply chains in the computing continuum.
 referencePerson: Riccardo Sisto
+description: MIRANDA develops a Cybersecurity Digital Twin (CDT) framework to
+  model and continuously monitor the security posture of complex,
+  multi-ownership ICT systems. It enables proactive monitoring, attack
+  detection, and autonomous response across service supply chains in the
+  computing continuum.

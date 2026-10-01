@@ -2,6 +2,5 @@ name: Francesco Andriani
 category: Past Collaborators
 order: 380
 links:
-- text: Personal Webpage
-  url: http://it.linkedin.com/in/andriani
-description: ''
+  - text: Personal Webpage
+    url: http://it.linkedin.com/in/andriani

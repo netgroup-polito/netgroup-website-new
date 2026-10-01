@@ -2,6 +2,5 @@ name: Dante Malagrino, PhD
 category: Past Collaborators
 order: 460
 links:
-- text: Personal Webpage
-  url: http://www.linkedin.com/in/dantemalagrino/
-description: ''
+  - text: Personal Webpage
+    url: http://www.linkedin.com/in/dantemalagrino/

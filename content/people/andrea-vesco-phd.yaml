@@ -2,6 +2,5 @@ name: Andrea Vesco, PhD
 category: Past Collaborators
 order: 320
 links:
-- text: Personal Webpage
-  url: https://it.linkedin.com/in/avesco
-description: ''
+  - text: Personal Webpage
+    url: https://it.linkedin.com/in/avesco

@@ -2,6 +2,5 @@ name: Olivier Morandi, PhD
 category: Past Collaborators
 order: 350
 links:
-- text: Personal Webpage
-  url: https://it.linkedin.com/in/oliviermorandi
-description: ''
+  - text: Personal Webpage
+    url: https://it.linkedin.com/in/oliviermorandi

@@ -2,6 +2,5 @@ name: Ju Liu
 category: Past Collaborators
 order: 260
 links:
-- text: Personal Webpage
-  url: http://www.linkedin.com/in/juliu/
-description: ''
+  - text: Personal Webpage
+    url: http://www.linkedin.com/in/juliu/

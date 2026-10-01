@@ -3,6 +3,5 @@ category: Research Assistants
 order: 10
 email: jacopo.marino@polito.it
 links:
-- text: Personal Webpage
-  url: https://www.linkedin.com/in/jacopo-marino-4b8a0618b
-description: ''
+  - text: Personal Webpage
+    url: https://www.linkedin.com/in/jacopo-marino-4b8a0618b

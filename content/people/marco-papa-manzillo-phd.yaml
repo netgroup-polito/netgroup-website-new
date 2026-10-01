@@ -2,6 +2,5 @@ name: Marco Papa Manzillo, PhD
 category: Past Collaborators
 order: 280
 links:
-- text: Personal Webpage
-  url: http://it.linkedin.com/in/mpapamanz
-description: ''
+  - text: Personal Webpage
+    url: http://it.linkedin.com/in/mpapamanz

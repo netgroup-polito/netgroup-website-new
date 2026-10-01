@@ -1,13 +1,13 @@
 name: CONNECT
+fullName: Continuous and Efficient Cooperative Trust Management for Resilient CCAM
 funding: EU
 order: 40
-fullName: Continuous and Efficient Cooperative Trust Management for Resilient CCAM
 year: 2022–2025
 url: https://horizon-connect.eu/
 logo: https://horizon-connect.eu/wp-content/uploads/2022/09/CONNECT-Logo-1.png
-description: >-
-  CONNECT builds a dynamic trust management framework for Connected, Cooperative and Automated Mobility
-  (CCAM). Combining on-board vehicle systems with cloud intelligence, it enables cooperative and safer
-  decision-making for intersection management, autonomous driving, and V2X applications across 16 partners
-  from 8 countries.
 referencePerson: Claudio Casetti
+description: CONNECT builds a dynamic trust management framework for Connected,
+  Cooperative and Automated Mobility (CCAM). Combining on-board vehicle systems
+  with cloud intelligence, it enables cooperative and safer decision-making for
+  intersection management, autonomous driving, and V2X applications across 16
+  partners from 8 countries.

@@ -2,6 +2,5 @@ name: Lorenzo De Carli, PhD
 category: Past Collaborators
 order: 290
 links:
-- text: Personal Webpage
-  url: http://www.linkedin.com/pub/lorenzo-de-carli/8/b38/a9a
-description: ''
+  - text: Personal Webpage
+    url: http://www.linkedin.com/pub/lorenzo-de-carli/8/b38/a9a

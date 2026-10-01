@@ -1,10 +1,10 @@
 code: 01TXZOV
-order: 70
 name: Distributed Systems Programming
+order: 70
 link: https://didattica.polito.it/pls/portal30/gap.pkg_guide.viewGap?p_cod_ins=01TXZSM
 cdl: Ing. Informatica
 year: 2LS
-period: '1'
+period: "1"
 instructors:
-- name: Riccardo Sisto
-  link: '#profile?id=Riccardo%20Sisto'
+  - name: Riccardo Sisto
+    link: "#profile?id=Riccardo%20Sisto"

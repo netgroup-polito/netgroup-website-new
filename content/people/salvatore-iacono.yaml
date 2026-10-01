@@ -2,6 +2,5 @@ name: Salvatore Iacono
 category: Past Collaborators
 order: 440
 links:
-- text: Personal Webpage
-  url: https://it.linkedin.com/in/salvatore-iacono-84aa0a
-description: ''
+  - text: Personal Webpage
+    url: https://it.linkedin.com/in/salvatore-iacono-84aa0a

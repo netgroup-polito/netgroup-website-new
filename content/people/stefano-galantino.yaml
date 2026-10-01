@@ -4,15 +4,14 @@ order: 10
 photo: assets/people/stefano_galantino.jpg
 email: stefano.galantino@polito.it
 joined: 2020
-left: null
 links:
-- text: Personal Webpage
-  url: https://stegala.github.io/
-- text: Publications
-  url: https://scholar.google.com/citations?user=E2J5xZcAAAAJ&hl=it&oi=ao
-description: >-
-  As a member of the NETGROUP (Computer Networks Group), my work primarily focuses on the orchestration
-  of computational resources across the edge-to-cloud continuum, exploring how network software engineering
-  and distributed systems intersect to create more efficient and dynamic infrastructures. My research
-  interests lie in the areas of orchestration for edge-to-cloud computing resources with a focus also
-  on energy consumption.
+  - text: Personal Webpage
+    url: https://stegala.github.io/
+  - text: Publications
+    url: https://scholar.google.com/citations?user=E2J5xZcAAAAJ&hl=it&oi=ao
+description: As a member of the NETGROUP (Computer Networks Group), my work
+  primarily focuses on the orchestration of computational resources across the
+  edge-to-cloud continuum, exploring how network software engineering and
+  distributed systems intersect to create more efficient and dynamic
+  infrastructures. My research interests lie in the areas of orchestration for
+  edge-to-cloud computing resources with a focus also on energy consumption.

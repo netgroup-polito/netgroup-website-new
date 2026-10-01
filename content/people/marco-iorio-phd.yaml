@@ -2,6 +2,5 @@ name: Marco Iorio, PhD
 category: Past Collaborators
 order: 120
 links:
-- text: Personal Webpage
-  url: https://www.linkedin.com/in/giorio94
-description: ''
+  - text: Personal Webpage
+    url: https://www.linkedin.com/in/giorio94

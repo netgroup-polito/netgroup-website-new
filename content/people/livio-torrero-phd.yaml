@@ -2,6 +2,5 @@ name: Livio Torrero, PhD
 category: Past Collaborators
 order: 340
 links:
-- text: Personal Webpage
-  url: https://it.linkedin.com/in/livio-torrero-ab12552
-description: ''
+  - text: Personal Webpage
+    url: https://it.linkedin.com/in/livio-torrero-ab12552

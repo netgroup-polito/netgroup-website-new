@@ -1,14 +1,13 @@
 name: TOSHI
+fullName: TOtal System SHIeld
 funding: EU
 order: 60
-fullName: TOtal System SHIeld
 year: 2020–2020
-url: >-
-  https://www.eitdigital.eu/fileadmin/files/2020/factsheets/digital-tech/EIT-Digital-Factsheet-TOSHII.pdf
+url: https://www.eitdigital.eu/fileadmin/files/2020/factsheets/digital-tech/EIT-Digital-Factsheet-TOSHII.pdf
 logo: TBD
-description: >-
-  TOSHI combines recent Linux kernel technologies that are now reaching their maturity with AI/ML-based
-  techniques to analyze events and detect anomalies. These two main pillars have not been integrated in
-  any product to enforce host security and their unique combination has the potential to address a constantly
-  growing security market.
 referencePerson: Fulvio Risso
+description: TOSHI combines recent Linux kernel technologies that are now
+  reaching their maturity with AI/ML-based techniques to analyze events and
+  detect anomalies. These two main pillars have not been integrated in any
+  product to enforce host security and their unique combination has the
+  potential to address a constantly growing security market.

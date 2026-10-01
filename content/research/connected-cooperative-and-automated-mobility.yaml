@@ -1,12 +1,13 @@
 name: Connected Cooperative and Automated Mobility
 order: 20
 reference: prof. Claudio Casetti
-description: >-
-  We research communication technologies for connected and automated vehicles, focusing on V2X communications,
-  cooperative driving, intelligent transportation systems, and ETSI ITS standards. Our work includes low-latency
-  networking, vehicular applications, and reliable communication protocols for future mobility services.
+description: We research communication technologies for connected and automated
+  vehicles, focusing on V2X communications, cooperative driving, intelligent
+  transportation systems, and ETSI ITS standards. Our work includes low-latency
+  networking, vehicular applications, and reliable communication protocols for
+  future mobility services.
 links:
-- text: Claudio Casetti's profile
-  url: '#profile?id=Claudio%20Casetti'
-- text: Marco Rapelli's profile
-  url: '#profile?id=Marco%20Rapelli'
+  - text: Claudio Casetti's profile
+    url: "#profile?id=Claudio%20Casetti"
+  - text: Marco Rapelli's profile
+    url: "#profile?id=Marco%20Rapelli"

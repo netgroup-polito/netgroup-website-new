@@ -5,8 +5,7 @@ role: Tenure-Track Assistant Professor
 photo: assets/people/alessio_sacco.jpg
 email: alessio_sacco@polito.it
 links:
-- text: Personal Webpage
-  url: https://alessiosac.gitlab.io/
-- text: Publications
-  url: https://scholar.google.com/citations?user=lRa2k3QAAAAJ&hl=it&oi=ao
-description: ''
+  - text: Personal Webpage
+    url: https://alessiosac.gitlab.io/
+  - text: Publications
+    url: https://scholar.google.com/citations?user=lRa2k3QAAAAJ&hl=it&oi=ao

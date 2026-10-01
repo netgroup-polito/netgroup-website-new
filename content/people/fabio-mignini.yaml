@@ -2,6 +2,5 @@ name: Fabio Mignini
 category: Past Collaborators
 order: 230
 links:
-- text: Personal Webpage
-  url: https://it.linkedin.com/in/fabio-mignini-703a08bb/en
-description: ''
+  - text: Personal Webpage
+    url: https://it.linkedin.com/in/fabio-mignini-703a08bb/en

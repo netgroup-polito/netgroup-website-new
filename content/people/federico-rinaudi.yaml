@@ -3,6 +3,5 @@ category: PhD Students
 order: 90
 email: federico.rinaudi@polito.it
 links:
-- text: Personal Webpage
-  url: https://www.linkedin.com/in/federico-rinaudi-031b842b2/
-description: ''
+  - text: Personal Webpage
+    url: https://www.linkedin.com/in/federico-rinaudi-031b842b2/

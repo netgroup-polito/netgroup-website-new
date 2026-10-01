@@ -1,12 +1,13 @@
 name: Network security analysis, verification and monitoring
 order: 90
 reference: prof. Riccardo Sisto
-description: >-
-  We develop formal and automated techniques to detect vulnerabilities, verify security configurations,
-  and monitor network traffic. Research includes traffic flow modelling, firewall anomaly detection, formal
-  verification of cryptographic handshake protocols, and security policy synthesis.
+description: We develop formal and automated techniques to detect
+  vulnerabilities, verify security configurations, and monitor network traffic.
+  Research includes traffic flow modelling, firewall anomaly detection, formal
+  verification of cryptographic handshake protocols, and security policy
+  synthesis.
 links:
-- text: Riccardo Sisto's profile
-  url: '#profile?id=Riccardo%20Sisto'
-- text: Daniele Bringhenti's profile
-  url: '#profile?id=Daniele%20Bringhenti'
+  - text: Riccardo Sisto's profile
+    url: "#profile?id=Riccardo%20Sisto"
+  - text: Daniele Bringhenti's profile
+    url: "#profile?id=Daniele%20Bringhenti"

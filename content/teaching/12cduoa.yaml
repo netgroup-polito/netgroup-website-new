@@ -1,12 +1,12 @@
 code: 12CDUOA
-order: 10
 name: Reti di Calcolatori
+order: 10
 link: https://didattica.polito.it/pls/portal30/gap.pkg_guide.viewGap?p_cod_ins=12CDUOA
 cdl: Ing. Informatica
-year: '3'
-period: '1'
+year: "3"
+period: "1"
 instructors:
-- name: Guido Marchetto
-  link: '#profile?id=Guido%20Marchetto'
-- name: Daniele Bringhenti
-  link: '#profile?id=Daniele%20Bringhenti'
+  - name: Guido Marchetto
+    link: "#profile?id=Guido%20Marchetto"
+  - name: Daniele Bringhenti
+    link: "#profile?id=Daniele%20Bringhenti"

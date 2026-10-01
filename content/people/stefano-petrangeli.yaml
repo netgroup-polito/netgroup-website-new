@@ -2,6 +2,5 @@ name: Stefano Petrangeli
 category: Past Collaborators
 order: 220
 links:
-- text: Personal Webpage
-  url: https://www.linkedin.com/in/stefano-petrangeli-068991108/
-description: ''
+  - text: Personal Webpage
+    url: https://www.linkedin.com/in/stefano-petrangeli-068991108/

@@ -1,46 +1,50 @@
 title: Welcome to the NetGroup at Politecnico di Torino
-description: >-
-  Computer Networks Group (NetGroup) is a research group focused on network infrastructures that interconnect
-  devices, along with their associated quality and security aspects. Its main research directions include
-  communication protocol engineering, network software design, high-performance packet processing, and
-  novel network architectures. The integration of emerging technologies such as cloud computing and 5G/6G
-  networks represents a key opportunity for innovation. Artificial Intelligence is leveraged both to enhance
-  network functionalities and as an application domain that requires advanced networking infrastructures.
-  The security of these systems is analyzed through formal methods as well as complementary approaches.
-  The group is also involved in teaching activities, research projects (both academic and applied), and
-  consulting.
+description: Computer Networks Group (NetGroup) is a research group focused on
+  network infrastructures that interconnect devices, along with their associated
+  quality and security aspects. Its main research directions include
+  communication protocol engineering, network software design, high-performance
+  packet processing, and novel network architectures. The integration of
+  emerging technologies such as cloud computing and 5G/6G networks represents a
+  key opportunity for innovation. Artificial Intelligence is leveraged both to
+  enhance network functionalities and as an application domain that requires
+  advanced networking infrastructures. The security of these systems is analyzed
+  through formal methods as well as complementary approaches. The group is also
+  involved in teaching activities, research projects (both academic and
+  applied), and consulting.
 directions:
-- title: Cloud, Edge & Fog Computing
-  items:
-  - Kubernetes, serverless, FaaS
-  - Multi-cloud (e.g., with Liqo.io)
-  - Resource-constrained infrastructure
-- title: AI/ML for Networking
-  items:
-  - LLM-based orchestration
-  - Resource prediction
-  - ML-based traffic analysis
-  - Resource-efficient model design
-  - In-network Machine Learning
-- title: Network-Software Engineering
-  items:
-  - Efficient data plane networking (e.g., Linux kernel, eBPF/XDP, DPDK, SmartNICs)
-  - Model-based and policy-based development
-  - Networking for AI processes (training and inference)
-  - High-speed packet processing/forwarding
-  - Responsive Software-Defined Networks (SDN)
-  - Software-based network infrastructures and services
-- title: 5G/6G Networks
-  items:
-  - Resource and Service orchestration
-  - Connected Cooperative and Automated Mobility
-  - Cloud-native network function
-  - Vehicular Networks
-- title: Cybersecurity Automation
-  items:
-  - Languages for protocol description and modeling
-  - Network security automation
-  - Formal verification of security protocols
-  - Security function allocation
-  - Network security analysis and verification
-  - Formal methods applied to multi-domain cloud/fog-oriented SDN/NFV-based networks
+  - title: Cloud, Edge & Fog Computing
+    items:
+      - Kubernetes, serverless, FaaS
+      - Multi-cloud (e.g., with Liqo.io)
+      - Resource-constrained infrastructure
+  - title: AI/ML for Networking
+    items:
+      - LLM-based orchestration
+      - Resource prediction
+      - ML-based traffic analysis
+      - Resource-efficient model design
+      - In-network Machine Learning
+  - title: Network-Software Engineering
+    items:
+      - Efficient data plane networking (e.g., Linux kernel, eBPF/XDP, DPDK,
+        SmartNICs)
+      - Model-based and policy-based development
+      - Networking for AI processes (training and inference)
+      - High-speed packet processing/forwarding
+      - Responsive Software-Defined Networks (SDN)
+      - Software-based network infrastructures and services
+  - title: 5G/6G Networks
+    items:
+      - Resource and Service orchestration
+      - Connected Cooperative and Automated Mobility
+      - Cloud-native network function
+      - Vehicular Networks
+  - title: Cybersecurity Automation
+    items:
+      - Languages for protocol description and modeling
+      - Network security automation
+      - Formal verification of security protocols
+      - Security function allocation
+      - Network security analysis and verification
+      - Formal methods applied to multi-domain cloud/fog-oriented SDN/NFV-based
+        networks

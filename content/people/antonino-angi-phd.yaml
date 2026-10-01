@@ -2,6 +2,5 @@ name: Antonino Angi, PhD
 category: Past Collaborators
 order: 60
 links:
-- text: Personal Webpage
-  url: https://www.linkedin.com/in/antonino-angi/
-description: ''
+  - text: Personal Webpage
+    url: https://www.linkedin.com/in/antonino-angi/

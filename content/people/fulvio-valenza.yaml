@@ -5,8 +5,7 @@ role: Associate Professor
 photo: assets/people/fulvio_valenza.jpg
 email: fulvio.valenza@polito.it
 links:
-- text: Personal Webpage
-  url: https://sites.google.com/view/fulviovalenza/home-page
-- text: Publications
-  url: https://scholar.google.com/citations?user=oaKhcyEAAAAJ&hl=it&oi=ao
-description: ''
+  - text: Personal Webpage
+    url: https://sites.google.com/view/fulviovalenza/home-page
+  - text: Publications
+    url: https://scholar.google.com/citations?user=oaKhcyEAAAAJ&hl=it&oi=ao

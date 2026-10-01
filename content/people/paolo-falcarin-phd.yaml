@@ -2,6 +2,5 @@ name: Paolo Falcarin, PhD
 category: Past Collaborators
 order: 430
 links:
-- text: Personal Webpage
-  url: http://it.linkedin.com/in/falcarin
-description: ''
+  - text: Personal Webpage
+    url: http://it.linkedin.com/in/falcarin

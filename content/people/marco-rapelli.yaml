@@ -5,8 +5,7 @@ role: Non-tenure Track Assistant Professor
 photo: assets/people/marco_rapelli.jpg
 email: marco.rapelli@polito.it
 links:
-- text: Personal Webpage
-  url: https://www.linkedin.com/in/marco-rapelli-a14760148/
-- text: Publications
-  url: https://scholar.google.com/citations?user=4XpgP4MAAAAJ&hl=it&oi=ao
-description: ''
+  - text: Personal Webpage
+    url: https://www.linkedin.com/in/marco-rapelli-a14760148/
+  - text: Publications
+    url: https://scholar.google.com/citations?user=4XpgP4MAAAAJ&hl=it&oi=ao

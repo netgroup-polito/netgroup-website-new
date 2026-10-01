@@ -2,6 +2,5 @@ name: Luca De Marco
 category: Past Collaborators
 order: 330
 links:
-- text: Personal Webpage
-  url: http://it.linkedin.com/pub/luca-de-marco/5/770/327
-description: ''
+  - text: Personal Webpage
+    url: http://it.linkedin.com/pub/luca-de-marco/5/770/327

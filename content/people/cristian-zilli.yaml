@@ -3,6 +3,5 @@ category: Research Assistants
 order: 40
 email: cristian.zilli@polito.it
 links:
-- text: Personal Webpage
-  url: https://www.polito.it/personale?p=cristian.zilli
-description: ''
+  - text: Personal Webpage
+    url: https://www.polito.it/personale?p=cristian.zilli

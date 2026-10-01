@@ -2,6 +2,5 @@ name: Simone Bussa, PhD
 category: Past Collaborators
 order: 70
 links:
-- text: Personal Webpage
-  url: https://www.linkedin.com/in/simone-bussa-46219717b/
-description: ''
+  - text: Personal Webpage
+    url: https://www.linkedin.com/in/simone-bussa-46219717b/

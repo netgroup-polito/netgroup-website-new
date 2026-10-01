@@ -2,6 +2,5 @@ name: Nicolo’ Cascarano, PhD
 category: Past Collaborators
 order: 270
 links:
-- text: Personal Webpage
-  url: https://www.linkedin.com/in/ncascarano
-description: ''
+  - text: Personal Webpage
+    url: https://www.linkedin.com/in/ncascarano

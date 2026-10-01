@@ -1,12 +1,13 @@
 name: 5G/6G Networks
 order: 60
 reference: prof. Claudio Casetti
-description: >-
-  We investigate next-generation mobile network architectures, protocols, and services. Research spans
-  network slicing, Open RAN, edge-native mobile systems, AI-native network management, ultra-low latency
-  communications, and resource optimization for emerging 5G and 6G infrastructures.
+description: We investigate next-generation mobile network architectures,
+  protocols, and services. Research spans network slicing, Open RAN, edge-native
+  mobile systems, AI-native network management, ultra-low latency
+  communications, and resource optimization for emerging 5G and 6G
+  infrastructures.
 links:
-- text: Claudio Casetti's profile
-  url: '#profile?id=Claudio%20Casetti'
-- text: Marco Rapelli's profile
-  url: '#profile?id=Marco%20Rapelli'
+  - text: Claudio Casetti's profile
+    url: "#profile?id=Claudio%20Casetti"
+  - text: Marco Rapelli's profile
+    url: "#profile?id=Marco%20Rapelli"

@@ -1,10 +1,10 @@
 code: 01SQOOV
-order: 90
 name: Enterprise Network Technologies
+order: 90
 link: https://didattica.polito.it/pls/portal30/gap.pkg_guide.viewGap?p_cod_ins=01SQOOV
 cdl: Ing. Informatica
 year: 2LS
-period: '1'
+period: "1"
 instructors:
-- name: Guido Marchetto
-  link: '#profile?id=Guido%20Marchetto'
+  - name: Guido Marchetto
+    link: "#profile?id=Guido%20Marchetto"

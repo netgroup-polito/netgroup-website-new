@@ -2,6 +2,5 @@ name: Maria Letizia Jaccheri, PhD
 category: Past Collaborators
 order: 510
 links:
-- text: Personal Webpage
-  url: https://no.linkedin.com/in/letizia
-description: ''
+  - text: Personal Webpage
+    url: https://no.linkedin.com/in/letizia

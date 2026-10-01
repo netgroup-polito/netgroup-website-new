@@ -3,6 +3,5 @@ category: PhD Students
 order: 100
 email: rosario.rizza@polito.it
 links:
-- text: Personal Webpage
-  url: https://www.linkedin.com/in/rosario-rizza-6b0ab11a5/
-description: ''
+  - text: Personal Webpage
+    url: https://www.linkedin.com/in/rosario-rizza-6b0ab11a5/

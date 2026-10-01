@@ -5,8 +5,7 @@ role: Full Professor
 photo: assets/people/guido_marchetto.jpg
 email: guido.marchetto@polito.it
 links:
-- text: Personal Webpage
-  url: https://netgroup.polito.it/post/profiles/gm/
-- text: Publications
-  url: https://scholar.google.com/citations?user=Y_MA4P8AAAAJ&hl=it&oi=ao
-description: ''
+  - text: Personal Webpage
+    url: https://netgroup.polito.it/post/profiles/gm/
+  - text: Publications
+    url: https://scholar.google.com/citations?user=Y_MA4P8AAAAJ&hl=it&oi=ao

@@ -1,14 +1,15 @@
 name: Network security automation
 order: 110
 reference: dott. Daniele Bringhenti
-description: >-
-  We investigate autonomous and closed-loop approaches to cybersecurity management, including automated
-  attack detection, firewall reconfiguration, and cyber-resilience in complex cloud and edge environments.
-  Recent work focuses on integrating AI-driven decision making into security orchestration frameworks.
+description: We investigate autonomous and closed-loop approaches to
+  cybersecurity management, including automated attack detection, firewall
+  reconfiguration, and cyber-resilience in complex cloud and edge environments.
+  Recent work focuses on integrating AI-driven decision making into security
+  orchestration frameworks.
 links:
-- text: Daniele Bringhenti's profile
-  url: '#profile?id=Daniele%20Bringhenti'
-- text: Riccardo Sisto's profile
-  url: '#profile?id=Riccardo%20Sisto'
-- text: Fulvio Valenza's profile
-  url: '#profile?id=Fulvio%20Valenza'
+  - text: Daniele Bringhenti's profile
+    url: "#profile?id=Daniele%20Bringhenti"
+  - text: Riccardo Sisto's profile
+    url: "#profile?id=Riccardo%20Sisto"
+  - text: Fulvio Valenza's profile
+    url: "#profile?id=Fulvio%20Valenza"

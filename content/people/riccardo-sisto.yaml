@@ -5,8 +5,7 @@ role: Full Professor
 photo: assets/people/riccardo_sisto.jpg
 email: riccardo.sisto@polito.it
 links:
-- text: Personal Webpage
-  url: http://staff.polito.it/riccardo.sisto/
-- text: Publications
-  url: https://scholar.google.com/citations?user=qLTxTQkAAAAJ&hl=it&oi=ao
-description: ''
+  - text: Personal Webpage
+    url: http://staff.polito.it/riccardo.sisto/
+  - text: Publications
+    url: https://scholar.google.com/citations?user=qLTxTQkAAAAJ&hl=it&oi=ao

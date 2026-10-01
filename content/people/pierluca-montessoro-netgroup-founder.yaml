@@ -2,6 +2,5 @@ name: Pierluca Montessoro, Netgroup Founder
 category: Past Collaborators
 order: 520
 links:
-- text: Personal Webpage
-  url: https://it.linkedin.com/in/pier-luca-montessoro-8462773
-description: ''
+  - text: Personal Webpage
+    url: https://it.linkedin.com/in/pier-luca-montessoro-8462773

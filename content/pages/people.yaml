@@ -1,3 +1,10 @@
+categories:
+  - title: Faculties
+  - title: Post-doc Research Assistants
+  - title: PhD Students
+  - title: Research Assistants
+  - title: Past Collaborators
+    collapsible: true
 memorial:
   sectionTitle: In Memoriam
   afterCategory: Faculties
@@ -5,34 +12,30 @@ memorial:
   role: Full Professor, Netgroup Leader
   photo: assets/people/luigi_ciminiera.jpg
   tribute:
-  - >-
-    Luigi Ciminiera passed away on September 2, 2012. He was the leader of the Netgroup and a renowned
-    professor and researcher, with a strong scientific reputation in several communities (mainly, networking
-    and computer arithmetic). During his service at Politecnico di Torino, he spared no effort: he also
-    served as Chair of the Control and Computer Engineering Department from 1999 to 2003 and as Dean of
-    the II School of Engineering from 2003 to 2007.
-  - >-
-    We remember Luigi as a generous, honest, creative, and ingenuous leader and friend. His advice was
-    fundamental for the growth of our research group, and we all owe so much of what we are to him.
+    - "Luigi Ciminiera passed away on September 2, 2012. He was the leader of
+      the Netgroup and a renowned professor and researcher, with a strong
+      scientific reputation in several communities (mainly, networking and
+      computer arithmetic). During his service at Politecnico di Torino, he
+      spared no effort: he also served as Chair of the Control and Computer
+      Engineering Department from 1999 to 2003 and as Dean of the II School of
+      Engineering from 2003 to 2007."
+    - We remember Luigi as a generous, honest, creative, and ingenuous leader
+      and friend. His advice was fundamental for the growth of our research
+      group, and we all owe so much of what we are to him.
   curriculum:
-  - >-
-    Luigi Ciminiera was born in Ortona, a small town in the Italian region of Abruzzo. He studied Electronics
-    Engineering at Politecnico di Torino and obtained his MS cum laude in 1977. In 1983 he became Research
-    Assistant at Politecnico di Torino. From 1988 to 1990 he was Associate Professor at the University
-    of Bari (Italy). From 1990 to 1991 he was Full Professor at the University of L’Aquila (Italy). Since
-    1991 he held a position of Full Professor of Computer Engineering at Politecnico di Torino, where
-    he served as Chair of the Control and Computer Engineering Department from 1999 to 2003 and Dean of
-    the II School of Engineering from 2003 to 2007.
-  - >-
-    He was a teacher of Computer Networking and Programming courses. During his scientific career he co-authored
-    two international books and over 100 contributions published in scientific journals and conference
-    proceedings, especially in the research fields of computer networks, communication protocols, grid
-    computing, peer-to-peer networks and computer arithmetic. He acted as the local coordinator of several
-    national and international funded research projects, and research contracts with industrial partners.
-categories:
-- title: Faculties
-- title: Post-doc Research Assistants
-- title: PhD Students
-- title: Research Assistants
-- title: Past Collaborators
-  collapsible: true
+    - Luigi Ciminiera was born in Ortona, a small town in the Italian region of
+      Abruzzo. He studied Electronics Engineering at Politecnico di Torino and
+      obtained his MS cum laude in 1977. In 1983 he became Research Assistant at
+      Politecnico di Torino. From 1988 to 1990 he was Associate Professor at the
+      University of Bari (Italy). From 1990 to 1991 he was Full Professor at the
+      University of L’Aquila (Italy). Since 1991 he held a position of Full
+      Professor of Computer Engineering at Politecnico di Torino, where he
+      served as Chair of the Control and Computer Engineering Department from
+      1999 to 2003 and Dean of the II School of Engineering from 2003 to 2007.
+    - He was a teacher of Computer Networking and Programming courses. During
+      his scientific career he co-authored two international books and over 100
+      contributions published in scientific journals and conference proceedings,
+      especially in the research fields of computer networks, communication
+      protocols, grid computing, peer-to-peer networks and computer arithmetic.
+      He acted as the local coordinator of several national and international
+      funded research projects, and research contracts with industrial partners.

@@ -1,13 +1,13 @@
 name: ASTRID
+fullName: Addressing threats for virtualised services
 funding: EU
 order: 80
-fullName: Addressing threats for virtualised services
 year: 2018–2020
-url: >-
-  https://www.surrey.ac.uk/research-projects/astrid-addressing-threats-virtualised-services
+url: https://www.surrey.ac.uk/research-projects/astrid-addressing-threats-virtualised-services
 logo: TBD
-description: >-
-  ASTRID project aims to build situational awareness for virtualised services to facilitate the detection
-  of sophisticated cyber-attacks and prompt an automated response. This would effectively shift the responsibility
-  for security, privacy and trustworthiness from developers or end users to service providers.
 referencePerson: Fulvio Risso
+description: ASTRID project aims to build situational awareness for virtualised
+  services to facilitate the detection of sophisticated cyber-attacks and prompt
+  an automated response. This would effectively shift the responsibility for
+  security, privacy and trustworthiness from developers or end users to service
+  providers.

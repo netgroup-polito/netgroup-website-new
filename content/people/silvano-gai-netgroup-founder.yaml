@@ -2,6 +2,5 @@ name: Silvano Gai, Netgroup Founder
 category: Past Collaborators
 order: 500
 links:
-- text: Personal Webpage
-  url: https://www.linkedin.com/in/silvano-gai-15263b1
-description: ''
+  - text: Personal Webpage
+    url: https://www.linkedin.com/in/silvano-gai-15263b1

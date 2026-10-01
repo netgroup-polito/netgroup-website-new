@@ -3,6 +3,14 @@
 #
 # If you add or rename a people category (content/pages/people.yaml) or a project
 # funding type (content/pages/projects.yaml), update the matching `values` lists below.
+#
+# Files in content/ are kept in the exact format Pages CMS writes (see
+# scripts/format_content.mjs), so a save only changes the fields you edited.
+
+settings:
+  content:
+    # Keep fields that are not in the forms below instead of silently deleting them.
+    merge: true
 
 media:
   input: assets

@@ -1,10 +1,10 @@
 code: 01NXIWQ
-order: 150
 name: Computer networks and cloud technologies
+order: 150
 link: https://didattica.polito.it/pls/portal30/gap.pkg_guide.viewGap?p_cod_ins=01NXIWQ
 cdl: Cybersecurity Engineering
 year: 1LS
-period: '1'
+period: "1"
 instructors:
-- name: Daniele Bringhenti
-  link: '#profile?id=Daniele%20Bringhenti'
+  - name: Daniele Bringhenti
+    link: "#profile?id=Daniele%20Bringhenti"

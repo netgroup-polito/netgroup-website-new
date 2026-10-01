@@ -1,10 +1,10 @@
 code: 01HFQYG
-order: 60
 name: Internet Architecture and Technologies
+order: 60
 link: https://didattica.polito.it/pls/portal30/gap.pkg_guide.viewGap?p_cod_ins=01HFQYG
 cdl: Ing. Informatica
 year: 1LS
-period: '1'
+period: "1"
 instructors:
-- name: Alessio Sacco
-  link: '#profile?id=Alessio%20Sacco'
+  - name: Alessio Sacco
+    link: "#profile?id=Alessio%20Sacco"

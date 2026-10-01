@@ -3,6 +3,5 @@ category: PhD Students
 order: 30
 email: diego.gasco@polito.it
 links:
-- text: Personal Webpage
-  url: https://www.linkedin.com/in/diego-gasco-677484210/
-description: ''
+  - text: Personal Webpage
+    url: https://www.linkedin.com/in/diego-gasco-677484210/

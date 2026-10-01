@@ -3,6 +3,5 @@ category: PhD Students
 order: 80
 email: giuseppe.perrone@polito.it
 links:
-- text: Personal Webpage
-  url: https://www.linkedin.com/in/giuseppe-perrone-7680b3322/
-description: ''
+  - text: Personal Webpage
+    url: https://www.linkedin.com/in/giuseppe-perrone-7680b3322/

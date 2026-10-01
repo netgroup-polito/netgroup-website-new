@@ -2,6 +2,5 @@ name: Gian Pietro Picco, PhD
 category: Past Collaborators
 order: 470
 links:
-- text: Personal Webpage
-  url: http://it.linkedin.com/pub/gian-pietro-picco/0/454/4a
-description: ''
+  - text: Personal Webpage
+    url: http://it.linkedin.com/pub/gian-pietro-picco/0/454/4a

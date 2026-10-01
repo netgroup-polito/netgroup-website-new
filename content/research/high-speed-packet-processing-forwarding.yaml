@@ -1,12 +1,13 @@
 name: High-speed packet processing/forwarding
 order: 70
 reference: prof. Fulvio Risso
-description: >-
-  We develop high-performance networking technologies based on programmable data planes, eBPF/XDP, DPDK,
-  SmartNICs, and hardware accelerators. Our research focuses on scalable packet processing frameworks,
-  in-network computing, and low-latency forwarding across cloud and edge infrastructures.
+description: We develop high-performance networking technologies based on
+  programmable data planes, eBPF/XDP, DPDK, SmartNICs, and hardware
+  accelerators. Our research focuses on scalable packet processing frameworks,
+  in-network computing, and low-latency forwarding across cloud and edge
+  infrastructures.
 links:
-- text: Fulvio Risso's profile
-  url: '#profile?id=Fulvio%20Risso'
-- text: Alessio Sacco's profile
-  url: '#profile?id=Alessio%20Sacco'
+  - text: Fulvio Risso's profile
+    url: "#profile?id=Fulvio%20Risso"
+  - text: Alessio Sacco's profile
+    url: "#profile?id=Alessio%20Sacco"

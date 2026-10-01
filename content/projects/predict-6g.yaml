@@ -1,12 +1,13 @@
 name: PREDICT-6G
+fullName: PRogrammable AI-Enabled DeterminIstiC neTworking for 6G
 funding: EU
 order: 30
-fullName: PRogrammable AI-Enabled DeterminIstiC neTworking for 6G
 year: 2023–2025
 url: https://predict-6g.eu/
 logo: https://predict-6g.eu/wp-content/uploads/2022/12/predict6g-logo.png
-description: >-
-  PREDICT-6G builds an end-to-end deterministic 6G network architecture ensuring high reliability and
-  precise timing. It combines a multi-domain AI-driven control plane, digital twin framework, and multi-technology
-  data plane. NetGroup leads the task on predictability and resource allocation in multi-domain environments.
 referencePerson: Claudio Casetti
+description: PREDICT-6G builds an end-to-end deterministic 6G network
+  architecture ensuring high reliability and precise timing. It combines a
+  multi-domain AI-driven control plane, digital twin framework, and
+  multi-technology data plane. NetGroup leads the task on predictability and
+  resource allocation in multi-domain environments.

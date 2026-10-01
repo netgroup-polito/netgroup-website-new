@@ -2,6 +2,5 @@ name: Amedeo Sapio, PhD
 category: Past Collaborators
 order: 540
 links:
-- text: Personal Webpage
-  url: https://www.linkedin.com/in/amedeosapio/
-description: ''
+  - text: Personal Webpage
+    url: https://www.linkedin.com/in/amedeosapio/

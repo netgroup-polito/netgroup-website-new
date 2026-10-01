@@ -2,6 +2,5 @@ name: Sebastiano Miano, PhD
 category: Past Collaborators
 order: 170
 links:
-- text: Personal Webpage
-  url: https://www.linkedin.com/in/sebymiano92/
-description: ''
+  - text: Personal Webpage
+    url: https://www.linkedin.com/in/sebymiano92/

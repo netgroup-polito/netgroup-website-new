@@ -2,6 +2,5 @@ name: Roberto Bonafiglia, PhD
 category: Past Collaborators
 order: 550
 links:
-- text: Personal Webpage
-  url: https://www.linkedin.com/in/roberto-bonafiglia-38731214a/
-description: ''
+  - text: Personal Webpage
+    url: https://www.linkedin.com/in/roberto-bonafiglia-38731214a/

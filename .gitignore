@@ -7,3 +7,4 @@ data/people.json
 data/projects.json
 data/research.json
 data/teaching.json
+node_modules/

@@ -1,13 +1,13 @@
 name: AI/ML for networks
 order: 40
 reference: dott. Alessio Sacco
-description: >-
-  We apply artificial intelligence and machine learning to improve network management, operation, and
-  security. Research topics include network automation via LLMs, traffic engineering, anomaly detection,
-  intent-based management, federated learning, reinforcement learning, and large language models for autonomous
-  network operations.
+description: We apply artificial intelligence and machine learning to improve
+  network management, operation, and security. Research topics include network
+  automation via LLMs, traffic engineering, anomaly detection, intent-based
+  management, federated learning, reinforcement learning, and large language
+  models for autonomous network operations.
 links:
-- text: Guido Marchetto's profile
-  url: '#profile?id=Guido%20Marchetto'
-- text: Alessio Sacco's profile
-  url: '#profile?id=Alessio%20Sacco'
+  - text: Guido Marchetto's profile
+    url: "#profile?id=Guido%20Marchetto"
+  - text: Alessio Sacco's profile
+    url: "#profile?id=Alessio%20Sacco"

@@ -1,10 +1,10 @@
 code: 01TXZYG
-order: 110
 name: Distributed Systems Progranmming
+order: 110
 link: https://didattica.polito.it/pls/portal30/gap.pkg_guide.viewGap?p_cod_ins=01TXZYG
 cdl: Ing. Informatica
 year: 1LS
-period: '2'
+period: "2"
 instructors:
-- name: Riccardo Sisto
-  link: '#profile?id=Riccardo%20Sisto'
+  - name: Riccardo Sisto
+    link: "#profile?id=Riccardo%20Sisto"

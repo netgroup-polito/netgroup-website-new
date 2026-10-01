@@ -1,6 +1,6 @@
 title: Projects (last 10 years)
 categories:
-- title: EU-Funded Projects
-  funding: EU
-- title: Research Projects Supported by Structural and National Funds
-  funding: National
+  - title: EU-Funded Projects
+    funding: EU
+  - title: Research Projects Supported by Structural and National Funds
+    funding: National

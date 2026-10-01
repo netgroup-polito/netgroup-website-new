@@ -1,14 +1,15 @@
 name: Network security analysis and verification
 order: 10
 reference: prof. Riccardo Sisto
-description: >-
-  We develop formal and automated techniques to analyze, verify, and validate the security of networked
-  systems. Research includes vulnerability analysis, policy verification, firewall analysis, protocol
-  verification, traffic monitoring, and methods for ensuring the correctness of security configurations.
+description: We develop formal and automated techniques to analyze, verify, and
+  validate the security of networked systems. Research includes vulnerability
+  analysis, policy verification, firewall analysis, protocol verification,
+  traffic monitoring, and methods for ensuring the correctness of security
+  configurations.
 links:
-- text: Riccardo Sisto's profile
-  url: '#profile?id=Riccardo%20Sisto'
-- text: Fulvio Valenza's profile
-  url: '#profile?id=Fulvio%20Valenza'
-- text: Daniele Bringhenti's profile
-  url: '#profile?id=Daniele%20Bringhenti'
+  - text: Riccardo Sisto's profile
+    url: "#profile?id=Riccardo%20Sisto"
+  - text: Fulvio Valenza's profile
+    url: "#profile?id=Fulvio%20Valenza"
+  - text: Daniele Bringhenti's profile
+    url: "#profile?id=Daniele%20Bringhenti"

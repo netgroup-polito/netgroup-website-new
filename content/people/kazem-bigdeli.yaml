@@ -3,6 +3,5 @@ category: Research Assistants
 order: 30
 email: kazem.bigdeli@polito.it
 links:
-- text: Personal Webpage
-  url: https://www.polito.it/personale?p=kazem.bigdeli
-description: ''
+  - text: Personal Webpage
+    url: https://www.polito.it/personale?p=kazem.bigdeli

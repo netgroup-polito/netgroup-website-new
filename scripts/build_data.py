@@ -9,6 +9,7 @@ content/<collection>/*.yaml holds one entry (person, project, ...) per file.
 """
 import json
 import os
+import re
 import sys
 
 import yaml
@@ -42,6 +43,50 @@ SCHEMAS = {
 META_KEYS = {"order", "category", "funding"}
 
 
+class Yaml12Loader(yaml.SafeLoader):
+    """Read YAML 1.2 (core schema), the version Pages CMS writes.
+
+    PyYAML implements YAML 1.1, where unquoted values like `No`, `on`, `1:30` or
+    `2025-01-15` turn into booleans, numbers or dates. Pages CMS leaves them unquoted
+    because in YAML 1.2 they are plain strings, so read them the same way.
+    """
+
+
+Yaml12Loader.yaml_implicit_resolvers = {}
+for tag, pattern, first in [
+    ("tag:yaml.org,2002:null", r"^(?:~|null|Null|NULL|)$", ["~", "n", "N", ""]),
+    ("tag:yaml.org,2002:bool", r"^(?:true|True|TRUE|false|False|FALSE)$", list("tTfF")),
+    ("tag:yaml.org,2002:int", r"^(?:[-+]?[0-9]+|0o[0-7]+|0x[0-9a-fA-F]+)$", list("-+0123456789")),
+    ("tag:yaml.org,2002:float",
+     r"^(?:[-+]?(?:\.[0-9]+|[0-9]+(?:\.[0-9]*)?)(?:[eE][-+]?[0-9]+)?"
+     r"|[-+]?\.(?:inf|Inf|INF)|\.(?:nan|NaN|NAN))$", list("-+.0123456789")),
+]:
+    Yaml12Loader.add_implicit_resolver(tag, re.compile(pattern), first)
+
+
+def construct_int_12(loader, node):
+    value = loader.construct_scalar(node)
+    if value.startswith("0o"):
+        return int(value[2:], 8)
+    if value.startswith("0x"):
+        return int(value[2:], 16)
+    return int(value)  # no YAML 1.1 octal: 010 is 10
+
+
+Yaml12Loader.add_constructor("tag:yaml.org,2002:int", construct_int_12)
+
+
+def drop_empty(value):
+    """Remove null/empty values, like Pages CMS does when it saves a file."""
+    empty = lambda v: v is None or v == "" or v == [] or v == {}
+    if isinstance(value, dict):
+        cleaned = {k: drop_empty(v) for k, v in value.items()}
+        return {k: v for k, v in cleaned.items() if not empty(v)}
+    if isinstance(value, list):
+        return [v for v in (drop_empty(v) for v in value) if not empty(v)]
+    return value
+
+
 class BuildError(Exception):
     pass
 
@@ -57,14 +102,14 @@ def rel(path):
 def read_yaml(path):
     try:
         with open(path, encoding="utf-8") as f:
-            data = yaml.safe_load(f)
+            data = yaml.load(f, Loader=Yaml12Loader)
     except yaml.YAMLError as e:
         errors.append(f"{rel(path)}: invalid YAML\n    {e}")
         return None
     if not isinstance(data, dict):
         errors.append(f"{rel(path)}: expected a set of 'key: value' fields at the top level")
         return None
-    return data
+    return drop_empty(data)
 
 
 def load_page(name):

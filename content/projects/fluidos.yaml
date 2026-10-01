@@ -1,13 +1,13 @@
 name: FLUIDOS
+fullName: Flexible, scaLable and secUre decentralIzeD Operating System
 funding: EU
 order: 50
-fullName: Flexible, scaLable and secUre decentralIzeD Operating System
 year: 2022–2025
 url: https://www.fluidos.eu/
 logo: https://www.fluidos.eu/wp-content/uploads/2022/09/fluidos-logo.png
-description: >-
-  FLUIDOS creates a decentralized MetaOS that seamlessly unifies edge, cloud, and IoT resources into a
-  trustworthy computing continuum. Built on top of Kubernetes, it introduces the REAR protocol for secure
-  resource discovery and AI-powered workload orchestration. Politecnico di Torino serves as Project Technical
-  Coordinator.
 referencePerson: Fulvio Risso
+description: FLUIDOS creates a decentralized MetaOS that seamlessly unifies
+  edge, cloud, and IoT resources into a trustworthy computing continuum. Built
+  on top of Kubernetes, it introduces the REAR protocol for secure resource
+  discovery and AI-powered workload orchestration. Politecnico di Torino serves
+  as Project Technical Coordinator.

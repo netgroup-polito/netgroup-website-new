@@ -3,6 +3,5 @@ category: PhD Students
 order: 120
 email: francesca.coriale@polito.it
 links:
-- text: Personal Webpage
-  url: https://www.polito.it/personale?p=francesca.coriale
-description: ''
+  - text: Personal Webpage
+    url: https://www.polito.it/personale?p=francesca.coriale

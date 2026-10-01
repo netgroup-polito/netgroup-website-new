@@ -1,10 +1,10 @@
 code: 01NXUWQ
-order: 170
 name: Data protection, Privacy and Anonymity
+order: 170
 link: https://didattica.polito.it/pls/portal30/gap.pkg_guide.viewGap?p_cod_ins=01NXUWQ
 cdl: Cybersecurity Engineering
 year: 2LS
-period: '1'
+period: "1"
 instructors:
-- name: Fulvio Valenza
-  link: '#profile?id=Fulvio%20Valenza'
+  - name: Fulvio Valenza
+    link: "#profile?id=Fulvio%20Valenza"

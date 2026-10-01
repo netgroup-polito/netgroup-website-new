@@ -2,6 +2,5 @@ name: Federico Parola, PhD
 category: Past Collaborators
 order: 90
 links:
-- text: Personal Webpage
-  url: https://it.linkedin.com/in/federico-parola-5b496b200
-description: ''
+  - text: Personal Webpage
+    url: https://it.linkedin.com/in/federico-parola-5b496b200

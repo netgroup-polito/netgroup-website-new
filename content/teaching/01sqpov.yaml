@@ -1,10 +1,10 @@
 code: 01SQPOV
-order: 80
 name: Software Networking
+order: 80
 link: https://didattica.polito.it/pls/portal30/gap.pkg_guide.viewGap?p_cod_ins=01SQPOV
 cdl: Ing. Informatica
 year: 1LS
-period: '2'
+period: "2"
 instructors:
-- name: Fulvio Risso
-  link: '#profile?id=Fulvio%20Risso'
+  - name: Fulvio Risso
+    link: "#profile?id=Fulvio%20Risso"

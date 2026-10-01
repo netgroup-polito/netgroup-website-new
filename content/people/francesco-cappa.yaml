@@ -2,6 +2,5 @@ name: Francesco Cappa
 category: Past Collaborators
 order: 110
 links:
-- text: Personal Webpage
-  url: https://www.linkedin.com/in/francesco-cappa-7a1758188/
-description: ''
+  - text: Personal Webpage
+    url: https://www.linkedin.com/in/francesco-cappa-7a1758188/

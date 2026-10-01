@@ -2,6 +2,5 @@ name: Alessandro Colli-Vignarelli
 category: Past Collaborators
 order: 100
 links:
-- text: Personal Webpage
-  url: https://www.polito.it/en/staff?p=andrea.collivignarelli
-description: ''
+  - text: Personal Webpage
+    url: https://www.polito.it/en/staff?p=andrea.collivignarelli

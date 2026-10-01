@@ -1,15 +1,16 @@
 name: Network software engineering
 order: 30
 reference: prof. Guido Marchetto
-description: >-
-  We develop software engineering methodologies, programming abstractions, and development frameworks
-  for building reliable, maintainable, and high-performance networked systems. Our research includes network
-  programmability (e.g., P4-based in-network processing), reusable software components, verification-aware
-  development, and tools that simplify the implementation of modern network functions.
+description: We develop software engineering methodologies, programming
+  abstractions, and development frameworks for building reliable, maintainable,
+  and high-performance networked systems. Our research includes network
+  programmability (e.g., P4-based in-network processing), reusable software
+  components, verification-aware development, and tools that simplify the
+  implementation of modern network functions.
 links:
-- text: Guido Marchetto's profile
-  url: '#profile?id=Guido%20Marchetto'
-- text: Alessio Sacco's profile
-  url: '#profile?id=Alessio%20Sacco'
-- text: Fulvio Risso's profile
-  url: '#profile?id=Fulvio%20Risso'
+  - text: Guido Marchetto's profile
+    url: "#profile?id=Guido%20Marchetto"
+  - text: Alessio Sacco's profile
+    url: "#profile?id=Alessio%20Sacco"
+  - text: Fulvio Risso's profile
+    url: "#profile?id=Fulvio%20Risso"

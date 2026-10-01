@@ -2,6 +2,5 @@ name: Riccardo Giacomelli, PhD
 category: Past Collaborators
 order: 310
 links:
-- text: Personal Webpage
-  url: http://it.linkedin.com/pub/riccardo-giacomelli/36/705/644
-description: ''
+  - text: Personal Webpage
+    url: http://it.linkedin.com/pub/riccardo-giacomelli/36/705/644

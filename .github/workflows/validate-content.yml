@@ -2,9 +2,9 @@ name: Validate content
 
 on:
   push:
-    paths: ['content/**', 'scripts/build_data.py', 'assets/**']
+    paths: ['content/**', 'scripts/**', 'assets/**', '.pages.yml', 'package*.json']
   pull_request:
-    paths: ['content/**', 'scripts/build_data.py', 'assets/**']
+    paths: ['content/**', 'scripts/**', 'assets/**', '.pages.yml', 'package*.json']
 
 jobs:
   validate:
@@ -16,3 +16,15 @@ jobs:
           python-version: '3.12'
       - run: pip install -r requirements.txt
       - run: python scripts/build_data.py --check
+
+  format:
+    # Hand-edited files must use the same format Pages CMS writes, otherwise the next
+    # CMS save rewrites the whole file and the diff hides the real change.
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm ci
+      - run: npm run format:check

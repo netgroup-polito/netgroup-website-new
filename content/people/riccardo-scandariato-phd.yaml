@@ -2,6 +2,5 @@ name: Riccardo Scandariato, PhD
 category: Past Collaborators
 order: 400
 links:
-- text: Personal Webpage
-  url: http://www.scandariato.eu/
-description: ''
+  - text: Personal Webpage
+    url: http://www.scandariato.eu/

@@ -1,12 +1,13 @@
 name: ELASTIC
+fullName: Efficient, portabLe And Secure orchesTration for reliable servICes
 funding: EU
 order: 10
-fullName: Efficient, portabLe And Secure orchesTration for reliable servICes
 year: 2024–2027
 url: https://elasticproject.eu/
 logo: https://elasticproject.eu/wp-content/uploads/2024/03/elastic-logo.png
-description: >-
-  ELASTIC redefines 6G network orchestration for edge and IoT workloads using cutting-edge technologies
-  including eBPF/XDP, WebAssembly, Confidential Computing, and Federated Learning. NetGroup contributes
-  core research on eBPF security, accelerated microservice interconnection, and distributed state management.
 referencePerson: Riccardo Sisto
+description: ELASTIC redefines 6G network orchestration for edge and IoT
+  workloads using cutting-edge technologies including eBPF/XDP, WebAssembly,
+  Confidential Computing, and Federated Learning. NetGroup contributes core
+  research on eBPF security, accelerated microservice interconnection, and
+  distributed state management.

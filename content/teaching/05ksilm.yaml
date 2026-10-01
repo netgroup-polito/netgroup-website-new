@@ -1,8 +1,7 @@
 code: 05KSILM
-order: 20
 name: Computer Networks
+order: 20
 link: https://didattica.polito.it/pls/portal30/gap.pkg_guide.viewGap?p_cod_ins=08KSILM
 cdl: Computer Engineering
-year: '3'
-period: '1'
-instructors: []
+year: "3"
+period: "1"

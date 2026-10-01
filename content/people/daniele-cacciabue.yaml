@@ -2,6 +2,5 @@ name: Daniele Cacciabue
 category: Past Collaborators
 order: 50
 links:
-- text: Personal Webpage
-  url: https://www.linkedin.com/in/daniele-cacciabue-28674929b/
-description: ''
+  - text: Personal Webpage
+    url: https://www.linkedin.com/in/daniele-cacciabue-28674929b/

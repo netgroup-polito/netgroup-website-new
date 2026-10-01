@@ -41,12 +41,13 @@ photo: assets/people/mario_rossi.jpg
 email: mario.rossi@polito.it
 joined: 2025
 links:
-- text: Publications
-  url: https://scholar.google.com/citations?user=XXXXXXX
-description: >-
-  Long text can span multiple lines like this.
-  No quotes or escaping needed.
+  - text: Publications
+    url: https://scholar.google.com/citations?user=XXXXXXX
+description: Long text can span multiple lines like this,
+  with no quotes or escaping needed.
 ```
+
+If you edit files by hand, run `npm run format` before committing (see [Formatting](#formatting)).
 
 Allowed fields for each collection are listed at the top of `scripts/build_data.py`. The `category` value must match one of the titles in `content/pages/people.yaml`.
 
@@ -69,6 +70,18 @@ python3 -m http.server 8000            # open http://localhost:8000
 ```
 
 `python3 scripts/build_data.py --check` only validates, without writing files. It reports typos in field names, unknown categories, missing required fields, broken YAML, and missing image files. The same check runs on GitHub for every push that touches `content/`, and the Docker image build runs `build_data.py` automatically.
+
+## Formatting
+
+Files in `content/` are kept in exactly the format Pages CMS writes when it saves: same YAML library and settings, empty fields removed, fields in the order of the forms in `.pages.yml`. A CMS save then only changes the lines you actually edited.
+
+After editing YAML files by hand, normalize them before committing:
+
+```bash
+npm install          # once
+npm run format       # rewrite content/ in Pages CMS format
+npm run format:check # only check (this also runs on GitHub)
+```
 
 ## Editing with Pages CMS
 

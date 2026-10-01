@@ -2,6 +2,5 @@ name: Serena Spinoso, PhD
 category: Past Collaborators
 order: 570
 links:
-- text: Personal Webpage
-  url: https://www.linkedin.com/in/serena-spinoso-9b3610a7/
-description: ''
+  - text: Personal Webpage
+    url: https://www.linkedin.com/in/serena-spinoso-9b3610a7/

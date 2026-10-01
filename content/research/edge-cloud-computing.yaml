@@ -1,14 +1,14 @@
 name: Edge/cloud computing
 order: 80
 reference: prof. Fulvio Risso
-description: >-
-  We investigate distributed computing systems spanning cloud, edge, and IoT environments. Research includes
-  workload orchestration, resource scheduling, virtualization, serverless computing, and AI-driven management
-  of applications operating across the computing continuum.
+description: We investigate distributed computing systems spanning cloud, edge,
+  and IoT environments. Research includes workload orchestration, resource
+  scheduling, virtualization, serverless computing, and AI-driven management of
+  applications operating across the computing continuum.
 links:
-- text: Fulvio Risso's profile
-  url: '#profile?id=Fulvio%20Risso'
-- text: Alessio Sacco's profile
-  url: '#profile?id=Alessio%20Sacco'
-- text: Guido Marchetto's profile
-  url: '#profile?id=Guido%20Marchetto'
+  - text: Fulvio Risso's profile
+    url: "#profile?id=Fulvio%20Risso"
+  - text: Alessio Sacco's profile
+    url: "#profile?id=Alessio%20Sacco"
+  - text: Guido Marchetto's profile
+    url: "#profile?id=Guido%20Marchetto"

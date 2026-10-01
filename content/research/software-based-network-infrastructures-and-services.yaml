@@ -1,14 +1,15 @@
 name: Software-based network infrastructures and services
 order: 100
 reference: prof. Guido Marchetto
-description: >-
-  We study software-defined and virtualized network infrastructures, including SDN, NFV, cloud-native
-  networking, and programmable networks. Our work focuses on network orchestration, service deployment,
-  intent-based management, and automation of network services across distributed infrastructures.
+description: We study software-defined and virtualized network infrastructures,
+  including SDN, NFV, cloud-native networking, and programmable networks. Our
+  work focuses on network orchestration, service deployment, intent-based
+  management, and automation of network services across distributed
+  infrastructures.
 links:
-- text: Guido Marchetto's profile
-  url: '#profile?id=Guido%20Marchetto'
-- text: Alessio Sacco's profile
-  url: '#profile?id=Alessio%20Sacco'
-- text: Fulvio Risso's profile
-  url: '#profile?id=Fulvio%20Risso'
+  - text: Guido Marchetto's profile
+    url: "#profile?id=Guido%20Marchetto"
+  - text: Alessio Sacco's profile
+    url: "#profile?id=Alessio%20Sacco"
+  - text: Fulvio Risso's profile
+    url: "#profile?id=Fulvio%20Risso"

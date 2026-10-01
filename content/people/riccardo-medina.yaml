@@ -3,6 +3,5 @@ category: Past Collaborators
 order: 30
 email: riccardo.medina@polito.it
 links:
-- text: Personal Webpage
-  url: https://www.polito.it/personale?p=riccardo.medina
-description: ''
+  - text: Personal Webpage
+    url: https://www.polito.it/personale?p=riccardo.medina

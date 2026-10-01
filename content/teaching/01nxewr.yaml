@@ -1,10 +1,10 @@
 code: 01NXEWR
-order: 190
 name: Threat Intelligence and Incident Management
+order: 190
 link: https://didattica.polito.it/pls/portal30/gap.pkg_guide.viewGap?p_cod_ins=01NXEWR
 cdl: Cybersecurity Engineering
 year: 2LS
-period: '2'
+period: "2"
 instructors:
-- name: Fulvio Valenza
-  link: '#profile?id=Fulvio%20Valenza'
+  - name: Fulvio Valenza
+    link: "#profile?id=Fulvio%20Valenza"
